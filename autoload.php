@@ -13,9 +13,9 @@ namespace Marks;
 
 defined('ABSPATH') || exit;
 
-$composer = __DIR__ . '/vendor/autoload.php';
-if (is_readable($composer)) {
-    require_once $composer;
+$marks_composer = __DIR__ . '/vendor/autoload.php';
+if (is_readable($marks_composer)) {
+    require_once $marks_composer;
     return;
 }
 

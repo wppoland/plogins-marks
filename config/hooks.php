@@ -16,12 +16,11 @@ use Marks\Service\MarksService;
 
 defined('ABSPATH') || exit;
 
-$hooks = [
-    MarksService::class,
-];
-
-if (is_admin()) {
-    $hooks[] = Settings::class;
-}
-
-return $hooks;
+return is_admin()
+    ? [
+        MarksService::class,
+        Settings::class,
+    ]
+    : [
+        MarksService::class,
+    ];
