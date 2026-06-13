@@ -1,0 +1,126 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Marks\Service;
+
+use Marks\Contract\HasHooks;
+use WPPoland\StorefrontKit\Badge\BadgeEngine;
+
+defined('ABSPATH') || exit;
+
+/**
+ * Thin adapter over the storefront-kit {@see BadgeEngine}.
+ *
+ * Injects this plugin's text-domain ('marks'), option prefix ('marks_') and
+ * product meta keys into the namespace-neutral engine, and renders badges
+ * through a packaged CSS-only template. All badge logic lives in the kit; this
+ * class only supplies localisation, option storage, meta-key naming and the
+ * front-end stylesheet.
+ */
+final class MarksService implements HasHooks
+{
+    private const OPTION = 'marks_settings';
+
+    /** Product meta keys for the (optional) per-product manual badge. */
+    private const META_MANUAL_TEXT  = '_marks_manual_text';
+    private const META_MANUAL_STYLE = '_marks_manual_style';
+
+    private ?BadgeEngine $engine = null;
+
+    public function __construct()
+    {
+        // The engine ships with storefront-kit >= 1.2.0. When present, wire it
+        // with this plugin's text-domain / option prefix / meta keys. Otherwise
+        // leave the service inert (see registerHooks()).
+        if (! class_exists(BadgeEngine::class)) {
+            return;
+        }
+
+        $this->engine = new BadgeEngine(
+            'badges',
+            [
+                'sale'       => __('Sale', 'marks'),
+                'new'        => __('New', 'marks'),
+                'low_stock'  => __('Low stock', 'marks'),
+                'bestseller' => __('Bestseller', 'marks'),
+            ],
+            [
+                'manual_text'  => self::META_MANUAL_TEXT,
+                'manual_style' => self::META_MANUAL_STYLE,
+            ],
+            fn (): bool => $this->isEnabled(),
+            fn (): array => $this->settings(),
+            fn (\WC_Product $product, string $key): mixed => $product->get_meta($key),
+            function (string $template, array $context): void {
+                $this->renderTemplate($template, $context);
+            },
+        );
+    }
+
+    public function registerHooks(): void
+    {
+        if ($this->engine instanceof BadgeEngine) {
+            $this->engine->registerHooks();
+            add_action('wp_enqueue_scripts', [$this, 'enqueueAssets']);
+            return;
+        }
+
+        // TODO: storefront-kit < 1.2.0 has no BadgeEngine. Bump the
+        // `wppoland/storefront-kit` constraint (composer update) to enable
+        // product badges. No hooks are registered until the engine is present.
+    }
+
+    public function enqueueAssets(): void
+    {
+        if (! $this->isEnabled() || ! (is_product() || is_shop() || is_product_category() || is_product_tag())) {
+            return;
+        }
+
+        wp_enqueue_style(
+            'marks',
+            MARKS_URL . 'assets/css/badges.css',
+            [],
+            \Marks\VERSION,
+        );
+    }
+
+    private function isEnabled(): bool
+    {
+        return (bool) ($this->settings()['enabled'] ?? false);
+    }
+
+    /**
+     * Stored settings merged over packaged defaults.
+     *
+     * @return array<string, mixed>
+     */
+    private function settings(): array
+    {
+        $stored = get_option(self::OPTION, []);
+
+        if (! is_array($stored)) {
+            $stored = [];
+        }
+
+        /** @var array<string, mixed> $defaults */
+        $defaults = require MARKS_DIR . 'config/defaults.php';
+
+        return array_merge($defaults, $stored);
+    }
+
+    /**
+     * @param array<string, mixed> $context
+     */
+    private function renderTemplate(string $template, array $context): void
+    {
+        $file = MARKS_DIR . 'templates/' . $template . '.php';
+
+        if (! is_readable($file)) {
+            return;
+        }
+
+        extract($context, EXTR_SKIP);
+        require $file;
+    }
+}

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace PluginNamespace\Contract;
+namespace Marks\Contract;
 
 defined('ABSPATH') || exit;
 

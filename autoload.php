@@ -4,12 +4,12 @@
  * the optimized classmap). Fall back to a minimal PSR-4 autoloader so the plugin
  * still boots if vendor/ is somehow absent.
  *
- * @package PluginNamespace
+ * @package Marks
  */
 
 declare(strict_types=1);
 
-namespace PluginNamespace;
+namespace Marks;
 
 defined('ABSPATH') || exit;
 
@@ -21,7 +21,7 @@ if (is_readable($composer)) {
 
 spl_autoload_register(static function (string $class): void {
     $prefixes = [
-        'PluginNamespace\\'           => __DIR__ . '/src/',
+        'Marks\\'           => __DIR__ . '/src/',
         'WPPoland\\StorefrontKit\\'    => __DIR__ . '/vendor/wppoland/storefront-kit/src/',
     ];
 

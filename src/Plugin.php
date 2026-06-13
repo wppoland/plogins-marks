@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace PluginNamespace;
+namespace Marks;
 
-use PluginNamespace\Contract\HasHooks;
+use Marks\Contract\HasHooks;
 
 defined('ABSPATH') || exit;
 

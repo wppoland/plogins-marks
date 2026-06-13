@@ -1,0 +1,69 @@
+/**
+ * Marks — CSS-only product badges.
+ *
+ * Absolutely positioned over the product image so badges never reflow the
+ * layout (no Cumulative Layout Shift). Colours map to the engine's style keys
+ * (accent, success, warning, danger, neutral) and can be overridden by themes
+ * via the --marks-* custom properties.
+ */
+
+.marks-badges {
+	position: absolute;
+	top: 0.5rem;
+	left: 0.5rem;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 0.35rem;
+	margin: 0;
+	padding: 0;
+	pointer-events: none;
+}
+
+/* WooCommerce product cells are positioned relatively in most themes; ensure it. */
+.woocommerce ul.products li.product,
+.woocommerce div.product div.images {
+	position: relative;
+}
+
+.marks-badge {
+	display: inline-block;
+	padding: 0.2em 0.6em;
+	font-size: 0.75rem;
+	font-weight: 600;
+	line-height: 1.4;
+	color: var(--marks-fg, #fff);
+	background: var(--marks-bg, #2c3338);
+	border-radius: 999px;
+	white-space: nowrap;
+}
+
+.marks-badges--square .marks-badge {
+	border-radius: 3px;
+}
+
+.marks-badges--upper .marks-badge {
+	text-transform: uppercase;
+	letter-spacing: 0.03em;
+}
+
+.marks-badge--accent {
+	--marks-bg: #2271b1;
+}
+
+.marks-badge--success {
+	--marks-bg: #1a7f37;
+}
+
+.marks-badge--warning {
+	--marks-bg: #bb6b00;
+}
+
+.marks-badge--danger {
+	--marks-bg: #b32d2e;
+}
+
+.marks-badge--neutral {
+	--marks-bg: #50575e;
+}
