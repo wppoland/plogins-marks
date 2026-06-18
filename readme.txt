@@ -1,5 +1,5 @@
 === Marks ===
-Contributors: wppoland
+Contributors: motylanogha
 Tags: woocommerce, product badges, sale badge, new badge, low stock
 Requires at least: 6.5
 Tested up to: 7.0
