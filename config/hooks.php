@@ -12,6 +12,7 @@
 declare(strict_types=1);
 
 use Marks\Admin\Settings;
+use Marks\Service\ElementorWidgets;
 use Marks\Service\MarksService;
 
 defined('ABSPATH') || exit;
@@ -19,8 +20,10 @@ defined('ABSPATH') || exit;
 return is_admin()
     ? [
         MarksService::class,
+        ElementorWidgets::class,
         Settings::class,
     ]
     : [
         MarksService::class,
+        ElementorWidgets::class,
     ];
