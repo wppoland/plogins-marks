@@ -31,3 +31,9 @@
 /test-results
 /playwright-report
 /.playwright-mcp
+/glotpress-import
+/.raw
+/.shotkit
+/SUBMISSION.md
+/phpcs.xml
+/phpstan.neon
