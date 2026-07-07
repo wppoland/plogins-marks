@@ -37,3 +37,7 @@
 /SUBMISSION.md
 /phpcs.xml
 /phpstan.neon
+
+# editor backups (never ship / never a badly_named_files reject)
+*~
+*.bak
