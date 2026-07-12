@@ -1,129 +1,136 @@
-=== Plogins Marks - Product Badges for WooCommerce ===
+=== Plogins Marks - Sale & Stock Badges for WooCommerce ===
 Contributors: motylanogha
 Tags: woocommerce, product badges, sale badge, new badge, low stock
 Requires at least: 6.5
 Tested up to: 7.0
 Requires PHP: 8.1
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Insignias de productos solo CSS para WooCommerce: Oferta, Nuevo, Stock bajo, Bestseller y una insignia manual. Sin JavaScript, sin cambios de diseño.
+Insignias de productos solo con CSS para WooCommerce: Venta, Nuevo, Stock bajo, Mejor vendido y una insignia manual. Sin JavaScript, sin saltos de diseño.
 
 == Description ==
 
-Marks coloca insignias en sus productos WooCommerce. Algunos aparecen solos de cada uno.
-estado actual del producto (<strong>Oferta</strong>, <strong>Nuevo</strong>, <strong>Pocas existencias</strong>, <strong>Bestseller</strong> y algunos
-otros), y también puede configurar una insignia manual por producto usando una etiqueta para toda la tienda
-y color.
+Marks coloca insignias en tus productos de WooCommerce. Algunas aparecen solas según el
+estado actual de cada producto (<strong>Venta</strong>, <strong>Nuevo</strong>, <strong>Stock bajo</strong>, <strong>Mejor vendido</strong> y algunas
+más) y, además, puedes definir una insignia manual por producto con una etiqueta y un color
+para toda la tienda.
 
-Las insignias se dibujan con CSS y se ubican sobre la imagen del producto, por lo que no agregan
-JavaScript y no cambie el diseño cuando se carga la página. Se muestran en el single.
-página del producto y en listados de tiendas, categorías y etiquetas.
+Las insignias se dibujan con CSS y se sitúan sobre la imagen del producto, así que no añaden
+JavaScript ni desplazan el diseño al cargar la página. Se muestran en la página de
+producto individual y en los listados de tienda, categoría y etiqueta.
 
-El código está abierto y se encuentra en https://github.com/wppoland/plogins-marks si desea leerlo.
-corregirlo, reportar un error o enviar un parche.
+El código es abierto y está en https://github.com/wppoland/plogins-marks por si quieres leerlo,
+informar de un error o enviar un parche.
 
-La configuración se encuentra en un menú de administración de <strong>Marcas</strong> de nivel superior: un encendido/apagado global
-alternancia, controles de ubicación, alternancia por regla con etiquetas personalizadas, umbrales, un
-sección de apariencia (forma, mayúsculas, mayúsculas por contexto) y la insignia del manual
-etiqueta y color. Las configuraciones se desinfectan y se fijan al guardar.
+La configuración está en un menú de administración <strong>Marks</strong> de nivel superior: un interruptor global de encendido/apagado,
+controles de ubicación, interruptores por regla con etiquetas personalizadas, umbrales, una
+sección de apariencia (forma, mayúsculas, límites por contexto) y la etiqueta y el color
+de la insignia manual. Los ajustes se depuran y se limitan al guardar.
 
 = Documentation and links =
 
 * <strong>Documentación</strong> - https://plogins.com/es/marks/docs/
-* <strong>Página de complementos</strong> - https://plogins.com/es/marks/
+* <strong>Página del plugin</strong> - https://plogins.com/es/marks/
 * <strong>Código fuente</strong> - https://github.com/wppoland/plogins-marks
-* <strong>Informes de errores y solicitudes de funciones</strong> - https://github.com/wppoland/plogins-marks/issues
+* <strong>Informes de errores y peticiones de funciones</strong> - https://github.com/wppoland/plogins-marks/issues
 
 
 = Features =
 
-* Insignias automáticas: Oferta, Nuevo, Stock bajo, Bestseller, Porcentaje de descuento, Envío gratis, Agotado.
-* Texto de etiqueta personalizado para cada credencial automática.
-* Umbrales configurables: ventana de novedad, nivel de stock bajo, ventas de los más vendidos.
-* Detección de envío gratuito por clase de envío del producto.
-* Controles de ubicación: página de un solo producto y/o listados de tiendas y categorías.
-* Controles de apariencia: forma de pastilla o cuadrada, mayúsculas y una tapa de insignia por contexto.
-* Código corto `[marks_badges]` para colocar insignias en cualquier lugar.
-* Una única insignia manual (etiqueta + color) que se muestra por producto a través de meta.
-* Representación solo CSS: sin JavaScript, sin cambio de diseño.
-* Activación/desactivación global y alternancia por regla.
-* Traducción lista (POT incluida) y desinstalación limpia.
-* Compatible con HPOS y bloques de carrito/pago.
+* Insignias automáticas: Venta, Nuevo, Stock bajo, Mejor vendido, Porcentaje de descuento, Envío gratis, Agotado.
+* Texto de etiqueta personalizado para cada insignia automática.
+* Umbrales configurables: ventana de novedad, nivel de stock bajo, ventas de best-seller.
+* Detección de envío gratis según la clase de envío del producto.
+* Controles de ubicación: página de producto individual o listados de tienda y categoría.
+* Controles de apariencia: forma de pastilla o cuadrada, mayúsculas y un límite de insignias por contexto.
+* Shortcode `[marks_badges]` para colocar insignias en cualquier lugar.
+* Una sola insignia manual (etiqueta + color) por producto, mostrada mediante meta.
+* Renderizado solo con CSS: sin JavaScript, sin saltos de diseño.
+* Interruptor global de encendido/apagado e interruptores por regla.
+* Listo para traducir (POT incluido) y desinstalación limpia.
+* Compatible con HPOS y con los bloques de carrito y pago.
 
 = The [marks_badges] shortcode =
 
-Utilice `[marks_badges]` para colocar las insignias de un producto en cualquier página, publicación o widget. con
-sin atributos, utiliza el producto actual (dentro de un bucle o en un solo producto)
-página). Pase `id` para apuntar a un producto específico y `context` (`single` o `loop`) para
-elige el estilo de renderizado:
+Usa `[marks_badges]` para colocar las insignias de un producto en cualquier página, entrada o widget. Sin
+atributos, usa el producto actual (dentro de un bucle o en una página de producto
+individual). Pasa `id` para apuntar a un producto concreto y `context` (`single` o `loop`) para
+elegir el estilo de renderizado:
 
 `[marks_badges id="123" context="loop"]`
 
 == Installation ==
 
-1. Cargue el complemento en `/wp-content/plugins/marks`, o instálelo a través de Complementos → Añadir nuevo.
+1. Sube el plugin a `/wp-content/plugins/marks` o instálalo desde Plugins → Añadir nuevo.
 2. Actívalo. WooCommerce debe estar activo.
-3. Vaya al menú <strong>Marcas</strong>, activa las insignias y elija qué insignias automáticas mostrar.
+3. Ve al menú <strong>Marks</strong>, activa las insignias y elige qué insignias automáticas mostrar.
 
 == Frequently Asked Questions ==
 
 = Does it require WooCommerce? =
 
-Sí.
+Sí, se necesita WooCommerce.
 
 = When does the "New" badge show? =
 
-En productos creados dentro de la ventana de novedad (30 días de forma predeterminada).
+En los productos creados dentro de la ventana de novedad (30 días de forma predeterminada).
 
 = When does the "Low stock" badge show? =
 
-En productos gestionados en stock cuya cantidad restante sea igual o inferior a la configurada
-umbral de existencias bajas.
+En productos con stock gestionado cuya cantidad restante sea igual o inferior al
+umbral de stock bajo configurado.
 
 = How do I add a manual badge to a single product? =
 
-Configure la etiqueta y el color de la insignia manual en la pantalla de configuración de Marcas, luego configure el
-meta del producto `_marks_manual_text` (y opcionalmente `_marks_manual_style`) en el
-productos que deben exhibirlo.
+Define la etiqueta y el color de la insignia manual en la pantalla de ajustes de Marks y luego asigna el
+meta de producto `_marks_manual_text` (y, opcionalmente, `_marks_manual_style`) en los
+productos que deban mostrarla.
 
 
 = Does this plugin work on WordPress Multisite? =
 
-Sí. Este complemento es compatible con WordPress Multisite. Activarlo en red o activarlo en sitios individuales; Cada sitio mantiene su propia configuración y datos.
+Sí. Este plugin es compatible con WordPress Multisite. Actívalo para toda la red o en sitios concretos; cada sitio conserva sus propios ajustes y datos.
 
 == Screenshots ==
 
-1. Insignias automáticas en la ficha de una tienda.
-2. La pantalla de configuración de Marcas.
+1. Insignias automáticas en un listado de tienda.
+2. La pantalla de ajustes de Marks.
 
 == External Services ==
 
-Marks no se conecta a ningún servicio externo. Las insignias se calculan y extraen completamente en su propio servidor a partir de los datos de WooCommerce que ya están en tu base de datos (precio, existencias, ventas, fechas de producto y clase de envío), y el CSS de la insignia se proporciona desde los propios activos del complemento.
+Marks no se conecta a ningún servicio externo. Las insignias se calculan y se dibujan íntegramente en tu propio servidor a partir de los datos de WooCommerce que ya están en tu base de datos (precio, stock, ventas, fechas de producto y clase de envío), y el CSS de las insignias se sirve desde los propios recursos del plugin.
 
-El complemento almacena tu configuración en dos opciones de WordPress (`marks_settings` y `marks_db_version`) y lee metadatos de publicaciones por producto (`_marks_manual_text` y `_marks_manual_style`) para la insignia manual. No se envían datos de visitantes ni de tiendas a ninguna parte, y Marks no llama a casa, no carga scripts o fuentes remotas ni envía correos electrónicos.
+El plugin guarda su configuración en dos opciones de WordPress (`marks_settings` y `marks_db_version`) y lee el meta de entrada por producto (`_marks_manual_text` y `_marks_manual_style`) para la insignia manual. No se envía a ninguna parte ningún dato de visitantes ni de la tienda, y Marks no se comunica con servidores externos, no carga scripts ni fuentes remotos y no envía correos.
+
+== Translations ==
+
+Plogins Marks incluye traducciones al polaco, al alemán y al español para la interfaz del plugin. El dominio de texto es `plogins-marks`, por lo que los paquetes de idioma de WordPress.org también pueden sustituir o ampliar estas traducciones incluidas.
 
 == Changelog ==
+
+= 1.0.2 =
+* Se añadieron traducciones incluidas al polaco, al alemán y al español para la interfaz del plugin.
 
 = 1.0.1 =
 * Primera versión estable.
 
 = 0.3.1 =
-* Se cambió el nombre a Plogins Marks para WooCommerce para obtener un nombre de complemento más distintivo.
+* Renombrado a Plogins Marks for WooCommerce para un nombre de plugin más distintivo.
 
 = 0.3.0 =
-* Nuevo: ocultación opcional del flash de venta predeterminado de WooCommerce cuando la insignia de venta de Marcas está habilitada.
-* La configuración de administrador ayuda a pulir la información sobre herramientas.
+* Nuevo: ocultación opcional del flash de oferta predeterminado de WooCommerce cuando la insignia Venta de Marks está activa.
+* Retoques en los tooltips de los ajustes de administración.
 
 = 0.2.0 =
-* Añade porcentaje de descuento, envío gratuito e insignias automáticas de Agotado.
+* Añade las insignias automáticas Porcentaje de descuento, Envío gratis y Agotado.
 * Añade texto de etiqueta personalizado para cada insignia automática.
-* Añade umbrales configurables de ventana de novedad y de best-seller, además de detección de clase de envío gratuito.
-* Añadir controles de ubicación (página de producto único y/o listados).
-* Añadir controles de apariencia: forma de la insignia, mayúsculas y tapas de insignia por contexto.
-* Añade el código corto `[marks_badges]` para la colocación manual.
-* Añade una plantilla de traducción (languages/marks.pot) y una limpieza de desinstalación.
+* Añade umbrales configurables de ventana de novedad y best-seller, además de la detección de la clase de envío gratis.
+* Añade controles de ubicación (página de producto individual o listados).
+* Añade controles de apariencia: forma de la insignia, mayúsculas y límites de insignias por contexto.
+* Añade el shortcode `[marks_badges]` para la colocación manual.
+* Añade una plantilla de traducción (languages/marks.pot) y una limpieza al desinstalar.
 
 = 0.1.0 =
-* Lanzamiento inicial: insignias automáticas de Venta / Nuevo / Stock bajo / Bestseller, una insignia manual y una pantalla de configuración. Solo CSS.
+* Lanzamiento inicial: insignias automáticas Venta / Nuevo / Stock bajo / Mejor vendido, una insignia manual y una pantalla de ajustes. Solo con CSS.
