@@ -1,129 +1,136 @@
-=== Plogins Marks - Product Badges for WooCommerce ===
+=== Plogins Marks - Sale & Stock Badges for WooCommerce ===
 Contributors: motylanogha
 Tags: woocommerce, product badges, sale badge, new badge, low stock
 Requires at least: 6.5
 Tested up to: 7.0
 Requires PHP: 8.1
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Nur CSS-Produktabzeichen für WooCommerce: Ausverkauf, Neu, Niedriger Lagerbestand, Bestseller und ein manuelles Abzeichen. Kein JavaScript, keine Layoutverschiebung.
+Produkt-Abzeichen für WooCommerce – komplett per CSS: Verkauf, Neu, Geringer Lagerbestand, Bestseller und ein manuelles Abzeichen. Kein JavaScript, keine Layout-Verschiebung.
 
 == Description ==
 
-Marks bringt Abzeichen auf deine WooCommerce-Produkte. Einige erscheinen jeweils einzeln
-Aktueller Status des Produkts (<strong>Ausverkauf</strong>, <strong>Neu</strong>, <strong>Wenig auf Lager</strong>, <strong>Bestseller</strong> und einige mehr
-andere), und Du kannst auch ein manuelles Abzeichen pro Produkt festlegen, indem du ein geschäftsweites Etikett verwenden
-und Farbe.
+Marks bringt Abzeichen auf deine WooCommerce-Produkte. Einige erscheinen von selbst
+anhand des aktuellen Zustands eines Produkts (<strong>Verkauf</strong>, <strong>Neu</strong>, <strong>Geringer Lagerbestand</strong>, <strong>Bestseller</strong> und einige
+weitere), und du kannst außerdem pro Produkt ein manuelles Abzeichen mit einem shopweiten Etikett
+und einer Farbe festlegen.
 
-Die Abzeichen werden mit CSS gezeichnet und über dem Produktbild platziert, sodass sie „nein“ hinzufügen
-JavaScript verwenden und das Layout nicht verschieben, wenn die Seite geladen wird. Sie sind auf der Single zu sehen
-Produktseite und in Shop-, Kategorie- und Tag-Listings.
+Die Abzeichen werden per CSS gezeichnet und liegen über dem Produktbild, also fügen sie kein
+JavaScript hinzu und verschieben das Layout beim Laden der Seite nicht. Sie erscheinen auf der
+einzelnen Produktseite sowie in Shop-, Kategorie- und Schlagwort-Listen.
 
-Der Code ist offen und befindet sich unter https://github.com/wppoland/plogins-marks, falls du ihn lesen möchten
-es, melde einen Fehler oder sende einen Patch.
+Der Code ist offen und liegt unter https://github.com/wppoland/plogins-marks, falls du ihn lesen,
+einen Fehler melden oder einen Patch einsenden möchtest.
 
-Die Konfiguration befindet sich unter einem <strong>Marks</strong>-Administratormenü der obersten Ebene: ein globales Ein-/Ausschalten
-Umschalten, Platzierungssteuerelemente, Umschalten pro Regel mit benutzerdefinierten Beschriftungen, Schwellenwerte usw
-Abschnitt „Darstellung“ (Form, Großschreibung, kontextabhängige Großbuchstaben) und das manuelle Abzeichen
-Etikett und Farbe. Die Einstellungen werden beim Speichern bereinigt und festgehalten.
+Die Konfiguration findest du in einem eigenen Hauptmenü <strong>Marks</strong>: ein globaler An-/Aus-Schalter,
+Platzierungsoptionen, Schalter je Regel mit eigenen Beschriftungen, Schwellenwerte, ein
+Bereich fürs Erscheinungsbild (Form, Großschreibung, Obergrenzen je Kontext) sowie Beschriftung und Farbe
+des manuellen Abzeichens. Die Einstellungen werden beim Speichern bereinigt und begrenzt.
 
 = Documentation and links =
 
 * <strong>Dokumentation</strong> - https://plogins.com/de/marks/docs/
 * <strong>Plugin-Seite</strong> - https://plogins.com/de/marks/
-* <strong>Quellcode</strong> – https://github.com/wppoland/plogins-marks
-* <strong>Fehlerberichte und Funktionsanfragen</strong> – https://github.com/wppoland/plogins-marks/issues
+* <strong>Quellcode</strong> - https://github.com/wppoland/plogins-marks
+* <strong>Fehlerberichte und Funktionswünsche</strong> - https://github.com/wppoland/plogins-marks/issues
 
 
 = Features =
 
-* Automatische Abzeichen: Ausverkauf, Neu, Geringer Lagerbestand, Bestseller, Rabattprozentsatz, Kostenloser Versand, Ausverkauft.
-* Benutzerdefinierter Etikettentext für jedes automatische Abzeichen.
-* Konfigurierbare Schwellenwerte: Neuheitenfenster, geringer Lagerbestand, Bestsellerverkäufe.
-* Kostenlose Versanderkennung nach Produktversandklasse.
-* Platzierungskontrollen: einzelne Produktseite und/oder Shop- und Kategorieeinträge.
-* Steuerelemente für das Erscheinungsbild: Pillen- oder Quadratform, Großbuchstaben und eine kontextbezogene Abzeichenkappe.
-* Shortcode „[marks_badges]“, um Abzeichen überall zu platzieren.
-* Ein einzelnes manuelles Abzeichen (Etikett + Farbe), das pro Produkt über Meta angezeigt wird.
-* Reines CSS-Rendering: kein JavaScript, keine Layoutverschiebung.
-* Globales Ein-/Ausschalten und Umschalten pro Regel.
+* Automatische Abzeichen: Verkauf, Neu, Geringer Lagerbestand, Bestseller, Rabattprozentsatz, Kostenloser Versand, Ausverkauft.
+* Eigener Beschriftungstext für jedes automatische Abzeichen.
+* Konfigurierbare Schwellenwerte: Neuheitenfenster, Grenze für geringen Lagerbestand, Bestseller-Verkäufe.
+* Erkennung von kostenlosem Versand anhand der Versandklasse des Produkts.
+* Platzierungsoptionen: einzelne Produktseite und/oder Shop- und Kategorie-Listen.
+* Optionen fürs Erscheinungsbild: Pillen- oder Quadratform, Großschreibung und eine Obergrenze für Abzeichen je Kontext.
+* Shortcode `[marks_badges]`, um Abzeichen überall zu platzieren.
+* Ein einzelnes manuelles Abzeichen (Beschriftung + Farbe) je Produkt, angezeigt über Meta.
+* Reines CSS-Rendering: kein JavaScript, keine Layout-Verschiebung.
+* Globaler An-/Aus-Schalter und Schalter je Regel.
 * Übersetzungsbereit (POT enthalten) und saubere Deinstallation.
-* Kompatibel mit HPOS und Warenkorb-/Kassenblöcken.
+* Kompatibel mit HPOS sowie Warenkorb-/Kassenblöcken.
 
 = The [marks_badges] shortcode =
 
-Verwende „[marks_badges]“, um die Abzeichen eines Produkts in eine beliebige Seite, einen Beitrag oder ein Widget einzufügen. Mit
-Keine Attribute, es verwendet das aktuelle Produkt (innerhalb einer Schleife oder für ein einzelnes Produkt).
-Seite). Übergebe „id“, um auf ein bestimmtes Produkt und „context“ („single“ oder „loop“) abzuzielen
-Wähle den Renderstil:
+Verwende `[marks_badges]`, um die Abzeichen eines Produkts in eine beliebige Seite, einen Beitrag oder ein Widget einzufügen. Ohne
+Attribute nutzt er das aktuelle Produkt (innerhalb einer Schleife oder auf einer einzelnen
+Produktseite). Übergib `id`, um ein bestimmtes Produkt anzusprechen, und `context` (`single` oder `loop`), um
+den Renderstil zu wählen:
 
 `[marks_badges id="123" context="loop"]`
 
 == Installation ==
 
-1. Lade das Plugin nach „/wp-content/plugins/marks“ hoch oder installiere es über Plugins → Neu hinzufügen.
+1. Lade das Plugin nach `/wp-content/plugins/marks` hoch oder installiere es über Plugins → Installieren.
 2. Aktiviere es. WooCommerce muss aktiv sein.
-3. Gehe zum Menü <strong>Markierungen</strong>, aktiviere Abzeichen und wähle aus, welche automatischen Abzeichen angezeigt werden sollen.
+3. Gehe zum Menü <strong>Marks</strong>, aktiviere die Abzeichen und wähle, welche automatischen Abzeichen angezeigt werden.
 
 == Frequently Asked Questions ==
 
 = Does it require WooCommerce? =
 
-Ja.
+Ja, WooCommerce ist erforderlich.
 
 = When does the "New" badge show? =
 
-Für Produkte, die innerhalb des Neuheitsfensters erstellt wurden (standardmäßig 30 Tage).
+Bei Produkten, die innerhalb des Neuheitenfensters angelegt wurden (standardmäßig 30 Tage).
 
 = When does the "Low stock" badge show? =
 
-Auf lagergeführte Produkte, deren Restmenge der konfigurierten Menge entspricht oder darunter liegt
-Schwelle für niedrige Lagerbestände.
+Bei lagerverwalteten Produkten, deren Restmenge auf oder unter dem konfigurierten
+Schwellenwert für geringen Lagerbestand liegt.
 
 = How do I add a manual badge to a single product? =
 
-Lege die Beschriftung und Farbe des manuellen Ausweises auf dem Bildschirm „Markierungseinstellungen“ fest und lege dann fest
-Produkt-Meta „_marks_manual_text“ (und optional „_marks_manual_style“) auf der
-Produkte, die es anzeigen sollen.
+Lege Beschriftung und Farbe des manuellen Abzeichens im Marks-Einstellungsbildschirm fest und setze dann
+das Produkt-Meta `_marks_manual_text` (und optional `_marks_manual_style`) bei den
+Produkten, die es anzeigen sollen.
 
 
 = Does this plugin work on WordPress Multisite? =
 
-Ja. Dieses Plugin ist mit WordPress Multisite kompatibel. Aktiviere es im Netzwerk oder auf einzelnen Websites. Jede Site behält ihre eigenen Einstellungen und Daten.
+Ja. Dieses Plugin ist mit WordPress Multisite kompatibel. Aktiviere es netzwerkweit oder auf einzelnen Websites; jede Website behält ihre eigenen Einstellungen und Daten.
 
 == Screenshots ==
 
-1. Automatische Abzeichen in einem Shop-Eintrag.
-2. Der Bildschirm „Markierungseinstellungen“.
+1. Automatische Abzeichen in einer Shop-Liste.
+2. Der Marks-Einstellungsbildschirm.
 
 == External Services ==
 
-Marks stellt keine Verbindung zu externen Diensten her. Abzeichen werden vollständig auf deinem eigenen Server aus WooCommerce-Daten berechnet und gezeichnet, die sich bereits in deiner Datenbank befinden (Preis, Lagerbestand, Verkäufe, Produktdaten und Versandklasse), und das Abzeichen-CSS wird aus den eigenen Assets des Plugins bereitgestellt.
+Marks stellt keine Verbindung zu externen Diensten her. Abzeichen werden vollständig auf deinem eigenen Server aus den bereits in deiner Datenbank vorhandenen WooCommerce-Daten berechnet und gezeichnet (Preis, Lagerbestand, Verkäufe, Produktdaten und Versandklasse), und das Abzeichen-CSS wird aus den eigenen Assets des Plugins ausgeliefert.
 
-Das Plugin speichert seine Konfiguration in zwei WordPress-Optionen („marks_settings“ und „marks_db_version“) und liest Post-Meta pro Produkt („_marks_manual_text“ und „_marks_manual_style“) für das manuelle Abzeichen. Es werden keine Besucher- oder Geschäftsdaten irgendwohin gesendet, und Marks ruft nicht zu Hause an, lädt keine Remote-Skripte oder Schriftarten und sendet keine E-Mails.
+Das Plugin speichert seine Konfiguration in zwei WordPress-Optionen (`marks_settings` und `marks_db_version`) und liest je Produkt Beitrags-Meta (`_marks_manual_text` und `_marks_manual_style`) für das manuelle Abzeichen. Es werden keinerlei Besucher- oder Shop-Daten irgendwohin gesendet, und Marks funkt nicht nach Hause, lädt keine entfernten Skripte oder Schriftarten und versendet keine E-Mails.
+
+== Translations ==
+
+Plogins Marks enthält polnische, deutsche und spanische Übersetzungen für die Plugin-Oberfläche. Die Textdomain ist `plogins-marks`, sodass Sprachpakete von WordPress.org diese mitgelieferten Übersetzungen ebenfalls überschreiben oder erweitern können.
 
 == Changelog ==
+
+= 1.0.2 =
+* Mitgelieferte polnische, deutsche und spanische Übersetzungen für die Plugin-Oberfläche hinzugefügt.
 
 = 1.0.1 =
 * Erste stabile Version.
 
 = 0.3.1 =
-* Für einen eindeutigeren Plugin-Namen in „Plogins Marks for WooCommerce“ umbenannt.
+* Umbenannt in Plogins Marks for WooCommerce für einen unverwechselbaren Plugin-Namen.
 
 = 0.3.0 =
-* Neu: Optionales Ausblenden des standardmäßigen WooCommerce-Verkaufs-Flashs, wenn das Marks-Verkaufsabzeichen aktiviert ist.
-* Mithilfe der Admin-Einstellungen kannst du die Tooltips polieren.
+* Neu: optionales Ausblenden des standardmäßigen WooCommerce-Sale-Flashs, wenn das Verkauf-Abzeichen von Marks aktiv ist.
+* Feinschliff an den Tooltips in den Admin-Einstellungen.
 
 = 0.2.0 =
-* Füge Rabattprozentsätze, kostenlosen Versand und automatische Abzeichen „Ausverkauft“ hinzu.
-* Füge für jedes automatische Abzeichen einen benutzerdefinierten Etikettentext hinzu.
-* Füge konfigurierbare Schwellenwerte für Neuheiten und Bestseller sowie die Erkennung von kostenlosen Versandklassen hinzu.
-* Platzierungskontrollen hinzufügen (einzelne Produktseite und/oder Auflistungen).
-* Füge Steuerelemente für das Erscheinungsbild hinzu: Abzeichenform, Großbuchstaben und kontextbezogene Abzeichenkappen.
-* Füge den Shortcode „[marks_badges]“ für die manuelle Platzierung hinzu.
-* Füge eine Übersetzungsvorlage (sprachen/marks.pot) und eine Deinstallationsbereinigung hinzu.
+* Fügt die automatischen Abzeichen Rabattprozentsatz, Kostenloser Versand und Ausverkauft hinzu.
+* Fügt für jedes automatische Abzeichen einen eigenen Beschriftungstext hinzu.
+* Fügt konfigurierbare Schwellenwerte für Neuheitenfenster und Bestseller sowie die Erkennung der Klasse für kostenlosen Versand hinzu.
+* Fügt Platzierungsoptionen hinzu (einzelne Produktseite und/oder Listen).
+* Fügt Optionen fürs Erscheinungsbild hinzu: Abzeichenform, Großschreibung und Obergrenzen für Abzeichen je Kontext.
+* Fügt den Shortcode `[marks_badges]` für die manuelle Platzierung hinzu.
+* Fügt eine Übersetzungsvorlage (languages/marks.pot) und eine Deinstallations-Bereinigung hinzu.
 
 = 0.1.0 =
-* Erstveröffentlichung: automatische Abzeichen „Ausverkauf/Neu/Geringer Lagerbestand/Bestseller“, ein manuelles Abzeichen und ein Einstellungsbildschirm. Nur CSS.
+* Erstveröffentlichung: automatische Abzeichen Verkauf / Neu / Geringer Lagerbestand / Bestseller, ein manuelles Abzeichen und ein Einstellungsbildschirm. Reines CSS.
