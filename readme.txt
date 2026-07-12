@@ -61,6 +61,19 @@ pick the render style:
 
 `[marks_badges id="123" context="loop"]`
 
+== Plogins Marks PRO ==
+
+The free edition ships the core CSS badges (Sale, New, Low stock, Bestseller, manual). **Plogins Marks PRO** adds campaign and rules-based badging:
+
+* **Scheduled and targeted badges** - campaign badges with custom colours, a start/end window and targeting by product, category or tag
+* **Conditional display rules** - store-wide rules that badge a product by category, price threshold or low stock
+* **Image badges** - show a certification or brand logo (PNG/SVG) on a product
+* **A/B label sets** - rotate competing badge labels with sticky cookies and per-variant impression counts
+
+Everything in the free edition stays free and open. Plogins Marks PRO starts at 19 EUR per year (PLN shown at checkout).
+
+Compare editions and pricing: https://plogins.com/plogins-marks-pro/pricing/
+
 == Installation ==
 
 1. Upload the plugin to `/wp-content/plugins/marks`, or install via Plugins → Add New.
