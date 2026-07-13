@@ -358,7 +358,7 @@ final class Settings implements HasHooks
             <p class="marks-preview__hint">
                 <?php esc_html_e('A sample of how your badges will look on a product image.', 'plogins-marks'); ?>
             </p>
-            <div class="marks-preview__stage">
+            <div class="marks-preview__stage" aria-live="polite">
                 <div class="marks-preview__badges">
                     <span class="marks-preview__badge marks-preview__badge--danger"><?php esc_html_e('Sale', 'plogins-marks'); ?></span>
                     <span class="marks-preview__badge marks-preview__badge--success"><?php esc_html_e('New', 'plogins-marks'); ?></span>
