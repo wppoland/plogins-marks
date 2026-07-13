@@ -4,7 +4,7 @@ Tags: woocommerce, product badges, sale badge, new badge, low stock
 Requires at least: 6.5
 Tested up to: 7.0
 Requires PHP: 8.1
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -122,6 +122,9 @@ The plugin stores its configuration in two WordPress options (`marks_settings` a
 Plogins Marks includes Polish, German and Spanish translations for the plugin interface. The text domain is `plogins-marks`, so WordPress.org language packs can also override or extend these bundled translations.
 
 == Changelog ==
+
+= 1.0.5 =
+* Prefixed the product-badges filter hook (plogins_marks_product_badges) to satisfy WordPress plugin naming guidelines.
 
 = 1.0.4 =
 * Accessibility improvements to the admin and storefront markup.
