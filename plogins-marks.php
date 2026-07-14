@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name:       Plogins Marks - Sale & Stock Badges for WooCommerce
+ * Plugin Name:       Marks - Sale & Stock Badges for WooCommerce
  * Plugin URI:        https://plogins.com/plogins-marks/
  * Description:        Automatic and manual product badges for WooCommerce (sale, new, low-stock, bestseller) — CSS-only, no layout shift
- * Version:           1.0.6
+ * Version:           1.0.7
  * Requires at least: 6.5
  * Requires PHP:      8.1
  * Requires Plugins:  woocommerce
@@ -24,7 +24,7 @@ namespace Marks;
 
 defined('ABSPATH') || exit;
 
-const VERSION = '1.0.6';
+const VERSION = '1.0.7';
 const PLUGIN_FILE = __FILE__;
 
 define('MARKS_DIR', plugin_dir_path(__FILE__));
