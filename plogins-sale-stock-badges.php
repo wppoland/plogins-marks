@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name:       Marks - Sale & Stock Badges for WooCommerce
- * Plugin URI:        https://plogins.com/plogins-marks/
- * Description:        Automatic and manual product badges for WooCommerce (sale, new, low-stock, bestseller) — CSS-only, no layout shift
- * Version:           1.0.7
+ * Plugin Name:       Plogins Sale & Stock Badges for WooCommerce
+ * Plugin URI:        https://plogins.com/plogins-sale-stock-badges/
+ * Description:        Automatic and manual product badges for WooCommerce (sale, new, low-stock, bestseller): CSS-only, no layout shift.
+ * Version:           1.0.8
  * Requires at least: 6.5
  * Requires PHP:      8.1
  * Requires Plugins:  woocommerce
@@ -11,7 +11,7 @@
  * Author URI:        https://wppoland.com
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       plogins-marks
+ * Text Domain:       plogins-sale-stock-badges
  * Domain Path:       /languages
  * WC requires at least: 8.0
  *
@@ -24,7 +24,7 @@ namespace Marks;
 
 defined('ABSPATH') || exit;
 
-const VERSION = '1.0.7';
+const VERSION = '1.0.8';
 const PLUGIN_FILE = __FILE__;
 
 define('MARKS_DIR', plugin_dir_path(__FILE__));
@@ -44,7 +44,7 @@ add_action('plugins_loaded', static function (): void {
     if (! class_exists('WooCommerce')) {
         add_action('admin_notices', static function (): void {
             echo '<div class="notice notice-error"><p>';
-            echo esc_html__('Marks requires WooCommerce to be active.', 'plogins-marks');
+            echo esc_html__('Plogins Sale & Stock Badges requires WooCommerce to be active.', 'plogins-sale-stock-badges');
             echo '</p></div>';
         });
         return;

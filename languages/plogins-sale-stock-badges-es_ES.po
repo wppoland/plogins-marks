@@ -2,7 +2,7 @@
 # This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Plogins Marks for WooCommerce 0.3.1\n"
+"Project-Id-Version: Plogins Sale & Stock Badges for WooCommerce 0.3.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/plogins-marks\n"
 "POT-Creation-Date: 2026-06-16T20:25:05+00:00\n"
 "PO-Revision-Date: 2026-06-16T20:25:05+00:00\n"
@@ -46,12 +46,12 @@ msgid "https://plogins.com/"
 msgstr "https://plogins.com/"
 
 #: plogins-marks.php:47
-msgid "Marks requires WooCommerce to be active."
-msgstr "Marks requiere que WooCommerce esté activo."
+msgid "Plogins Sale & Stock Badges requires WooCommerce to be active."
+msgstr "Plogins Sale & Stock Badges requiere que WooCommerce esté activo."
 
 #: src/Admin/Settings.php:72
-msgid "Marks Settings"
-msgstr "Configuración de marcas"
+msgid "Sale & Stock Badges"
+msgstr "Insignias de oferta y stock"
 
 #: src/Admin/Settings.php:73
 msgid "Marks"

@@ -69,8 +69,8 @@ final class Settings implements HasHooks
     public function addMenuPage(): void
     {
         add_menu_page(
-            __('Marks Settings', 'plogins-marks'),
-            __('Marks', 'plogins-marks'),
+            __('Sale & Stock Badges', 'plogins-sale-stock-badges'),
+            __('Sale & Stock Badges', 'plogins-sale-stock-badges'),
             'manage_woocommerce',
             self::PAGE,
             [$this, 'renderPage'],
@@ -120,9 +120,9 @@ final class Settings implements HasHooks
 
             <div class="marks-intro">
                 <div>
-                    <h2><?php esc_html_e('Product badges that boost conversions', 'plogins-marks'); ?></h2>
+                    <h2><?php esc_html_e('Product badges that boost conversions', 'plogins-sale-stock-badges'); ?></h2>
                     <p>
-                        <?php esc_html_e('Badges highlight what makes a product worth buying, a sale, a fresh arrival, low stock or a bestseller. They are pure CSS, so they load instantly and never shift your layout. Configure them below; the live preview on the right updates as you type.', 'plogins-marks'); ?>
+                        <?php esc_html_e('Badges highlight what makes a product worth buying, a sale, a fresh arrival, low stock or a bestseller. They are pure CSS, so they load instantly and never shift your layout. Configure them below; the live preview on the right updates as you type.', 'plogins-sale-stock-badges'); ?>
                     </p>
                 </div>
             </div>
@@ -133,13 +133,13 @@ final class Settings implements HasHooks
                 <div class="marks-layout">
                     <div class="marks-settings">
                         <div class="marks-card">
-                            <h2><?php esc_html_e('Display', 'plogins-marks'); ?></h2>
+                            <h2><?php esc_html_e('Display', 'plogins-sale-stock-badges'); ?></h2>
                             <table class="form-table" role="presentation">
                                 <tbody>
                                     <tr>
                                         <th scope="row">
-                                            <?php esc_html_e('Enable badges', 'plogins-marks'); ?>
-                                            <?php $this->help(__('The master switch. When off, no badges render anywhere on your storefront and the badge stylesheet is not loaded, zero front-end impact.', 'plogins-marks')); ?>
+                                            <?php esc_html_e('Enable badges', 'plogins-sale-stock-badges'); ?>
+                                            <?php $this->help(__('The master switch. When off, no badges render anywhere on your storefront and the badge stylesheet is not loaded, zero front-end impact.', 'plogins-sale-stock-badges')); ?>
                                         </th>
                                         <td>
                                             <label for="marks_enabled">
@@ -150,24 +150,24 @@ final class Settings implements HasHooks
                                                     value="1"
                                                     <?php checked((bool) ($settings['enabled'] ?? false), true); ?>
                                                 />
-                                                <?php esc_html_e('Show product badges on the storefront.', 'plogins-marks'); ?>
+                                                <?php esc_html_e('Show product badges on the storefront.', 'plogins-sale-stock-badges'); ?>
                                             </label>
                                         </td>
                                     </tr>
                                     <?php
                                     $this->checkboxRow(
                                         'show_on_single',
-                                        __('Single product page', 'plogins-marks'),
-                                        __('Show badges on the product page.', 'plogins-marks'),
+                                        __('Single product page', 'plogins-sale-stock-badges'),
+                                        __('Show badges on the product page.', 'plogins-sale-stock-badges'),
                                         $settings,
-                                        __('Places badges over the main product image on each product\'s own page.', 'plogins-marks'),
+                                        __('Places badges over the main product image on each product\'s own page.', 'plogins-sale-stock-badges'),
                                     );
                                     $this->checkboxRow(
                                         'show_on_loop',
-                                        __('Shop and category listings', 'plogins-marks'),
-                                        __('Show badges on shop, category and tag listings.', 'plogins-marks'),
+                                        __('Shop and category listings', 'plogins-sale-stock-badges'),
+                                        __('Show badges on shop, category and tag listings.', 'plogins-sale-stock-badges'),
                                         $settings,
-                                        __('Places badges on product thumbnails across the shop, category and tag archive pages.', 'plogins-marks'),
+                                        __('Places badges on product thumbnails across the shop, category and tag archive pages.', 'plogins-sale-stock-badges'),
                                     );
                                     ?>
                                 </tbody>
@@ -176,7 +176,7 @@ final class Settings implements HasHooks
                                 <?php
                                 printf(
                                     /* translators: %s: shortcode wrapped in <code>. */
-                                    esc_html__('Need badges somewhere else? Drop %s into any page, post or widget to render the current product\'s badges.', 'plogins-marks'),
+                                    esc_html__('Need badges somewhere else? Drop %s into any page, post or widget to render the current product\'s badges.', 'plogins-sale-stock-badges'),
                                     '<code>[marks_badges]</code>',
                                 );
                                 ?>
@@ -184,27 +184,27 @@ final class Settings implements HasHooks
                         </div>
 
                         <div class="marks-card">
-                            <h2><?php esc_html_e('Automatic badges', 'plogins-marks'); ?></h2>
+                            <h2><?php esc_html_e('Automatic badges', 'plogins-sale-stock-badges'); ?></h2>
                             <p class="description">
-                                <?php esc_html_e('These appear on their own based on each product\'s live state, no manual tagging needed. Tick the ones you want and, optionally, give them your own wording. Leave a label blank to use the translated default.', 'plogins-marks'); ?>
+                                <?php esc_html_e('These appear on their own based on each product\'s live state, no manual tagging needed. Tick the ones you want and, optionally, give them your own wording. Leave a label blank to use the translated default.', 'plogins-sale-stock-badges'); ?>
                             </p>
                             <table class="form-table" role="presentation">
                                 <tbody>
                                     <?php
-                                    $this->autoBadgeRow('sale', __('Sale', 'plogins-marks'), __('On products currently on sale.', 'plogins-marks'), $settings, true, __('Shown automatically whenever a product has an active sale price.', 'plogins-marks'));
-                                    $this->autoBadgeRow('new', __('New', 'plogins-marks'), __('On products created within the newness window.', 'plogins-marks'), $settings, true, __('Shown while a product is younger than the "Newness window" set under Thresholds.', 'plogins-marks'));
-                                    $this->autoBadgeRow('low_stock', __('Low stock', 'plogins-marks'), __('On stock-managed products at or below the threshold.', 'plogins-marks'), $settings, true, __('Creates urgency. Requires WooCommerce stock management; triggers at or below the "Low-stock threshold".', 'plogins-marks'));
-                                    $this->autoBadgeRow('bestseller', __('Bestseller', 'plogins-marks'), __('On products at or above the sales threshold.', 'plogins-marks'), $settings, true, __('Social proof for your top sellers. Triggers once total units sold reaches the "Bestseller threshold".', 'plogins-marks'));
-                                    $this->autoBadgeRow('free_shipping', __('Free shipping', 'plogins-marks'), __('On products in a free-shipping shipping class.', 'plogins-marks'), $settings, true, __('Shown for products whose shipping class matches one listed under "Free-shipping classes".', 'plogins-marks'));
-                                    $this->autoBadgeRow('out_of_stock', __('Out of stock', 'plogins-marks'), __('On products that are out of stock.', 'plogins-marks'), $settings, true, __('Sets expectations before the click. Shown when WooCommerce reports the product as out of stock.', 'plogins-marks'));
+                                    $this->autoBadgeRow('sale', __('Sale', 'plogins-sale-stock-badges'), __('On products currently on sale.', 'plogins-sale-stock-badges'), $settings, true, __('Shown automatically whenever a product has an active sale price.', 'plogins-sale-stock-badges'));
+                                    $this->autoBadgeRow('new', __('New', 'plogins-sale-stock-badges'), __('On products created within the newness window.', 'plogins-sale-stock-badges'), $settings, true, __('Shown while a product is younger than the "Newness window" set under Thresholds.', 'plogins-sale-stock-badges'));
+                                    $this->autoBadgeRow('low_stock', __('Low stock', 'plogins-sale-stock-badges'), __('On stock-managed products at or below the threshold.', 'plogins-sale-stock-badges'), $settings, true, __('Creates urgency. Requires WooCommerce stock management; triggers at or below the "Low-stock threshold".', 'plogins-sale-stock-badges'));
+                                    $this->autoBadgeRow('bestseller', __('Bestseller', 'plogins-sale-stock-badges'), __('On products at or above the sales threshold.', 'plogins-sale-stock-badges'), $settings, true, __('Social proof for your top sellers. Triggers once total units sold reaches the "Bestseller threshold".', 'plogins-sale-stock-badges'));
+                                    $this->autoBadgeRow('free_shipping', __('Free shipping', 'plogins-sale-stock-badges'), __('On products in a free-shipping shipping class.', 'plogins-sale-stock-badges'), $settings, true, __('Shown for products whose shipping class matches one listed under "Free-shipping classes".', 'plogins-sale-stock-badges'));
+                                    $this->autoBadgeRow('out_of_stock', __('Out of stock', 'plogins-sale-stock-badges'), __('On products that are out of stock.', 'plogins-sale-stock-badges'), $settings, true, __('Sets expectations before the click. Shown when WooCommerce reports the product as out of stock.', 'plogins-sale-stock-badges'));
                                     // Discount-percent badge text is computed (e.g. -20%), so no label field.
-                                    $this->autoBadgeRow('discount_percent', __('Discount percent', 'plogins-marks'), __('Shows the sale discount as a percentage (e.g. -20%).', 'plogins-marks'), $settings, false, __('Calculates the saving from the regular and sale price automatically, e.g. -20%. Pairs well with, or instead of, the plain Sale badge.', 'plogins-marks'));
+                                    $this->autoBadgeRow('discount_percent', __('Discount percent', 'plogins-sale-stock-badges'), __('Shows the sale discount as a percentage (e.g. -20%).', 'plogins-sale-stock-badges'), $settings, false, __('Calculates the saving from the regular and sale price automatically, e.g. -20%. Pairs well with, or instead of, the plain Sale badge.', 'plogins-sale-stock-badges'));
                                     $this->checkboxRow(
                                         'hide_woocommerce_sale_flash',
-                                        __('Hide theme “Sale!” flash', 'plogins-marks'),
-                                        __('Replace WooCommerce’s default sale flash with the Marks sale badge only.', 'plogins-marks'),
+                                        __('Hide theme “Sale!” flash', 'plogins-sale-stock-badges'),
+                                        __('Replace WooCommerce’s default sale flash with the Marks sale badge only.', 'plogins-sale-stock-badges'),
                                         $settings,
-                                        __('Avoids two sale labels on one product card. Marks badges are CSS-only, they never reflow the page. Best used together with the Sale badge above.', 'plogins-marks'),
+                                        __('Avoids two sale labels on one product card. Marks badges are CSS-only, they never reflow the page. Best used together with the Sale badge above.', 'plogins-sale-stock-badges'),
                                     );
                                     ?>
                                 </tbody>
@@ -212,21 +212,21 @@ final class Settings implements HasHooks
                         </div>
 
                         <div class="marks-card">
-                            <h2><?php esc_html_e('Thresholds', 'plogins-marks'); ?></h2>
+                            <h2><?php esc_html_e('Thresholds', 'plogins-sale-stock-badges'); ?></h2>
                             <p class="description">
-                                <?php esc_html_e('Tune when the automatic badges above trigger. Values must be at least 1.', 'plogins-marks'); ?>
+                                <?php esc_html_e('Tune when the automatic badges above trigger. Values must be at least 1.', 'plogins-sale-stock-badges'); ?>
                             </p>
                             <table class="form-table" role="presentation">
                                 <tbody>
                                     <?php
-                                    $this->numberRow('newness_days', __('Newness window (days)', 'plogins-marks'), __('Show the New badge on products created within this many days.', 'plogins-marks'), $settings, 1, __('A product counts as "new" for this many days after it is published. 30 is a sensible default.', 'plogins-marks'));
-                                    $this->numberRow('low_stock_threshold', __('Low-stock threshold', 'plogins-marks'), __('Show the Low stock badge when remaining stock is at or below this number.', 'plogins-marks'), $settings, 1, __('When stock falls to this number or below, the Low stock badge appears. Lower it to reserve the badge for true scarcity.', 'plogins-marks'));
-                                    $this->numberRow('bestseller_threshold', __('Bestseller threshold', 'plogins-marks'), __('Show the Bestseller badge when total sales reach this number.', 'plogins-marks'), $settings, 1, __('Total lifetime units sold needed to earn the Bestseller badge. Set it to match what "popular" means for your store.', 'plogins-marks'));
+                                    $this->numberRow('newness_days', __('Newness window (days)', 'plogins-sale-stock-badges'), __('Show the New badge on products created within this many days.', 'plogins-sale-stock-badges'), $settings, 1, __('A product counts as "new" for this many days after it is published. 30 is a sensible default.', 'plogins-sale-stock-badges'));
+                                    $this->numberRow('low_stock_threshold', __('Low-stock threshold', 'plogins-sale-stock-badges'), __('Show the Low stock badge when remaining stock is at or below this number.', 'plogins-sale-stock-badges'), $settings, 1, __('When stock falls to this number or below, the Low stock badge appears. Lower it to reserve the badge for true scarcity.', 'plogins-sale-stock-badges'));
+                                    $this->numberRow('bestseller_threshold', __('Bestseller threshold', 'plogins-sale-stock-badges'), __('Show the Bestseller badge when total sales reach this number.', 'plogins-sale-stock-badges'), $settings, 1, __('Total lifetime units sold needed to earn the Bestseller badge. Set it to match what "popular" means for your store.', 'plogins-sale-stock-badges'));
                                     ?>
                                     <tr>
                                         <th scope="row">
-                                            <label for="marks_free_shipping_classes"><?php esc_html_e('Free-shipping classes', 'plogins-marks'); ?></label>
-                                            <?php $this->help(__('Enter the slugs of your WooCommerce shipping classes that ship free, separated by commas. Find slugs under WooCommerce → Settings → Shipping → Classes.', 'plogins-marks')); ?>
+                                            <label for="marks_free_shipping_classes"><?php esc_html_e('Free-shipping classes', 'plogins-sale-stock-badges'); ?></label>
+                                            <?php $this->help(__('Enter the slugs of your WooCommerce shipping classes that ship free, separated by commas. Find slugs under WooCommerce → Settings → Shipping → Classes.', 'plogins-sale-stock-badges')); ?>
                                         </th>
                                         <td>
                                             <input
@@ -237,7 +237,7 @@ final class Settings implements HasHooks
                                                 class="regular-text"
                                                 placeholder="free-shipping"
                                             />
-                                            <p class="description"><?php esc_html_e('Comma-separated product shipping-class slugs that count as free shipping.', 'plogins-marks'); ?></p>
+                                            <p class="description"><?php esc_html_e('Comma-separated product shipping-class slugs that count as free shipping.', 'plogins-sale-stock-badges'); ?></p>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -245,21 +245,21 @@ final class Settings implements HasHooks
                         </div>
 
                         <div class="marks-card">
-                            <h2><?php esc_html_e('Appearance', 'plogins-marks'); ?></h2>
+                            <h2><?php esc_html_e('Appearance', 'plogins-sale-stock-badges'); ?></h2>
                             <table class="form-table" role="presentation">
                                 <tbody>
                                     <tr>
                                         <th scope="row">
-                                            <label for="marks_shape"><?php esc_html_e('Badge shape', 'plogins-marks'); ?></label>
-                                            <?php $this->help(__('Pill gives soft, fully-rounded corners; Square gives a tighter, more editorial look. Themes can override the exact radius via the --marks-radius variable.', 'plogins-marks')); ?>
+                                            <label for="marks_shape"><?php esc_html_e('Badge shape', 'plogins-sale-stock-badges'); ?></label>
+                                            <?php $this->help(__('Pill gives soft, fully-rounded corners; Square gives a tighter, more editorial look. Themes can override the exact radius via the --marks-radius variable.', 'plogins-sale-stock-badges')); ?>
                                         </th>
                                         <td>
                                             <select id="marks_shape" name="<?php echo esc_attr(self::OPTION); ?>[shape]">
                                                 <?php
                                                 $currentShape = (string) ($settings['shape'] ?? 'pill');
                                                 $shapeLabels  = [
-                                                    'pill'   => __('Pill (rounded)', 'plogins-marks'),
-                                                    'square' => __('Square', 'plogins-marks'),
+                                                    'pill'   => __('Pill (rounded)', 'plogins-sale-stock-badges'),
+                                                    'square' => __('Square', 'plogins-sale-stock-badges'),
                                                 ];
                                                 foreach (self::SHAPES as $shape) :
                                                     ?>
@@ -271,21 +271,21 @@ final class Settings implements HasHooks
                                         </td>
                                     </tr>
                                     <?php
-                                    $this->checkboxRow('uppercase', __('Uppercase labels', 'plogins-marks'), __('Render badge labels in uppercase.', 'plogins-marks'), $settings, __('Uppercases every badge label and adds light letter-spacing for a bolder, more uniform look.', 'plogins-marks'));
-                                    $this->numberRow('max_badges_single', __('Max badges (product page)', 'plogins-marks'), __('Maximum number of badges shown on a single product page.', 'plogins-marks'), $settings, 1, __('Caps how many badges stack on a single product page so the image stays uncluttered. Highest-priority badges win.', 'plogins-marks'));
-                                    $this->numberRow('max_badges_loop', __('Max badges (listings)', 'plogins-marks'), __('Maximum number of badges shown on shop and category listings.', 'plogins-marks'), $settings, 1, __('Caps badges on the smaller thumbnails in shop and category grids. 2–3 keeps listings clean.', 'plogins-marks'));
+                                    $this->checkboxRow('uppercase', __('Uppercase labels', 'plogins-sale-stock-badges'), __('Render badge labels in uppercase.', 'plogins-sale-stock-badges'), $settings, __('Uppercases every badge label and adds light letter-spacing for a bolder, more uniform look.', 'plogins-sale-stock-badges'));
+                                    $this->numberRow('max_badges_single', __('Max badges (product page)', 'plogins-sale-stock-badges'), __('Maximum number of badges shown on a single product page.', 'plogins-sale-stock-badges'), $settings, 1, __('Caps how many badges stack on a single product page so the image stays uncluttered. Highest-priority badges win.', 'plogins-sale-stock-badges'));
+                                    $this->numberRow('max_badges_loop', __('Max badges (listings)', 'plogins-sale-stock-badges'), __('Maximum number of badges shown on shop and category listings.', 'plogins-sale-stock-badges'), $settings, 1, __('Caps badges on the smaller thumbnails in shop and category grids. 2–3 keeps listings clean.', 'plogins-sale-stock-badges'));
                                     ?>
                                 </tbody>
                             </table>
                         </div>
 
                         <div class="marks-card">
-                            <h2><?php esc_html_e('Manual badge', 'plogins-marks'); ?></h2>
+                            <h2><?php esc_html_e('Manual badge', 'plogins-sale-stock-badges'); ?></h2>
                             <p class="description">
                                 <?php
                                 printf(
                                     /* translators: %s: meta key wrapped in <code>. */
-                                    esc_html__('Define one store-wide badge (label + colour). Leave the label empty to disable it. To show it on a specific product, set the %s product meta, handy for "Editor\'s pick" or "Staff favourite" flags.', 'plogins-marks'),
+                                    esc_html__('Define one store-wide badge (label + colour). Leave the label empty to disable it. To show it on a specific product, set the %s product meta, handy for "Editor\'s pick" or "Staff favourite" flags.', 'plogins-sale-stock-badges'),
                                     '<code>_marks_manual_text</code>',
                                 );
                                 ?>
@@ -294,8 +294,8 @@ final class Settings implements HasHooks
                                 <tbody>
                                     <tr>
                                         <th scope="row">
-                                            <label for="marks_manual_badge_text"><?php esc_html_e('Manual badge label', 'plogins-marks'); ?></label>
-                                            <?php $this->help(__('The text shown by your manual badge, e.g. "Editor\'s pick". Leave blank to turn the manual badge off entirely.', 'plogins-marks')); ?>
+                                            <label for="marks_manual_badge_text"><?php esc_html_e('Manual badge label', 'plogins-sale-stock-badges'); ?></label>
+                                            <?php $this->help(__('The text shown by your manual badge, e.g. "Editor\'s pick". Leave blank to turn the manual badge off entirely.', 'plogins-sale-stock-badges')); ?>
                                         </th>
                                         <td>
                                             <input
@@ -304,14 +304,14 @@ final class Settings implements HasHooks
                                                 name="<?php echo esc_attr(self::OPTION); ?>[manual_badge_text]"
                                                 value="<?php echo esc_attr((string) ($settings['manual_badge_text'] ?? '')); ?>"
                                                 class="regular-text"
-                                                placeholder="<?php esc_attr_e('e.g. Editor’s pick', 'plogins-marks'); ?>"
+                                                placeholder="<?php esc_attr_e('e.g. Editor’s pick', 'plogins-sale-stock-badges'); ?>"
                                             />
                                         </td>
                                     </tr>
                                     <tr>
                                         <th scope="row">
-                                            <label for="marks_manual_badge_style"><?php esc_html_e('Manual badge colour', 'plogins-marks'); ?></label>
-                                            <?php $this->help(__('Pick a semantic colour. Accent is the Marks signature ink (a vermilion red), Success green, Warning amber, Danger red, Neutral grey. The preview on the right shows each. Exact shades are themeable via the --marks-bg-* variables.', 'plogins-marks')); ?>
+                                            <label for="marks_manual_badge_style"><?php esc_html_e('Manual badge colour', 'plogins-sale-stock-badges'); ?></label>
+                                            <?php $this->help(__('Pick a semantic colour. Accent is the Marks signature ink (a vermilion red), Success green, Warning amber, Danger red, Neutral grey. The preview on the right shows each. Exact shades are themeable via the --marks-bg-* variables.', 'plogins-sale-stock-badges')); ?>
                                         </th>
                                         <td>
                                             <select
@@ -353,19 +353,19 @@ final class Settings implements HasHooks
     private function renderPreviewPanel(): void
     {
         ?>
-        <aside class="marks-card marks-preview" aria-label="<?php esc_attr_e('Badge preview', 'plogins-marks'); ?>">
-            <h2><?php esc_html_e('Live preview', 'plogins-marks'); ?></h2>
+        <aside class="marks-card marks-preview" aria-label="<?php esc_attr_e('Badge preview', 'plogins-sale-stock-badges'); ?>">
+            <h2><?php esc_html_e('Live preview', 'plogins-sale-stock-badges'); ?></h2>
             <p class="marks-preview__hint">
-                <?php esc_html_e('A sample of how your badges will look on a product image.', 'plogins-marks'); ?>
+                <?php esc_html_e('A sample of how your badges will look on a product image.', 'plogins-sale-stock-badges'); ?>
             </p>
             <div class="marks-preview__stage" aria-live="polite">
                 <div class="marks-preview__badges">
-                    <span class="marks-preview__badge marks-preview__badge--danger"><?php esc_html_e('Sale', 'plogins-marks'); ?></span>
-                    <span class="marks-preview__badge marks-preview__badge--success"><?php esc_html_e('New', 'plogins-marks'); ?></span>
-                    <span class="marks-preview__badge marks-preview__badge--warning"><?php esc_html_e('Low stock', 'plogins-marks'); ?></span>
+                    <span class="marks-preview__badge marks-preview__badge--danger"><?php esc_html_e('Sale', 'plogins-sale-stock-badges'); ?></span>
+                    <span class="marks-preview__badge marks-preview__badge--success"><?php esc_html_e('New', 'plogins-sale-stock-badges'); ?></span>
+                    <span class="marks-preview__badge marks-preview__badge--warning"><?php esc_html_e('Low stock', 'plogins-sale-stock-badges'); ?></span>
                 </div>
                 <p class="marks-preview__empty" hidden>
-                    <?php esc_html_e('No badges enabled yet, tick some on the left to see them here.', 'plogins-marks'); ?>
+                    <?php esc_html_e('No badges enabled yet, tick some on the left to see them here.', 'plogins-sale-stock-badges'); ?>
                 </p>
             </div>
         </aside>
@@ -382,9 +382,9 @@ final class Settings implements HasHooks
         <div class="wrap marks-admin">
             <h1><?php echo esc_html(get_admin_page_title()); ?></h1>
             <div class="marks-empty">
-                <h2><?php esc_html_e('Badges are not available yet', 'plogins-marks'); ?></h2>
+                <h2><?php esc_html_e('Badges are not available yet', 'plogins-sale-stock-badges'); ?></h2>
                 <p class="description">
-                    <?php esc_html_e('Marks could not load its badge engine. This usually means a required dependency is missing or out of date. Please reinstall or update the plugin; once the engine is present, this screen will show the full badge settings.', 'plogins-marks'); ?>
+                    <?php esc_html_e('Plogins Sale & Stock Badges could not load its badge engine. This usually means a required dependency is missing or out of date. Please reinstall or update the plugin; once the engine is present, this screen will show the full badge settings.', 'plogins-sale-stock-badges'); ?>
                 </p>
             </div>
         </div>
@@ -399,11 +399,11 @@ final class Settings implements HasHooks
     private function styleLabels(): array
     {
         return [
-            'accent'  => __('Accent (blue)', 'plogins-marks'),
-            'success' => __('Success (green)', 'plogins-marks'),
-            'warning' => __('Warning (amber)', 'plogins-marks'),
-            'danger'  => __('Danger (red)', 'plogins-marks'),
-            'neutral' => __('Neutral (grey)', 'plogins-marks'),
+            'accent'  => __('Accent (blue)', 'plogins-sale-stock-badges'),
+            'success' => __('Success (green)', 'plogins-sale-stock-badges'),
+            'warning' => __('Warning (amber)', 'plogins-sale-stock-badges'),
+            'danger'  => __('Danger (red)', 'plogins-sale-stock-badges'),
+            'neutral' => __('Neutral (grey)', 'plogins-sale-stock-badges'),
         ];
     }
 
@@ -421,7 +421,7 @@ final class Settings implements HasHooks
         <button
             type="button"
             class="marks-help"
-            aria-label="<?php esc_attr_e('More information', 'plogins-marks'); ?>"
+            aria-label="<?php esc_attr_e('More information', 'plogins-sale-stock-badges'); ?>"
             aria-describedby="<?php echo esc_attr($id); ?>"
             aria-expanded="false"
             popovertarget="<?php echo esc_attr($id); ?>"
@@ -529,10 +529,10 @@ final class Settings implements HasHooks
                         name="<?php echo esc_attr(self::OPTION); ?>[<?php echo esc_attr($labelKey); ?>]"
                         value="<?php echo esc_attr((string) ($settings[$labelKey] ?? '')); ?>"
                         class="regular-text"
-                        placeholder="<?php esc_attr_e('Custom label (optional)', 'plogins-marks'); ?>"
+                        placeholder="<?php esc_attr_e('Custom label (optional)', 'plogins-sale-stock-badges'); ?>"
                         aria-label="<?php
                         /* translators: %s: badge name, e.g. Sale. */
-                        echo esc_attr(sprintf(__('Custom label for the %s badge', 'plogins-marks'), $label));
+                        echo esc_attr(sprintf(__('Custom label for the %s badge', 'plogins-sale-stock-badges'), $label));
                         ?>"
                     />
                 <?php endif; ?>
