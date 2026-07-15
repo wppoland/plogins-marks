@@ -10,7 +10,7 @@ use WPPoland\StorefrontKit\Badge\BadgeEngine;
 defined('ABSPATH') || exit;
 
 /**
- * Wires {@see BadgeEngine} with this plugin's text-domain ('plogins-marks'), option
+ * Wires {@see BadgeEngine} with this plugin's text-domain ('plogins-sale-stock-badges'), option
  * prefix ('marks_') and product meta keys, and renders badges through a CSS-only
  * template. This class supplies localisation, option storage, meta-key naming
  * and the front-end stylesheet.
@@ -45,12 +45,12 @@ final class MarksService implements HasHooks
         $this->engine = new BadgeEngine(
             'badges',
             [
-                'sale'          => __('Sale', 'plogins-marks'),
-                'new'           => __('New', 'plogins-marks'),
-                'low_stock'     => __('Low stock', 'plogins-marks'),
-                'bestseller'    => __('Bestseller', 'plogins-marks'),
-                'free_shipping' => __('Free shipping', 'plogins-marks'),
-                'out_of_stock'  => __('Out of stock', 'plogins-marks'),
+                'sale'          => __('Sale', 'plogins-sale-stock-badges'),
+                'new'           => __('New', 'plogins-sale-stock-badges'),
+                'low_stock'     => __('Low stock', 'plogins-sale-stock-badges'),
+                'bestseller'    => __('Bestseller', 'plogins-sale-stock-badges'),
+                'free_shipping' => __('Free shipping', 'plogins-sale-stock-badges'),
+                'out_of_stock'  => __('Out of stock', 'plogins-sale-stock-badges'),
             ],
             [
                 'manual_text'    => self::META_MANUAL_TEXT,
