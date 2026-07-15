@@ -102,7 +102,7 @@ Sí. Este plugin es compatible con WordPress Multisite. Actívalo para toda la r
 
 Marks no se conecta a ningún servicio externo. Las insignias se calculan y se dibujan íntegramente en tu propio servidor a partir de los datos de WooCommerce que ya están en tu base de datos (precio, stock, ventas, fechas de producto y clase de envío), y el CSS de las insignias se sirve desde los propios recursos del plugin.
 
-El plugin guarda su configuración en dos opciones de WordPress (`marks_settings` y `marks_db_version`) y lee el meta de entrada por producto (`_marks_manual_text` y `_marks_manual_style`) para la insignia manual. No se envía a ninguna parte ningún dato de visitantes ni de la tienda, y Marks no se comunica con servidores externos, no carga scripts ni fuentes remotos y no envía correos.
+El plugin guarda tu configuración en dos opciones de WordPress (`marks_settings` y `marks_db_version`) y lee el meta de entrada por producto (`_marks_manual_text` y `_marks_manual_style`) para la insignia manual. No se envía a ninguna parte ningún dato de visitantes ni de la tienda, y Marks no se comunica con servidores externos, no carga scripts ni fuentes remotos y no envía correos.
 
 == Translations ==
 
