@@ -384,7 +384,7 @@ final class Settings implements HasHooks
             <div class="marks-empty">
                 <h2><?php esc_html_e('Badges are not available yet', 'plogins-sale-stock-badges'); ?></h2>
                 <p class="description">
-                    <?php esc_html_e('Plogins Sale & Stock Badges could not load its badge engine. This usually means a required dependency is missing or out of date. Please reinstall or update the plugin; once the engine is present, this screen will show the full badge settings.', 'plogins-sale-stock-badges'); ?>
+                    <?php esc_html_e('Sale & Stock Badges could not load its badge engine. This usually means a required dependency is missing or out of date. Please reinstall or update the plugin; once the engine is present, this screen will show the full badge settings.', 'plogins-sale-stock-badges'); ?>
                 </p>
             </div>
         </div>
