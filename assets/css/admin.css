@@ -253,3 +253,19 @@
 		transition: background-color 0.15s ease, transform 0.15s ease;
 	}
 }
+
+@media (prefers-color-scheme: dark) {
+	.marks-admin {
+		/* Lightened vermilion keeps the family accent above the AA UI floor on
+		   the dark card: #e8543f vs #1e1e1e = 4.58:1. */
+		--marks-a-accent: #e8543f;
+		--marks-a-card-bg: #1e1e1e;
+		--marks-a-card-border: #3c434a;
+		--marks-a-muted: #a7aaad;
+	}
+
+	.marks-preview__stage {
+		background: #2c3338;
+		border-color: #3c434a;
+	}
+}
