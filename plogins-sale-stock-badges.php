@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       Plogins Sale & Stock Badges for WooCommerce
+ * Plugin Name:       Sale & Stock Badges for WooCommerce
  * Plugin URI:        https://plogins.com/plogins-sale-stock-badges/
  * Description:        Automatic and manual product badges for WooCommerce (sale, new, low-stock, bestseller): CSS-only, no layout shift.
  * Version:           1.0.9

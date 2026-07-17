@@ -1,4 +1,4 @@
-=== Plogins Sale & Stock Badges for WooCommerce ===
+=== Sale & Stock Badges for WooCommerce ===
 Contributors: motylanogha
 Tags: woocommerce, product badges, sale badge, new badge, low stock
 Requires at least: 6.5
@@ -12,7 +12,7 @@ CSS-only product badges for WooCommerce: Sale, New, Low stock, Bestseller and a 
 
 == Description ==
 
-Plogins Sale & Stock Badges puts badges on your WooCommerce products. Some appear on their own from each
+Sale & Stock Badges puts badges on your WooCommerce products. Some appear on their own from each
 product's current state (**Sale**, **New**, **Low stock**, **Bestseller**, and a few
 others), and you can also set one manual badge per product using a store-wide label
 and colour.
@@ -61,16 +61,16 @@ pick the render style:
 
 `[marks_badges id="123" context="loop"]`
 
-== Plogins Sale & Stock Badges PRO ==
+== Sale & Stock Badges PRO ==
 
-The free edition ships the core CSS badges (Sale, New, Low stock, Bestseller, manual). **Plogins Sale & Stock Badges PRO** adds campaign and rules-based badging:
+The free edition ships the core CSS badges (Sale, New, Low stock, Bestseller, manual). **Sale & Stock Badges PRO** adds campaign and rules-based badging:
 
 * **Scheduled and targeted badges** - campaign badges with custom colours, a start/end window and targeting by product, category or tag
 * **Conditional display rules** - store-wide rules that badge a product by category, price threshold or low stock
 * **Image badges** - show a certification or brand logo (PNG/SVG) on a product
 * **A/B label sets** - rotate competing badge labels with sticky cookies and per-variant impression counts
 
-Everything in the free edition stays free and open. Plogins Sale & Stock Badges PRO starts at 19 EUR per year (PLN shown at checkout).
+Everything in the free edition stays free and open. Sale & Stock Badges PRO starts at 19 EUR per year (PLN shown at checkout).
 
 Compare editions and pricing: https://plogins.com/plogins-marks-pro/pricing/
 
@@ -113,17 +113,18 @@ Yes. This plugin is compatible with WordPress Multisite. Network activate it or 
 
 == External Services ==
 
-Plogins Sale & Stock Badges does not connect to any external services. Badges are computed and drawn entirely on your own server from WooCommerce data already in your database (price, stock, sales, product dates and shipping class), and the badge CSS is served from the plugin's own assets.
+Sale & Stock Badges does not connect to any external services. Badges are computed and drawn entirely on your own server from WooCommerce data already in your database (price, stock, sales, product dates and shipping class), and the badge CSS is served from the plugin's own assets.
 
 The plugin stores its configuration in two WordPress options (`marks_settings` and `marks_db_version`) and reads per-product post meta (`_marks_manual_text` and `_marks_manual_style`) for the manual badge. No visitor or store data is sent anywhere, and the plugin does not call home, load remote scripts or fonts, or send email.
 
 == Translations ==
 
-Plogins Sale & Stock Badges includes Polish, German and Spanish translations for the plugin interface. The text domain is `plogins-sale-stock-badges`, so WordPress.org language packs can also override or extend these bundled translations.
+Sale & Stock Badges includes Polish, German and Spanish translations for the plugin interface. The text domain is `plogins-sale-stock-badges`, so WordPress.org language packs can also override or extend these bundled translations.
 
 == Changelog ==
 
 = 1.0.9 =
+* Simplified the display name to Sale & Stock Badges for WooCommerce (slug and text domain unchanged).
 * Added an Elementor widget for product badges (self-guarding: loads only when Elementor is active).
 * Admin settings screen now supports dark colour scheme.
 
