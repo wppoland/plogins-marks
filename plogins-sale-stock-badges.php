@@ -44,7 +44,7 @@ add_action('plugins_loaded', static function (): void {
     if (! class_exists('WooCommerce')) {
         add_action('admin_notices', static function (): void {
             echo '<div class="notice notice-error"><p>';
-            echo esc_html__('Plogins Sale & Stock Badges requires WooCommerce to be active.', 'plogins-sale-stock-badges');
+            echo esc_html__('Sale & Stock Badges requires WooCommerce to be active.', 'plogins-sale-stock-badges');
             echo '</p></div>';
         });
         return;
