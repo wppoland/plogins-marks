@@ -21,7 +21,7 @@ The badges are drawn with CSS and sit over the product image, so they add no
 JavaScript and don't shift the layout when the page loads. They show on the single
 product page and on shop, category and tag listings.
 
-The code is open and lives at https://github.com/wppoland/plogins-marks if you want to read
+The code is open and lives on [GitHub](https://github.com/wppoland/plogins-marks) if you want to read
 it, file a bug or send a patch.
 
 Configuration lives under a top-level **Sale & Stock Badges** admin menu: a global on/off
@@ -31,10 +31,10 @@ label and colour. Settings are sanitised and clamped on save.
 
 = Documentation and links =
 
-* **Documentation** - https://plogins.com/marks/docs/
-* **Plugin page** - https://plogins.com/marks/
-* **Source code** - https://github.com/wppoland/plogins-marks
-* **Bug reports and feature requests** - https://github.com/wppoland/plogins-marks/issues
+* **Documentation** - [plogins.com/plogins-marks/docs](https://plogins.com/plogins-marks/docs/)
+* **Plugin page** - [plogins.com/plogins-marks](https://plogins.com/plogins-marks/)
+* **Source code** - [github.com/wppoland/plogins-marks](https://github.com/wppoland/plogins-marks)
+* **Bug reports and feature requests** - [GitHub issues](https://github.com/wppoland/plogins-marks/issues)
 
 
 = Features =
@@ -72,7 +72,7 @@ The free edition ships the core CSS badges (Sale, New, Low stock, Bestseller, ma
 
 Everything in the free edition stays free and open. Sale & Stock Badges PRO starts at 19 EUR per year (PLN shown at checkout).
 
-Compare editions and pricing: https://plogins.com/plogins-marks-pro/pricing/
+Compare editions and pricing: [plogins.com/plogins-marks-pro/pricing](https://plogins.com/plogins-marks-pro/pricing/)
 
 == Installation ==
 
