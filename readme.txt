@@ -4,7 +4,7 @@ Tags: woocommerce, product badges, sale badge, new badge, low stock
 Requires at least: 6.5
 Tested up to: 7.0
 Requires PHP: 8.1
-Stable tag: 1.0.8
+Stable tag: 1.0.9
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -122,6 +122,10 @@ The plugin stores its configuration in two WordPress options (`marks_settings` a
 Plogins Sale & Stock Badges includes Polish, German and Spanish translations for the plugin interface. The text domain is `plogins-sale-stock-badges`, so WordPress.org language packs can also override or extend these bundled translations.
 
 == Changelog ==
+
+= 1.0.9 =
+* Added an Elementor widget for product badges (self-guarding: loads only when Elementor is active).
+* Admin settings screen now supports dark colour scheme.
 
 = 1.0.8 =
 * Renamed the plugin to Plogins Sale & Stock Badges for WooCommerce (new slug: plogins-sale-stock-badges) for a clearer, distinctive name per WordPress.org review. Text domain updated to match; internal data keys unchanged.
