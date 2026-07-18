@@ -14,7 +14,7 @@ msgid ""
 "CSS-only product badges for WooCommerce: Sale, New, Low stock, Bestseller "
 "and a manual badge. No JavaScript, no layout shift."
 msgstr ""
-"Produkt-Abzeichen für WooCommerce – komplett per CSS: Verkauf, Neu, Geringer"
+"Produkt-Abzeichen für WooCommerce - komplett per CSS: Verkauf, Neu, Geringer"
 " Lagerbestand, Bestseller und ein manuelles Abzeichen. Kein JavaScript, "
 "keine Layout-Verschiebung."
 
@@ -115,7 +115,7 @@ msgstr ""
 "3. Gehe zum Menü <strong>Marks</strong>, aktiviere die Abzeichen und wähle, welche automatischen Abzeichen angezeigt werden."
 
 msgid "Yes."
-msgstr "Ja, WooCommerce ist erforderlich."
+msgstr "Ja."
 
 msgid "On products created within the newness window (30 days by default)."
 msgstr ""

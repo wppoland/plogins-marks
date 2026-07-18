@@ -19,7 +19,7 @@ msgstr ""
 #. Plugin Name of the plugin
 #: plogins-marks.php
 msgid "Plogins Marks for WooCommerce"
-msgstr "Oznaczenia Plogins dla WooCommerce"
+msgstr "Plogins Marks dla WooCommerce"
 
 #. Plugin URI of the plugin
 #: plogins-marks.php
@@ -51,7 +51,7 @@ msgstr "Plogins Sale & Stock Badges wymaga aktywnego WooCommerce."
 
 #: src/Admin/Settings.php:72
 msgid "Sale & Stock Badges"
-msgstr "Plakietki promocji i magazynu"
+msgstr "Sale & Stock Badges"
 
 #: src/Admin/Settings.php:73
 msgid "Marks"
@@ -441,7 +441,7 @@ msgid ""
 "listings clean."
 msgstr ""
 "Ogranicza oznaczenia na mniejszych miniaturach w siatkach sklepu i "
-"kategorii. 2–3 utrzymuje listy w czystości."
+"kategorii. 2-3 utrzymuje listy w czystości."
 
 #: src/Admin/Settings.php:283
 msgid "Manual badge"
@@ -486,11 +486,11 @@ msgid ""
 " Success green, Warning amber, Danger red, Neutral grey. The preview on the "
 "right shows each. Exact shades are themeable via the --marks-bg-* variables."
 msgstr ""
-"Wybierz kolor semantyczny. Akcentem jest charakterystyczny atrament Marks "
-"(czerwień cynobrowa), zieleń Sukces, bursztyn ostrzegawczy, czerwień Danger "
-"i neutralna szarość. Podgląd po prawej stronie pokazuje każdy z nich. "
-"Dokładne odcienie można tematycznie zmieniać za pomocą zmiennych --marks-"
-"bg-*."
+"Wybierz kolor semantyczny. Akcent to charakterystyczny atrament Marks "
+"(czerwień cynobrowa), Sukces to zieleń, Ostrzeżenie to bursztyn, "
+"Niebezpieczeństwo to czerwień, a Neutralny to szarość. Podgląd po prawej "
+"stronie pokazuje każdy z nich. Dokładne odcienie można zmieniać w motywie za"
+" pomocą zmiennych --marks-bg-*."
 
 #: src/Admin/Settings.php:356
 msgid "Badge preview"

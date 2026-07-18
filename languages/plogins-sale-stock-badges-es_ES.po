@@ -51,11 +51,11 @@ msgstr "Plogins Sale & Stock Badges requiere que WooCommerce esté activo."
 
 #: src/Admin/Settings.php:72
 msgid "Sale & Stock Badges"
-msgstr "Insignias de oferta y stock"
+msgstr "Sale & Stock Badges"
 
 #: src/Admin/Settings.php:73
 msgid "Marks"
-msgstr "marcas"
+msgstr "Marks"
 
 #: src/Admin/Settings.php:123
 msgid "Product badges that boost conversions"
@@ -262,19 +262,19 @@ msgid ""
 "Calculates the saving from the regular and sale price automatically, e.g. "
 "-20%. Pairs well with, or instead of, the plain Sale badge."
 msgstr ""
-"Calcula el ahorro del precio regular y de oferta automáticamente, p.e. -20%."
-" Combina bien con la insignia de oferta simple o en lugar de ella."
+"Calcula el ahorro del precio regular y de oferta automáticamente, p. ej. "
+"-20%. Combina bien con la insignia de oferta simple o en lugar de ella."
 
 #: src/Admin/Settings.php:204
 msgid "Hide theme “Sale!” flash"
-msgstr "Ocultar tema \"¡Oferta!\" destello"
+msgstr "Ocultar el destello «¡Oferta!» del tema"
 
 #: src/Admin/Settings.php:205
 msgid ""
 "Replace WooCommerce’s default sale flash with the Marks sale badge only."
 msgstr ""
-"Reemplace el flash de venta predeterminado de WooCommerce solo con la "
-"insignia de venta de Marcas."
+"Reemplaza el flash de venta predeterminado de WooCommerce solo con la "
+"insignia de venta de Marks."
 
 #: src/Admin/Settings.php:207
 msgid ""
@@ -293,8 +293,8 @@ msgstr "Umbrales"
 msgid ""
 "Tune when the automatic badges above trigger. Values must be at least 1."
 msgstr ""
-"Sintonice cuándo se activan las insignias automáticas anteriores. Los "
-"valores deben ser al menos 1."
+"Ajusta cuándo se activan las insignias automáticas anteriores. Los valores "
+"deben ser al menos 1."
 
 #: src/Admin/Settings.php:222
 msgid "Newness window (days)"
@@ -448,8 +448,8 @@ msgid ""
 "Caps badges on the smaller thumbnails in shop and category grids. 2–3 keeps "
 "listings clean."
 msgstr ""
-"Insignias de mayúsculas en las miniaturas más pequeñas en las cuadrículas de"
-" tiendas y categorías. 2–3 mantiene los listados limpios."
+"Limita las insignias en las miniaturas más pequeñas de las cuadrículas de "
+"tienda y categoría. 2-3 mantiene los listados limpios."
 
 #: src/Admin/Settings.php:283
 msgid "Manual badge"
@@ -463,22 +463,22 @@ msgid ""
 "disable it. To show it on a specific product, set the %s product meta, handy"
 " for \"Editor's pick\" or \"Staff favourite\" flags."
 msgstr ""
-"Defina una insignia para toda la tienda (etiqueta + color). Deje la etiqueta"
-" vacía para desactivarla. Para mostrarlo en un producto específico, "
-"configure el meta del producto %s, útil para las banderas \"Elección del "
-"editor\" o \"Favorito del personal\"."
+"Define una insignia para toda la tienda (etiqueta + color). Deja la etiqueta"
+" vacía para desactivarla. Para mostrarla en un producto específico, "
+"configura el meta de producto %s, útil para indicadores como «Elección del "
+"editor» o «Favorito del personal»."
 
 #: src/Admin/Settings.php:297
 msgid "Manual badge label"
-msgstr "Etiqueta de identificación manual"
+msgstr "Etiqueta de la insignia manual"
 
 #: src/Admin/Settings.php:298
 msgid ""
 "The text shown by your manual badge, e.g. \"Editor's pick\". Leave blank to "
 "turn the manual badge off entirely."
 msgstr ""
-"El texto que se muestra en su insignia manual, p. \"Elección del editor\". "
-"Déjelo en blanco para desactivar completamente la credencial manual."
+"El texto que se muestra en tu insignia manual, p. ej. «Elección del editor»."
+" Déjalo en blanco para desactivar por completo la insignia manual."
 
 #: src/Admin/Settings.php:307
 msgid "e.g. Editor’s pick"
