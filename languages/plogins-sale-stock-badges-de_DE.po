@@ -19,7 +19,7 @@ msgstr ""
 #. Plugin Name of the plugin
 #: plogins-marks.php
 msgid "Plogins Marks for WooCommerce"
-msgstr "Plogins-Marken für WooCommerce"
+msgstr "Plogins Marks für WooCommerce"
 
 #. Plugin URI of the plugin
 #: plogins-marks.php
@@ -51,11 +51,11 @@ msgstr "Für Plogins Sale & Stock Badges muss WooCommerce aktiv sein."
 
 #: src/Admin/Settings.php:72
 msgid "Sale & Stock Badges"
-msgstr "Angebots- & Bestands-Badges"
+msgstr "Sale & Stock Badges"
 
 #: src/Admin/Settings.php:73
 msgid "Marks"
-msgstr "Markierungen"
+msgstr "Marks"
 
 #: src/Admin/Settings.php:123
 msgid "Product badges that boost conversions"
@@ -311,7 +311,7 @@ msgid ""
 "A product counts as \"new\" for this many days after it is published. 30 is "
 "a sensible default."
 msgstr ""
-"Ein Produkt gilt bereits viele Tage nach seiner Veröffentlichung als „neu“. "
+"Ein Produkt gilt für so viele Tage nach seiner Veröffentlichung als „neu“. "
 "30 ist ein sinnvoller Standardwert."
 
 #: src/Admin/Settings.php:223
@@ -341,7 +341,8 @@ msgstr "Bestseller-Schwelle"
 #: src/Admin/Settings.php:224
 msgid "Show the Bestseller badge when total sales reach this number."
 msgstr ""
-"Zeige das Bestseller-Logo an, wenn der Gesamtumsatz diese Zahl erreicht."
+"Zeige das Bestseller-Abzeichen an, wenn die Gesamtverkäufe diese Zahl "
+"erreichen."
 
 #: src/Admin/Settings.php:224
 msgid ""
@@ -354,7 +355,7 @@ msgstr ""
 
 #: src/Admin/Settings.php:228
 msgid "Free-shipping classes"
-msgstr "Kostenlose Versandkurse"
+msgstr "Klassen für kostenlosen Versand"
 
 #: src/Admin/Settings.php:229
 msgid ""
@@ -405,7 +406,7 @@ msgstr "Beschriftungen in Großbuchstaben"
 
 #: src/Admin/Settings.php:274
 msgid "Render badge labels in uppercase."
-msgstr "Rendern Sie Abzeichenbeschriftungen in Großbuchstaben."
+msgstr "Abzeichenbeschriftungen in Großbuchstaben darstellen."
 
 #: src/Admin/Settings.php:274
 msgid ""
@@ -450,8 +451,8 @@ msgid ""
 "Caps badges on the smaller thumbnails in shop and category grids. 2–3 keeps "
 "listings clean."
 msgstr ""
-"Kappen-Abzeichen auf den kleineren Miniaturansichten in Shop- und Kategorie-"
-"Rastern. 2–3 sorgt dafür, dass die Einträge sauber bleiben."
+"Begrenzt die Abzeichen auf den kleineren Miniaturansichten in Shop- und "
+"Kategorie-Rastern. 2-3 hält die Listen sauber."
 
 #: src/Admin/Settings.php:283
 msgid "Manual badge"
@@ -479,8 +480,8 @@ msgid ""
 "The text shown by your manual badge, e.g. \"Editor's pick\". Leave blank to "
 "turn the manual badge off entirely."
 msgstr ""
-"Der auf deinem manuellen Ausweis angezeigte Text, z. B. „Wahl der "
-"Redaktion“. Lass das Feld leer, um den manuellen Badge vollständig zu "
+"Der auf deinem manuellen Abzeichen angezeigte Text, z. B. „Wahl der "
+"Redaktion“. Lass das Feld leer, um das manuelle Abzeichen vollständig zu "
 "deaktivieren."
 
 #: src/Admin/Settings.php:307

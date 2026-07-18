@@ -42,7 +42,7 @@ msgid ""
 "The code is open and lives at https://github.com/wppoland/plogins-marks if you want to read\n"
 "it, file a bug or send a patch."
 msgstr ""
-"Kod jest otwarty i znajduje się na https://github.com/wppoland/plogins-marks — jeśli chcesz go przejrzeć,\n"
+"Kod jest otwarty i znajduje się na https://github.com/wppoland/plogins-marks - jeśli chcesz go przejrzeć,\n"
 "zgłosić błąd lub przesłać poprawkę."
 
 msgid ""
