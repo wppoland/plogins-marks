@@ -1,15 +1,18 @@
-# wp.org Stable Readme translation (pl_PL)
+# Translation of Plugins - Sale &amp; Stock Badges for WooCommerce - Stable Readme (latest release) in Polish
+# This file is distributed under the same license as the Plugins - Sale &amp; Stock Badges for WooCommerce - Stable Readme (latest release) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: marks Stable Readme\n"
-"Last-Translator: wppoland.com <hello@wppoland.com>\n"
-"Language-Team: Polish <pl@li.org>\n"
+"Project-Id-Version: Plugins - Sale &amp; Stock Badges for WooCommerce - Stable Readme (latest release)\n"
+"PO-Revision-Date: 2026-07-19 14:36:11+0000\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: plogins-i18n\n"
+"Plural-Forms: nplurals=3; plural=(n == 1) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.3\n"
 
+#. Short description.
+#, gp-priority: high
 msgid ""
 "CSS-only product badges for WooCommerce: Sale, New, Low stock, Bestseller "
 "and a manual badge. No JavaScript, no layout shift."
@@ -18,124 +21,12 @@ msgstr ""
 "Niski stan, Bestseller oraz oznaczenie ręczne. Bez JavaScriptu, bez "
 "przeskoków układu."
 
-msgid ""
-"Marks puts badges on your WooCommerce products. Some appear on their own from each\n"
-"product's current state (<strong>Sale</strong>, <strong>New</strong>, <strong>Low stock</strong>, <strong>Bestseller</strong>, and a few\n"
-"others), and you can also set one manual badge per product using a store-wide label\n"
-"and colour."
-msgstr ""
-"Marks umieszcza oznaczenia na Twoich produktach WooCommerce. Część pojawia się samoczynnie na\n"
-"podstawie bieżącego stanu produktu (<strong>Promocja</strong>, <strong>Nowość</strong>, <strong>Niski stan</strong>, <strong>Bestseller</strong> i kilka\n"
-"innych), a dodatkowo możesz ustawić jedno ręczne oznaczenie na produkt, używając etykiety i koloru\n"
-"wspólnych dla całego sklepu."
+#. Plugin name.
+#, gp-priority: high
+msgid "Sale &amp; Stock Badges for WooCommerce"
+msgstr "Sale &amp; Stock Badges dla WooCommerce"
 
-msgid ""
-"The badges are drawn with CSS and sit over the product image, so they add no\n"
-"JavaScript and don't shift the layout when the page loads. They show on the single\n"
-"product page and on shop, category and tag listings."
-msgstr ""
-"Oznaczenia są rysowane w CSS i umieszczone nad obrazem produktu, więc nie dodają żadnego\n"
-"JavaScriptu i nie przesuwają układu podczas ładowania strony. Pojawiają się na stronie\n"
-"pojedynczego produktu oraz na listach sklepu, kategorii i tagów."
-
-msgid ""
-"The code is open and lives at https://github.com/wppoland/plogins-marks if you want to read\n"
-"it, file a bug or send a patch."
-msgstr ""
-"Kod jest otwarty i znajduje się na https://github.com/wppoland/plogins-marks - jeśli chcesz go przejrzeć,\n"
-"zgłosić błąd lub przesłać poprawkę."
-
-msgid ""
-"Configuration lives under a top-level <strong>Marks</strong> admin menu: a global on/off\n"
-"toggle, placement controls, per-rule toggles with custom labels, thresholds, an\n"
-"appearance section (shape, uppercase, per-context caps) and the manual badge\n"
-"label and colour. Settings are sanitised and clamped on save."
-msgstr ""
-"Konfiguracja znajduje się w głównym menu administracyjnym <strong>Marks</strong>: globalny przełącznik włącz/wyłącz,\n"
-"ustawienia rozmieszczenia, przełączniki dla poszczególnych reguł z własnymi etykietami, progi,\n"
-"sekcja wyglądu (kształt, wielkie litery, limity na kontekst) oraz etykieta i kolor\n"
-"ręcznego oznaczenia. Ustawienia są przy zapisie oczyszczane i ograniczane do dozwolonych wartości."
-
-msgid ""
-"* <strong>Documentation</strong> - https://plogins.com/marks/docs/\n"
-"* <strong>Plugin page</strong> - https://plogins.com/marks/\n"
-"* <strong>Source code</strong> - https://github.com/wppoland/plogins-marks\n"
-"* <strong>Bug reports and feature requests</strong> - https://github.com/wppoland/plogins-marks/issues"
-msgstr ""
-"* <strong>Dokumentacja</strong> - https://plogins.com/pl/marks/docs/\n"
-"* <strong>Strona wtyczki</strong> - https://plogins.com/pl/marks/\n"
-"* <strong>Kod źródłowy</strong> - https://github.com/wppoland/plogins-marks\n"
-"* <strong>Zgłoszenia błędów i propozycje funkcji</strong> - https://github.com/wppoland/plogins-marks/issues"
-
-msgid ""
-"* Automatic badges: Sale, New, Low stock, Bestseller, Discount percent, Free shipping, Out of stock.\n"
-"* Custom label text for every automatic badge.\n"
-"* Configurable thresholds: newness window, low-stock level, bestseller sales.\n"
-"* Free-shipping detection by product shipping class.\n"
-"* Placement controls: single product page and/or shop and category listings.\n"
-"* Appearance controls: pill or square shape, uppercase, and a per-context badge cap.\n"
-"* `[marks_badges]` shortcode to place badges anywhere.\n"
-"* A single manual badge (label + colour) shown per product via meta.\n"
-"* CSS-only rendering: no JavaScript, no layout shift.\n"
-"* Global on/off toggle and per-rule toggles.\n"
-"* Translation ready (POT included) and clean uninstall.\n"
-"* HPOS and cart/checkout blocks compatible."
-msgstr ""
-"* Automatyczne oznaczenia: Promocja, Nowość, Niski stan, Bestseller, Procent rabatu, Darmowa wysyłka, Niedostępny.\n"
-"* Własny tekst etykiety dla każdego automatycznego oznaczenia.\n"
-"* Konfigurowalne progi: okno nowości, poziom niskiego stanu, sprzedaż bestsellerów.\n"
-"* Wykrywanie darmowej wysyłki na podstawie klasy wysyłkowej produktu.\n"
-"* Kontrola rozmieszczenia: strona pojedynczego produktu i/lub listy sklepu i kategorii.\n"
-"* Kontrola wyglądu: kształt pigułki lub kwadratu, wielkie litery i limit oznaczeń na kontekst.\n"
-"* Shortcode `[marks_badges]` do umieszczania oznaczeń w dowolnym miejscu.\n"
-"* Jedno ręczne oznaczenie (etykieta + kolor) na produkt, ustawiane przez metadane.\n"
-"* Renderowanie wyłącznie w CSS: bez JavaScriptu, bez przeskoków układu.\n"
-"* Globalny przełącznik włącz/wyłącz oraz przełączniki dla poszczególnych reguł.\n"
-"* Gotowe do tłumaczenia (POT w zestawie) i czysta dezinstalacja.\n"
-"* Zgodne z HPOS oraz blokami koszyka i kasy."
-
-msgid ""
-"Use `[marks_badges]` to drop a product's badges into any page, post or widget. With\n"
-"no attributes it uses the current product (inside a loop or on a single product\n"
-"page). Pass `id` to target a specific product and `context` (`single` or `loop`) to\n"
-"pick the render style:"
-msgstr ""
-"Użyj `[marks_badges]`, aby umieścić oznaczenia produktu na dowolnej stronie, wpisie lub w widżecie. Bez\n"
-"atrybutów używa bieżącego produktu (wewnątrz pętli lub na stronie pojedynczego\n"
-"produktu). Podaj `id`, aby wskazać konkretny produkt, oraz `context` (`single` lub `loop`), aby\n"
-"wybrać styl renderowania:"
-
-msgid ""
-"1. Upload the plugin to `/wp-content/plugins/marks`, or install via Plugins → Add New.\n"
-"2. Activate it. WooCommerce must be active.\n"
-"3. Go to the <strong>Marks</strong> menu, enable badges, and choose which automatic badges to show."
-msgstr ""
-"1. Prześlij wtyczkę do `/wp-content/plugins/marks` lub zainstaluj przez Wtyczki → Dodaj nową.\n"
-"2. Włącz ją. WooCommerce musi być aktywne.\n"
-"3. Przejdź do menu <strong>Marks</strong>, włącz oznaczenia i wybierz, które automatyczne oznaczenia mają być wyświetlane."
-
-msgid "Yes."
-msgstr "Tak."
-
-msgid "On products created within the newness window (30 days by default)."
-msgstr "Dla produktów utworzonych w oknie nowości (domyślnie 30 dni)."
-
-msgid ""
-"On stock-managed products whose remaining quantity is at or below the configured\n"
-"low-stock threshold."
-msgstr ""
-"Dla produktów z zarządzaniem stanem magazynowym, których pozostała ilość jest równa skonfigurowanemu\n"
-"progowi niskiego stanu lub od niego niższa."
-
-msgid ""
-"Set the manual badge label and colour on the Marks settings screen, then set the\n"
-"product meta `_marks_manual_text` (and optionally `_marks_manual_style`) on the\n"
-"products that should display it."
-msgstr ""
-"Ustaw etykietę i kolor ręcznego oznaczenia na ekranie ustawień Marks, a następnie ustaw\n"
-"metadane produktu `_marks_manual_text` (i opcjonalnie `_marks_manual_style`) na\n"
-"produktach, które mają je wyświetlać."
-
+#. Found in faq paragraph.
 msgid ""
 "Yes. This plugin is compatible with WordPress Multisite. Network activate it"
 " or activate it on individual sites; each site keeps its own settings and "
@@ -145,93 +36,545 @@ msgstr ""
 "lub w pojedynczych witrynach; każda witryna zachowuje własne ustawienia i "
 "dane."
 
+#. Found in faq paragraph.
 msgid ""
-"1. Automatic badges on a shop listing.\n"
-"2. The Marks settings screen."
+"Set the manual badge label and colour on the Sale &amp; Stock Badges settings screen, then set the\n"
+"product meta <code>_marks_manual_text</code> (and optionally <code>_marks_manual_style</code>) on the\n"
+"products that should display it."
 msgstr ""
-"1. Automatyczne oznaczenia na liście sklepu.\n"
-"2. Ekran ustawień Marks."
+"Ustaw etykietę i kolor ręcznego oznaczenia na ekranie ustawień Sale &amp; Stock Badges, a następnie ustaw\n"
+"meta produktu <code>_marks_manual_text</code> (i opcjonalnie <code>_marks_manual_style</code>) na\n"
+"produktach, które mają je wyświetlać."
 
+#. Found in faq paragraph.
 msgid ""
-"Marks does not connect to any external services. Badges are computed and "
-"drawn entirely on your own server from WooCommerce data already in your "
-"database (price, stock, sales, product dates and shipping class), and the "
-"badge CSS is served from the plugin's own assets."
+"On stock-managed products whose remaining quantity is at or below the configured\n"
+"low-stock threshold."
 msgstr ""
-"Marks nie łączy się z żadnymi usługami zewnętrznymi. Oznaczenia są w całości"
-" obliczane i rysowane na Twoim własnym serwerze na podstawie danych "
-"WooCommerce znajdujących się już w Twojej bazie danych (cena, stan "
-"magazynowy, sprzedaż, daty produktów i klasa wysyłkowa), a CSS oznaczeń jest"
-" serwowany z własnych zasobów wtyczki."
+"Dla produktów z zarządzaniem stanem magazynowym, których pozostała ilość jest równa skonfigurowanemu\n"
+"progowi niskiego stanu lub od niego niższa."
 
+#. Found in faq paragraph.
+msgid "On products created within the newness window (30 days by default)."
+msgstr "Dla produktów utworzonych w oknie nowości (domyślnie 30 dni)."
+
+#. Found in faq paragraph.
+msgid "Yes."
+msgstr "Tak."
+
+#. Found in faq header.
+msgid "Does this plugin work on WordPress Multisite?"
+msgstr "Czy ta wtyczka działa na WordPress Multisite?"
+
+#. Found in faq header.
+msgid "How do I add a manual badge to a single product?"
+msgstr "Jak dodać ręczne oznaczenie do pojedynczego produktu?"
+
+#. Found in faq header.
+msgid "When does the \"Low stock\" badge show?"
+msgstr "Kiedy pojawia się oznaczenie „Niski stan”?"
+
+#. Found in faq header.
+msgid "When does the \"New\" badge show?"
+msgstr "Kiedy pojawia się oznaczenie „Nowość”?"
+
+#. Found in faq header.
+msgid "Does it require WooCommerce?"
+msgstr "Czy wymaga WooCommerce?"
+
+#. Found in installation list item.
+msgid ""
+"Go to the <strong>Sale &amp; Stock Badges</strong> menu, enable badges, and "
+"choose which automatic badges to show."
+msgstr ""
+"Przejdź do menu <strong>Sale &amp; Stock Badges</strong>, włącz oznaczenia i"
+" wybierz, które automatyczne oznaczenia mają być wyświetlane."
+
+#. Found in installation list item.
+msgid "Activate it. WooCommerce must be active."
+msgstr "Aktywuj ją. WooCommerce musi być aktywne."
+
+#. Found in installation list item.
+msgid ""
+"Upload the plugin to <code>/wp-content/plugins/marks</code>, or install via "
+"Plugins → Add New."
+msgstr ""
+"Prześlij wtyczkę do <code>/wp-content/plugins/marks</code> lub zainstaluj "
+"przez Wtyczki → Dodaj nową."
+
+#. Found in description paragraph.
+msgid ""
+"Sale &amp; Stock Badges includes Polish, German and Spanish translations for"
+" the plugin interface. The text domain is <code>plogins-sale-stock-"
+"badges</code>, so WordPress.org language packs can also override or extend "
+"these bundled translations."
+msgstr ""
+"Sale &amp; Stock Badges zawiera polskie, niemieckie i hiszpańskie "
+"tłumaczenia interfejsu wtyczki. Text domain to <code>plogins-sale-stock-"
+"badges</code>, więc pakiety językowe z WordPress.org mogą również nadpisywać"
+" lub rozszerzać te dołączone tłumaczenia."
+
+#. Found in description paragraph.
 msgid ""
 "The plugin stores its configuration in two WordPress options "
-"(`marks_settings` and `marks_db_version`) and reads per-product post meta "
-"(`_marks_manual_text` and `_marks_manual_style`) for the manual badge. No "
-"visitor or store data is sent anywhere, and Marks does not call home, load "
-"remote scripts or fonts, or send email."
+"(<code>marks_settings</code> and <code>marks_db_version</code>) and reads "
+"per-product post meta (<code>_marks_manual_text</code> and "
+"<code>_marks_manual_style</code>) for the manual badge. No visitor or store "
+"data is sent anywhere, and the plugin does not call home, load remote "
+"scripts or fonts, or send email."
 msgstr ""
 "Wtyczka przechowuje swoją konfigurację w dwóch opcjach WordPress "
-"(`marks_settings` i `marks_db_version`) i odczytuje metadane wpisów dla "
-"poszczególnych produktów (`_marks_manual_text` i `_marks_manual_style`) na "
-"potrzeby ręcznego oznaczenia. Żadne dane odwiedzających ani sklepu nie są "
-"nigdzie wysyłane, a Marks nie łączy się z serwerem zewnętrznym, nie ładuje "
-"zdalnych skryptów ani czcionek i nie wysyła e-maili."
+"(<code>marks_settings</code> i <code>marks_db_version</code>) oraz odczytuje"
+" meta wpisu dla każdego produktu (<code>_marks_manual_text</code> i "
+"<code>_marks_manual_style</code>) na potrzeby ręcznego oznaczenia. Żadne "
+"dane odwiedzających ani sklepu nie są nigdzie wysyłane, a wtyczka nie łączy "
+"się z serwerami zewnętrznymi, nie ładuje zdalnych skryptów ani czcionek i "
+"nie wysyła wiadomości e-mail."
 
+#. Found in description paragraph.
 msgid ""
-"Plogins Marks includes Polish, German and Spanish translations for the "
-"plugin interface. The text domain is `plogins-marks`, so WordPress.org "
-"language packs can also override or extend these bundled translations."
+"Sale &amp; Stock Badges does not connect to any external services. Badges "
+"are computed and drawn entirely on your own server from WooCommerce data "
+"already in your database (price, stock, sales, product dates and shipping "
+"class), and the badge CSS is served from the plugin's own assets."
 msgstr ""
-"Plogins Marks zawiera polskie, niemieckie i hiszpańskie tłumaczenie "
-"interfejsu wtyczki. Domena tekstowa to `plogins-marks`, dzięki czemu paczki "
-"językowe z WordPress.org mogą również nadpisywać lub rozszerzać dołączone "
-"tłumaczenia."
+"Sale &amp; Stock Badges nie łączy się z żadnymi usługami zewnętrznymi. "
+"Oznaczenia są obliczane i rysowane w całości na Twoim własnym serwerze na "
+"podstawie danych WooCommerce już znajdujących się w bazie danych (cena, stan"
+" magazynowy, sprzedaż, daty produktu i klasa wysyłki), a CSS oznaczeń jest "
+"serwowany z zasobów samej wtyczki."
 
+#. Found in description paragraph.
 msgid ""
-"* Added bundled Polish, German and Spanish translations for the plugin "
-"interface."
+"Compare editions and pricing: <a href=\"https://plogins.com/plogins-marks-"
+"pro/pricing/\">plogins.com/plogins-marks-pro/pricing</a>"
 msgstr ""
-"* Dodano dołączone polskie, niemieckie i hiszpańskie tłumaczenia interfejsu "
-"wtyczki."
+"Porównaj edycje i cennik: <a href=\"https://plogins.com/plogins-marks-"
+"pro/pricing/\">plogins.com/plogins-marks-pro/pricing</a>"
 
-msgid "* First stable release."
-msgstr "* Pierwsza stabilna wersja."
-
+#. Found in description paragraph.
 msgid ""
-"* Renamed to Plogins Marks for WooCommerce for a more distinctive plugin "
-"name."
+"Everything in the free edition stays free and open. Sale &amp; Stock Badges "
+"PRO starts at 19 EUR per year (PLN shown at checkout)."
 msgstr ""
-"* Zmieniono nazwę na Plogins Marks for WooCommerce, aby uzyskać bardziej "
-"charakterystyczną nazwę wtyczki."
+"Wszystko w darmowej edycji pozostaje darmowe i otwarte. Sale &amp; Stock "
+"Badges PRO zaczyna się od 19 EUR rocznie (PLN wyświetlane przy płatności)."
 
+#. Found in description paragraph.
 msgid ""
-"* New: optional hide of the default WooCommerce sale flash when the Marks sale badge is enabled.\n"
-"* Admin settings help tooltips polish."
+"The free edition ships the core CSS badges (Sale, New, Low stock, "
+"Bestseller, manual). <strong>Sale &amp; Stock Badges PRO</strong> adds "
+"campaign and rules-based badging:"
 msgstr ""
-"* Nowość: opcjonalne ukrycie domyślnego dymka wyprzedaży WooCommerce, gdy włączone jest oznaczenie Promocja w Marks.\n"
-"* Dopracowano podpowiedzi w ustawieniach administratora."
+"Darmowa edycja zawiera podstawowe oznaczenia CSS (Promocja, Nowość, Niski "
+"stan, Bestseller, ręczne). <strong>Sale &amp; Stock Badges PRO</strong> "
+"dodaje oznaczenia kampanijne i oparte na regułach:"
 
+#. Found in description paragraph.
 msgid ""
-"* Add Discount percent, Free shipping and Out of stock automatic badges.\n"
-"* Add custom label text for every automatic badge.\n"
-"* Add configurable newness-window and bestseller thresholds, plus free-shipping class detection.\n"
-"* Add placement controls (single product page and/or listings).\n"
-"* Add appearance controls: badge shape, uppercase and per-context badge caps.\n"
-"* Add the `[marks_badges]` shortcode for manual placement.\n"
-"* Add a translation template (languages/marks.pot) and an uninstall cleanup."
+"Use <code>[marks_badges]</code> to drop a product's badges into any page, post or widget. With\n"
+"no attributes it uses the current product (inside a loop or on a single product\n"
+"page). Pass <code>id</code> to target a specific product and <code>context</code> (<code>single</code> or <code>loop</code>) to\n"
+"pick the render style:"
 msgstr ""
-"* Dodano oznaczenia automatyczne: Procent rabatu, Darmowa wysyłka i Niedostępny.\n"
-"* Dodano własny tekst etykiety dla każdego automatycznego oznaczenia.\n"
-"* Dodano konfigurowalne progi okna nowości i bestsellera oraz wykrywanie klasy darmowej wysyłki.\n"
-"* Dodano kontrolę rozmieszczenia (strona pojedynczego produktu i/lub listy).\n"
-"* Dodano kontrolę wyglądu: kształt oznaczenia, wielkie litery i limity oznaczeń na kontekst.\n"
-"* Dodano shortcode `[marks_badges]` do ręcznego umieszczania.\n"
-"* Dodano szablon tłumaczenia (languages/marks.pot) i czyszczenie przy dezinstalacji."
+"Użyj <code>[marks_badges]</code>, aby umieścić oznaczenia produktu na dowolnej stronie, we wpisie lub w widżecie. Bez\n"
+"atrybutów używa bieżącego produktu (wewnątrz pętli lub na stronie pojedynczego\n"
+"produktu). Podaj <code>id</code>, aby wskazać konkretny produkt, oraz <code>context</code> (<code>single</code> lub <code>loop</code>), aby\n"
+"wybrać styl renderowania:"
 
+#. Found in description paragraph.
 msgid ""
-"* Initial release: automatic Sale / New / Low stock / Bestseller badges, a "
+"Configuration lives under a top-level <strong>Sale &amp; Stock Badges</strong> admin menu: a global on/off\n"
+"toggle, placement controls, per-rule toggles with custom labels, thresholds, an\n"
+"appearance section (shape, uppercase, per-context caps) and the manual badge\n"
+"label and colour. Settings are sanitised and clamped on save."
+msgstr ""
+"Konfiguracja znajduje się w menu administracyjnym najwyższego poziomu <strong>Sale &amp; Stock Badges</strong>: globalny przełącznik\n"
+"włącz/wyłącz, kontrolki umiejscowienia, przełączniki poszczególnych reguł z własnymi etykietami, progi,\n"
+"sekcja wyglądu (kształt, wielkie litery, limity dla każdego kontekstu) oraz etykieta i kolor\n"
+"ręcznego oznaczenia. Ustawienia są oczyszczane i ograniczane do zakresu podczas zapisu."
+
+#. Found in description paragraph.
+msgid ""
+"The code is open and lives on <a href=\"https://github.com/wppoland/plogins-marks\">GitHub</a> if you want to read\n"
+"it, file a bug or send a patch."
+msgstr ""
+"Kod jest otwarty i znajduje się na <a href=\"https://github.com/wppoland/plogins-marks\">GitHub</a>, jeśli chcesz go\n"
+"przeczytać, zgłosić błąd lub przesłać poprawkę."
+
+#. Found in description paragraph.
+msgid ""
+"The badges are drawn with CSS and sit over the product image, so they add no\n"
+"JavaScript and don't shift the layout when the page loads. They show on the single\n"
+"product page and on shop, category and tag listings."
+msgstr ""
+"Oznaczenia są rysowane w CSS i umieszczone nad obrazem produktu, więc nie dodają żadnego\n"
+"JavaScriptu i nie przesuwają układu podczas ładowania strony. Pojawiają się na stronie\n"
+"pojedynczego produktu oraz na listach sklepu, kategorii i tagów."
+
+#. Found in description paragraph.
+msgid ""
+"Sale &amp; Stock Badges puts badges on your WooCommerce products. Some appear on their own from each\n"
+"product's current state (<strong>Sale</strong>, <strong>New</strong>, <strong>Low stock</strong>, <strong>Bestseller</strong>, and a few\n"
+"others), and you can also set one manual badge per product using a store-wide label\n"
+"and colour."
+msgstr ""
+"Sale &amp; Stock Badges umieszcza oznaczenia na produktach WooCommerce. Niektóre pojawiają się samodzielnie na podstawie bieżącego\n"
+"stanu każdego produktu (<strong>Promocja</strong>, <strong>Nowość</strong>, <strong>Niski stan</strong>, <strong>Bestseller</strong> i kilku\n"
+"innych), a dla każdego produktu możesz też ustawić jedno ręczne oznaczenie, korzystając z ogólnosklepowej etykiety\n"
+"i koloru."
+
+#. Found in description list item.
+msgid ""
+"<strong>A/B label sets</strong> - rotate competing badge labels with sticky "
+"cookies and per-variant impression counts"
+msgstr ""
+"<strong>Zestawy etykiet A/B</strong> - rotacja konkurujących etykiet "
+"oznaczeń z trwałymi plikami cookie i liczbą wyświetleń dla każdego wariantu"
+
+#. Found in description list item.
+msgid ""
+"<strong>Image badges</strong> - show a certification or brand logo (PNG/SVG)"
+" on a product"
+msgstr ""
+"<strong>Oznaczenia graficzne</strong> - wyświetlanie certyfikatu lub logo "
+"marki (PNG/SVG) na produkcie"
+
+#. Found in description list item.
+msgid ""
+"<strong>Conditional display rules</strong> - store-wide rules that badge a "
+"product by category, price threshold or low stock"
+msgstr ""
+"<strong>Reguły warunkowego wyświetlania</strong> - ogólnosklepowe reguły "
+"oznaczające produkt według kategorii, progu ceny lub niskiego stanu"
+
+#. Found in description list item.
+msgid ""
+"<strong>Scheduled and targeted badges</strong> - campaign badges with custom"
+" colours, a start/end window and targeting by product, category or tag"
+msgstr ""
+"<strong>Zaplanowane i targetowane oznaczenia</strong> - oznaczenia "
+"kampanijne z własnymi kolorami, oknem początku/końca i targetowaniem według "
+"produktu, kategorii lub tagu"
+
+#. Found in description list item.
+msgid "HPOS and cart/checkout blocks compatible."
+msgstr "Zgodne z HPOS oraz blokami koszyka/zamówienia."
+
+#. Found in description list item.
+msgid "Translation ready (POT included) and clean uninstall."
+msgstr "Gotowe do tłumaczenia (dołączony plik POT) i czyste odinstalowanie."
+
+#. Found in description list item.
+msgid "Global on/off toggle and per-rule toggles."
+msgstr ""
+"Globalny przełącznik włącz/wyłącz oraz przełączniki poszczególnych reguł."
+
+#. Found in description list item.
+msgid "CSS-only rendering: no JavaScript, no layout shift."
+msgstr "Renderowanie wyłącznie w CSS: bez JavaScriptu, bez przeskoków układu."
+
+#. Found in description list item.
+msgid "A single manual badge (label + colour) shown per product via meta."
+msgstr ""
+"Jedno ręczne oznaczenie (etykieta + kolor) wyświetlane dla produktu za "
+"pomocą meta."
+
+#. Found in description list item.
+msgid "<code>[marks_badges]</code> shortcode to place badges anywhere."
+msgstr ""
+"Shortcode <code>[marks_badges]</code> do umieszczania oznaczeń w dowolnym "
+"miejscu."
+
+#. Found in description list item.
+msgid ""
+"Appearance controls: pill or square shape, uppercase, and a per-context "
+"badge cap."
+msgstr ""
+"Kontrolki wyglądu: kształt pigułki lub kwadratu, wielkie litery oraz limit "
+"oznaczeń dla każdego kontekstu."
+
+#. Found in description list item.
+msgid ""
+"Placement controls: single product page and/or shop and category listings."
+msgstr ""
+"Kontrolki umiejscowienia: strona pojedynczego produktu i/lub listy sklepu i "
+"kategorii."
+
+#. Found in description list item.
+msgid "Free-shipping detection by product shipping class."
+msgstr "Wykrywanie darmowej wysyłki na podstawie klasy wysyłki produktu."
+
+#. Found in description list item.
+msgid ""
+"Configurable thresholds: newness window, low-stock level, bestseller sales."
+msgstr ""
+"Konfigurowalne progi: okno nowości, poziom niskiego stanu, sprzedaż "
+"bestsellerów."
+
+#. Found in description list item.
+msgid "Custom label text for every automatic badge."
+msgstr "Własny tekst etykiety dla każdego automatycznego oznaczenia."
+
+#. Found in description list item.
+msgid ""
+"Automatic badges: Sale, New, Low stock, Bestseller, Discount percent, Free "
+"shipping, Out of stock."
+msgstr ""
+"Automatyczne oznaczenia: Promocja, Nowość, Niski stan, Bestseller, Procent "
+"rabatu, Darmowa wysyłka, Brak w magazynie."
+
+#. Found in description list item.
+msgid ""
+"<strong>Bug reports and feature requests</strong> - <a "
+"href=\"https://github.com/wppoland/plogins-marks/issues\">GitHub issues</a>"
+msgstr ""
+"<strong>Zgłoszenia błędów i propozycje funkcji</strong> - <a "
+"href=\"https://github.com/wppoland/plogins-marks/issues\">GitHub issues</a>"
+
+#. Found in description list item.
+msgid ""
+"<strong>Source code</strong> - <a "
+"href=\"https://github.com/wppoland/plogins-"
+"marks\">github.com/wppoland/plogins-marks</a>"
+msgstr ""
+"<strong>Kod źródłowy</strong> - <a "
+"href=\"https://github.com/wppoland/plogins-"
+"marks\">github.com/wppoland/plogins-marks</a>"
+
+#. Found in description list item.
+msgid ""
+"<strong>Plugin page</strong> - <a href=\"https://plogins.com/plogins-"
+"marks/\">plogins.com/plogins-marks</a>"
+msgstr ""
+"<strong>Strona wtyczki</strong> - <a href=\"https://plogins.com/plogins-"
+"marks/\">plogins.com/plogins-marks</a>"
+
+#. Found in description list item.
+msgid ""
+"<strong>Documentation</strong> - <a href=\"https://plogins.com/plogins-"
+"marks/docs/\">plogins.com/plogins-marks/docs</a>"
+msgstr ""
+"<strong>Dokumentacja</strong> - <a href=\"https://plogins.com/plogins-"
+"marks/docs/\">plogins.com/plogins-marks/docs</a>"
+
+#. Found in description header.
+msgid "Translations"
+msgstr "Tłumaczenia"
+
+#. Found in description header.
+msgid "External Services"
+msgstr "Usługi zewnętrzne"
+
+#. Found in description header.
+msgid "Sale &amp; Stock Badges PRO"
+msgstr "Sale &amp; Stock Badges PRO"
+
+#. Found in description header.
+msgid "The [marks_badges] shortcode"
+msgstr "Shortcode [marks_badges]"
+
+#. Found in description header.
+msgid "Features"
+msgstr "Funkcje"
+
+#. Found in description header.
+msgid "Documentation and links"
+msgstr "Dokumentacja i odnośniki"
+
+#. Screenshot description.
+msgid "The Sale &amp; Stock Badges settings screen."
+msgstr "Ekran ustawień Sale &amp; Stock Badges."
+
+#. Screenshot description.
+msgid "Automatic badges on a shop listing."
+msgstr "Automatyczne oznaczenia na liście sklepu."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid ""
+"Translation quality pass: corrected Polish, German and Spanish (product "
+"names kept in English, legal withdrawal terminology, WooCommerce glossary "
+"and grammar fixes)."
+msgstr ""
+"Poprawa jakości tłumaczeń: skorygowano polski, niemiecki i hiszpański (nazwy"
+" produktów pozostawiono po angielsku, terminologia prawna dotycząca "
+"odstąpienia od umowy, poprawki zgodne z glosariuszem WooCommerce oraz "
+"gramatyka)."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid ""
+"Initial release: automatic Sale / New / Low stock / Bestseller badges, a "
 "manual badge, and a settings screen. CSS-only."
 msgstr ""
-"* Pierwsze wydanie: automatyczne oznaczenia Promocja / Nowość / Niski stan /"
-" Bestseller, oznaczenie ręczne i ekran ustawień. Wyłącznie w CSS."
+"Pierwsze wydanie: automatyczne oznaczenia Promocja / Nowość / Niski stan / "
+"Bestseller, ręczne oznaczenie oraz ekran ustawień. Wyłącznie CSS."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid ""
+"Add a translation template (languages/marks.pot) and an uninstall cleanup."
+msgstr ""
+"Dodano szablon tłumaczeń (languages/marks.pot) oraz czyszczenie przy "
+"odinstalowaniu."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid "Add the <code>[marks_badges]</code> shortcode for manual placement."
+msgstr ""
+"Dodano shortcode <code>[marks_badges]</code> do ręcznego umieszczania."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid ""
+"Add appearance controls: badge shape, uppercase and per-context badge caps."
+msgstr ""
+"Dodano kontrolki wyglądu: kształt oznaczenia, wielkie litery oraz limity "
+"oznaczeń dla każdego kontekstu."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid "Add placement controls (single product page and/or listings)."
+msgstr ""
+"Dodano kontrolki umiejscowienia (strona pojedynczego produktu i/lub listy)."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid ""
+"Add configurable newness-window and bestseller thresholds, plus free-"
+"shipping class detection."
+msgstr ""
+"Dodano konfigurowalne progi okna nowości i bestsellerów oraz wykrywanie "
+"klasy darmowej wysyłki."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid "Add custom label text for every automatic badge."
+msgstr "Dodano własny tekst etykiety dla każdego automatycznego oznaczenia."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid "Add Discount percent, Free shipping and Out of stock automatic badges."
+msgstr ""
+"Dodano automatyczne oznaczenia Procent rabatu, Darmowa wysyłka i Brak w "
+"magazynie."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid "Admin settings help tooltips polish."
+msgstr "Dopracowano podpowiedzi pomocy w ustawieniach administracyjnych."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid ""
+"New: optional hide of the default WooCommerce sale flash when the Marks sale"
+" badge is enabled."
+msgstr ""
+"Nowość: opcjonalne ukrycie domyślnej etykiety promocji WooCommerce, gdy "
+"włączone jest oznaczenie promocji Marks."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid ""
+"Renamed to Plogins Marks for WooCommerce for a more distinctive plugin name."
+msgstr ""
+"Zmieniono nazwę na Plogins Marks for WooCommerce dla bardziej wyróżniającej "
+"się nazwy wtyczki."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid "First stable release."
+msgstr "Pierwsze stabilne wydanie."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid ""
+"Added bundled Polish, German and Spanish translations for the plugin "
+"interface."
+msgstr ""
+"Dodano dołączone polskie, niemieckie i hiszpańskie tłumaczenia interfejsu "
+"wtyczki."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid "Clearer name: Plogins Marks - Sale &amp; Stock Badges for WooCommerce."
+msgstr ""
+"Czytelniejsza nazwa: Plogins Marks - Sale &amp; Stock Badges for "
+"WooCommerce."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid "Fixed low-contrast admin headings under an OS dark-mode preference."
+msgstr ""
+"Naprawiono nagłówki administracyjne o niskim kontraście przy preferencji "
+"trybu ciemnego systemu."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid "Accessibility improvements to the admin and storefront markup."
+msgstr "Ulepszenia dostępności w kodzie panelu administracyjnego i sklepu."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid ""
+"Prefixed the product-badges filter hook (plogins_marks_product_badges) to "
+"satisfy WordPress plugin naming guidelines."
+msgstr ""
+"Dodano prefiks do filtra oznaczeń produktów (plogins_marks_product_badges), "
+"aby spełnić wytyczne nazewnictwa wtyczek WordPress."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid ""
+"Corrected the product-badges filter prefix to marks_product_badges to match "
+"the plugin prefix."
+msgstr ""
+"Poprawiono prefiks filtra oznaczeń produktów na marks_product_badges, aby "
+"pasował do prefiksu wtyczki."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid ""
+"Shortened display name to Marks (dropped the Plogins brand prefix; slug "
+"unchanged)."
+msgstr ""
+"Skrócono wyświetlaną nazwę do Marks (usunięto prefiks marki Plogins; slug "
+"bez zmian)."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid ""
+"Renamed the plugin to Plogins Sale &amp; Stock Badges for WooCommerce (new "
+"slug: plogins-sale-stock-badges) for a clearer, distinctive name per "
+"WordPress.org review. Text domain updated to match; internal data keys "
+"unchanged."
+msgstr ""
+"Zmieniono nazwę wtyczki na Plogins Sale &amp; Stock Badges for WooCommerce "
+"(nowy slug: plogins-sale-stock-badges) dla czytelniejszej, wyróżniającej się"
+" nazwy zgodnie z recenzją WordPress.org. Zaktualizowano text domain, aby "
+"pasował; wewnętrzne klucze danych bez zmian."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid "Admin settings screen now supports dark colour scheme."
+msgstr ""
+"Ekran ustawień administracyjnych obsługuje teraz ciemny schemat kolorów."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid ""
+"Added an Elementor widget for product badges (self-guarding: loads only when"
+" Elementor is active)."
+msgstr ""
+"Dodano widżet Elementora dla oznaczeń produktów (samozabezpieczający: ładuje"
+" się tylko, gdy Elementor jest aktywny)."
+
+#. Found in changelog list item.
+#, gp-priority: low
+msgid ""
+"Simplified the display name to Sale &amp; Stock Badges for WooCommerce (slug"
+" and text domain unchanged)."
+msgstr ""
+"Uproszczono wyświetlaną nazwę do Sale &amp; Stock Badges for WooCommerce "
+"(slug i text domain bez zmian)."
