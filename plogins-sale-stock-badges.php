@@ -3,7 +3,7 @@
  * Plugin Name:       Sale & Stock Badges for WooCommerce
  * Plugin URI:        https://plogins.com/plogins-sale-stock-badges/
  * Description:        Automatic and manual product badges for WooCommerce (sale, new, low-stock, bestseller): CSS-only, no layout shift.
- * Version:           1.0.10
+ * Version:           1.0.11
  * Requires at least: 6.5
  * Requires PHP:      8.1
  * Requires Plugins:  woocommerce
@@ -14,6 +14,7 @@
  * Text Domain:       plogins-sale-stock-badges
  * Domain Path:       /languages
  * WC requires at least: 8.0
+ * WC tested up to: 10.9
  *
  * @package Marks
  */
@@ -24,7 +25,7 @@ namespace Marks;
 
 defined('ABSPATH') || exit;
 
-const VERSION = '1.0.10';
+const VERSION = '1.0.11';
 const PLUGIN_FILE = __FILE__;
 
 define('MARKS_DIR', plugin_dir_path(__FILE__));
