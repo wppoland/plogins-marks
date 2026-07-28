@@ -12,7 +12,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
+"|| n%100>14) ? 1 : 2);\n"
 "X-Domain: plogins-marks\n"
 "X-Generator: WP-CLI 2.12.0\n"
 
@@ -63,13 +64,13 @@ msgstr "Oznaczenia produktów zwiększające konwersję"
 
 #: src/Admin/Settings.php:125
 msgid ""
-"Badges highlight what makes a product worth buying, a sale, a fresh arrival,"
-" low stock or a bestseller. They are pure CSS, so they load instantly and "
-"never shift your layout. Configure them below; the live preview on the right"
-" updates as you type."
+"Badges highlight what makes a product worth buying, a sale, a fresh arrival, "
+"low stock or a bestseller. They are pure CSS, so they load instantly and "
+"never shift your layout. Configure them below; the live preview on the right "
+"updates as you type."
 msgstr ""
-"Oznaczenia podkreślają to, co czyni produkt wartym zakupu, promocję, nowość,"
-" niski stan magazynowy lub status bestsellera. Są oparte wyłącznie na CSS, "
+"Oznaczenia podkreślają to, co czyni produkt wartym zakupu, promocję, nowość, "
+"niski stan magazynowy lub status bestsellera. Są oparte wyłącznie na CSS, "
 "więc ładują się natychmiast i nigdy nie przesuwają układu. Skonfiguruj je "
 "poniżej; podgląd na żywo po prawej stronie aktualizuje się podczas pisania."
 
@@ -87,8 +88,8 @@ msgid ""
 "and the badge stylesheet is not loaded, zero front-end impact."
 msgstr ""
 "Główny przełącznik. Gdy wyłączony, żadne oznaczenia nie są renderowane w "
-"sklepie, a arkusz stylów oznaczeń nie jest wczytywany, zerowy wpływ na front"
-" sklepu."
+"sklepie, a arkusz stylów oznaczeń nie jest wczytywany, zerowy wpływ na front "
+"sklepu."
 
 #: src/Admin/Settings.php:153
 msgid "Show product badges on the storefront."
@@ -145,8 +146,8 @@ msgid ""
 msgstr ""
 "Pojawiają się samodzielnie na podstawie bieżącego stanu każdego produktu, "
 "bez ręcznego oznaczania. Zaznacz te, których chcesz, i opcjonalnie nadaj im "
-"własne brzmienie. Pozostaw etykietę pustą, aby użyć przetłumaczonej wartości"
-" domyślnej."
+"własne brzmienie. Pozostaw etykietę pustą, aby użyć przetłumaczonej wartości "
+"domyślnej."
 
 #: src/Admin/Settings.php:194 src/Admin/Settings.php:363
 #: src/Service/MarksService.php:48
@@ -191,11 +192,11 @@ msgstr ""
 
 #: src/Admin/Settings.php:196
 msgid ""
-"Creates urgency. Requires WooCommerce stock management; triggers at or below"
-" the \"Low-stock threshold\"."
+"Creates urgency. Requires WooCommerce stock management; triggers at or below "
+"the \"Low-stock threshold\"."
 msgstr ""
-"Buduje poczucie pilności. Wymaga zarządzania stanem magazynowym WooCommerce;"
-" uruchamia się na poziomie „Progu niskiego stanu” lub poniżej."
+"Buduje poczucie pilności. Wymaga zarządzania stanem magazynowym WooCommerce; "
+"uruchamia się na poziomie „Progu niskiego stanu” lub poniżej."
 
 #: src/Admin/Settings.php:197 src/Service/MarksService.php:51
 msgid "Bestseller"
@@ -210,8 +211,8 @@ msgid ""
 "Social proof for your top sellers. Triggers once total units sold reaches "
 "the \"Bestseller threshold\"."
 msgstr ""
-"Społeczny dowód słuszności dla Twoich najlepiej sprzedających się produktów."
-" Uruchamia się, gdy łączna liczba sprzedanych sztuk osiągnie „Próg "
+"Społeczny dowód słuszności dla Twoich najlepiej sprzedających się produktów. "
+"Uruchamia się, gdy łączna liczba sprzedanych sztuk osiągnie „Próg "
 "bestsellera”."
 
 #: src/Admin/Settings.php:198 src/Service/MarksService.php:52
@@ -260,8 +261,8 @@ msgid ""
 "-20%. Pairs well with, or instead of, the plain Sale badge."
 msgstr ""
 "Automatycznie oblicza oszczędność na podstawie ceny regularnej i "
-"promocyjnej, np. -20%. Dobrze łączy się ze zwykłym oznaczeniem Promocja, lub"
-" może je zastąpić."
+"promocyjnej, np. -20%. Dobrze łączy się ze zwykłym oznaczeniem Promocja, lub "
+"może je zastąpić."
 
 #: src/Admin/Settings.php:204
 msgid "Hide theme “Sale!” flash"
@@ -271,8 +272,8 @@ msgstr "Ukryj etykietę „Promocja!” motywu"
 msgid ""
 "Replace WooCommerce’s default sale flash with the Marks sale badge only."
 msgstr ""
-"Zastąp domyślną etykietę promocji WooCommerce wyłącznie oznaczeniem promocji"
-" Marks."
+"Zastąp domyślną etykietę promocji WooCommerce wyłącznie oznaczeniem promocji "
+"Marks."
 
 #: src/Admin/Settings.php:207
 msgid ""
@@ -318,13 +319,13 @@ msgstr "Próg niskiego stanu"
 msgid ""
 "Show the Low stock badge when remaining stock is at or below this number."
 msgstr ""
-"Pokaż oznaczenie Niski stan, gdy pozostały zapas jest na poziomie tej liczby"
-" lub poniżej."
+"Pokaż oznaczenie Niski stan, gdy pozostały zapas jest na poziomie tej liczby "
+"lub poniżej."
 
 #: src/Admin/Settings.php:223
 msgid ""
-"When stock falls to this number or below, the Low stock badge appears. Lower"
-" it to reserve the badge for true scarcity."
+"When stock falls to this number or below, the Low stock badge appears. Lower "
+"it to reserve the badge for true scarcity."
 msgstr ""
 "Gdy zapas spadnie do tej liczby lub poniżej, pojawia się oznaczenie Niski "
 "stan. Obniż ją, aby zarezerwować oznaczenie dla prawdziwego niedoboru."
@@ -423,8 +424,7 @@ msgid ""
 "uncluttered. Highest-priority badges win."
 msgstr ""
 "Ogranicza liczbę oznaczeń nakładanych na stronie pojedynczego produktu, aby "
-"zdjęcie pozostało przejrzyste. Wygrywają oznaczenia o najwyższym "
-"priorytecie."
+"zdjęcie pozostało przejrzyste. Wygrywają oznaczenia o najwyższym priorytecie."
 
 #: src/Admin/Settings.php:276
 msgid "Max badges (listings)"
@@ -452,8 +452,8 @@ msgstr "Oznaczenie ręczne"
 #, php-format
 msgid ""
 "Define one store-wide badge (label + colour). Leave the label empty to "
-"disable it. To show it on a specific product, set the %s product meta, handy"
-" for \"Editor's pick\" or \"Staff favourite\" flags."
+"disable it. To show it on a specific product, set the %s product meta, handy "
+"for \"Editor's pick\" or \"Staff favourite\" flags."
 msgstr ""
 "Zdefiniuj jedno ogólnosklepowe oznaczenie (etykieta + kolor). Pozostaw "
 "etykietę pustą, aby je wyłączyć. Aby pokazać je na konkretnym produkcie, "
@@ -482,15 +482,15 @@ msgstr "Kolor oznaczenia ręcznego"
 
 #: src/Admin/Settings.php:314
 msgid ""
-"Pick a semantic colour. Accent is the Marks signature ink (a vermilion red),"
-" Success green, Warning amber, Danger red, Neutral grey. The preview on the "
+"Pick a semantic colour. Accent is the Marks signature ink (a vermilion red), "
+"Success green, Warning amber, Danger red, Neutral grey. The preview on the "
 "right shows each. Exact shades are themeable via the --marks-bg-* variables."
 msgstr ""
 "Wybierz kolor semantyczny. Akcent to charakterystyczny atrament Marks "
 "(czerwień cynobrowa), Sukces to zieleń, Ostrzeżenie to bursztyn, "
 "Niebezpieczeństwo to czerwień, a Neutralny to szarość. Podgląd po prawej "
-"stronie pokazuje każdy z nich. Dokładne odcienie można zmieniać w motywie za"
-" pomocą zmiennych --marks-bg-*."
+"stronie pokazuje każdy z nich. Dokładne odcienie można zmieniać w motywie za "
+"pomocą zmiennych --marks-bg-*."
 
 #: src/Admin/Settings.php:356
 msgid "Badge preview"
@@ -502,8 +502,7 @@ msgstr "Podgląd na żywo"
 
 #: src/Admin/Settings.php:359
 msgid "A sample of how your badges will look on a product image."
-msgstr ""
-"Przykład tego, jak Twoje oznaczenia będą wyglądać na zdjęciu produktu."
+msgstr "Przykład tego, jak Twoje oznaczenia będą wyglądać na zdjęciu produktu."
 
 #: src/Admin/Settings.php:368
 msgid "No badges enabled yet, tick some on the left to see them here."
@@ -518,8 +517,8 @@ msgstr "Oznaczenia nie są jeszcze dostępne"
 #: src/Admin/Settings.php:387
 msgid ""
 "Marks could not load its badge engine. This usually means a required "
-"dependency is missing or out of date. Please reinstall or update the plugin;"
-" once the engine is present, this screen will show the full badge settings."
+"dependency is missing or out of date. Please reinstall or update the plugin; "
+"once the engine is present, this screen will show the full badge settings."
 msgstr ""
 "Marks nie mógł wczytać swojego silnika oznaczeń. Zwykle oznacza to, że "
 "wymagana zależność jest brakująca lub nieaktualna. Zainstaluj ponownie lub "
@@ -560,12 +559,72 @@ msgstr "Własna etykieta (opcjonalnie)"
 msgid "Custom label for the %s badge"
 msgstr "Własna etykieta dla oznaczenia %s"
 
+#: src/Admin/ProUpsell.php:78
+msgid "Wkrótce"
+msgstr "Wkrótce"
+
+#: src/Admin/ProUpsell.php:78
+msgid "Coming soon"
+msgstr "Wkrótce"
+
+#. translators: %d: yearly price in PLN
+#: src/Admin/ProUpsell.php:83
+#, php-format
+msgid "od %d zł/rok"
+msgstr "od %d zł/rok"
+
+#. translators: 1: currency symbol, 2: yearly price
+#: src/Admin/ProUpsell.php:88
+#, php-format
+msgid "from %1$s%2$d/yr"
+msgstr "od %1$s%2$d/rok"
+
+#: src/Admin/ProUpsell.php:97
+msgid "Upgrade to PRO"
+msgstr "Przejdź na PRO"
+
+#: src/Admin/ProUpsell.php:98
+msgid "Powiadom mnie"
+msgstr "Powiadom mnie"
+
+#: src/Admin/ProUpsell.php:98
+msgid "Get notified"
+msgstr "Powiadom mnie"
+
+#: src/Admin/ProUpsell.php:128
+msgid "Permission denied."
+msgstr "Brak uprawnień."
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:158
+#, php-format
+msgid "Do more with %s"
+msgstr "Zrób więcej dzięki %s"
+
+#: src/Admin/ProUpsell.php:165
+msgid "Dismiss this notice"
+msgstr "Odrzuć to powiadomienie"
+
+#: src/Admin/ProUpsell.php:182
+msgid "Unlock every PRO feature"
+msgstr "Odblokuj wszystkie funkcje PRO"
+
+#: src/Admin/ProUpsell.php:195
+msgid "one licence, every PRO feature"
+msgstr "jedna licencja, wszystkie funkcje PRO"
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:214
+#, php-format
+msgid "What %s adds"
+msgstr "Co dodaje %s"
+
 #~ msgid ""
-#~ "Pick a semantic colour. Accent uses your store blue, Success green, Warning "
-#~ "amber, Danger red, Neutral grey. Exact shades are themeable via the --marks-"
-#~ "bg-* variables."
+#~ "Pick a semantic colour. Accent uses your store blue, Success green, "
+#~ "Warning amber, Danger red, Neutral grey. Exact shades are themeable via "
+#~ "the --marks-bg-* variables."
 #~ msgstr ""
-#~ "Wybierz kolor semantyczny. Akcent używa niebieskiego Twojego sklepu, Sukces "
-#~ "zielonego, Ostrzeżenie bursztynowego, Niebezpieczeństwo czerwonego, "
-#~ "Neutralny szarego. Dokładne odcienie można zmieniać w motywie za pomocą "
-#~ "zmiennych --marks-bg-*."
+#~ "Wybierz kolor semantyczny. Akcent używa niebieskiego Twojego sklepu, "
+#~ "Sukces zielonego, Ostrzeżenie bursztynowego, Niebezpieczeństwo "
+#~ "czerwonego, Neutralny szarego. Dokładne odcienie można zmieniać w motywie "
+#~ "za pomocą zmiennych --marks-bg-*."
