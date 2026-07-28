@@ -8,7 +8,7 @@ Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Produkt-Abzeichen für WooCommerce – komplett per CSS: Verkauf, Neu, Geringer Lagerbestand, Bestseller und ein manuelles Abzeichen. Kein JavaScript, keine Layout-Verschiebung.
+Produkt-Abzeichen für WooCommerce, komplett per CSS: Verkauf, Neu, Geringer Lagerbestand, Bestseller und ein manuelles Abzeichen. Kein JavaScript, keine Layout-Verschiebung.
 
 == Description ==
 

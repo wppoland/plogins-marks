@@ -115,7 +115,7 @@ final class MarksService implements HasHooks
     }
 
     /**
-     * Shortcode `[marks_badges]` — render a product's badge group anywhere.
+     * Shortcode `[marks_badges]`, render a product's badge group anywhere.
      *
      * Attributes:
      *  - `id`      Product ID. Defaults to the current global product, then to

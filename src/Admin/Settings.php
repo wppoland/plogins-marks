@@ -112,7 +112,7 @@ final class Settings implements HasHooks
             return;
         }
 
-        // Edge state: without the badge engine, badges cannot render — tell the
+        // Edge state: without the badge engine, badges cannot render, tell the
         // merchant clearly instead of showing settings that would silently do
         // nothing.
         if (! class_exists(\WPPoland\StorefrontKit\Badge\BadgeEngine::class)) {
@@ -283,7 +283,7 @@ final class Settings implements HasHooks
                                     <?php
                                     $this->checkboxRow('uppercase', __('Uppercase labels', 'plogins-sale-stock-badges'), __('Render badge labels in uppercase.', 'plogins-sale-stock-badges'), $settings, __('Uppercases every badge label and adds light letter-spacing for a bolder, more uniform look.', 'plogins-sale-stock-badges'));
                                     $this->numberRow('max_badges_single', __('Max badges (product page)', 'plogins-sale-stock-badges'), __('Maximum number of badges shown on a single product page.', 'plogins-sale-stock-badges'), $settings, 1, __('Caps how many badges stack on a single product page so the image stays uncluttered. Highest-priority badges win.', 'plogins-sale-stock-badges'));
-                                    $this->numberRow('max_badges_loop', __('Max badges (listings)', 'plogins-sale-stock-badges'), __('Maximum number of badges shown on shop and category listings.', 'plogins-sale-stock-badges'), $settings, 1, __('Caps badges on the smaller thumbnails in shop and category grids. 2–3 keeps listings clean.', 'plogins-sale-stock-badges'));
+                                    $this->numberRow('max_badges_loop', __('Max badges (listings)', 'plogins-sale-stock-badges'), __('Maximum number of badges shown on shop and category listings.', 'plogins-sale-stock-badges'), $settings, 1, __('Caps badges on the smaller thumbnails in shop and category grids. 2-3 keeps listings clean.', 'plogins-sale-stock-badges'));
                                     ?>
                                 </tbody>
                             </table>

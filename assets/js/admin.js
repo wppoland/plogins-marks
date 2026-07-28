@@ -1,5 +1,5 @@
 /**
- * Marks — admin settings enhancements (progressive, dependency-free).
+ * Marks, admin settings enhancements (progressive, dependency-free).
  *
  * 1. Inline help: each "?" button is wired to an accessible popover. Where the
  *    native Popover API exists it is used; otherwise a small show/hide fallback
