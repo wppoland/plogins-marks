@@ -1,5 +1,5 @@
 /**
- * Marks — admin settings screen.
+ * Marks, admin settings screen.
  *
  * A polished, themeable layer on top of the WordPress settings UI. Tokens live
  * under --marks-a-* so the look can be tuned in one place. Transitions are gated
@@ -9,13 +9,13 @@
 
 .marks-admin {
 	/*
-	 * Section accent — the storefront "inked vermilion" (#c52d1a), brought into
+	 * Section accent, the storefront "inked vermilion" (#c52d1a), brought into
 	 * the admin as one restrained family-brand touch (the section rule + help
 	 * affordance), so the settings screen reads as the same product as the
 	 * badges it configures. Everything else stays native WordPress.
 	 *
 	 * Contrast (computed, WCAG AA): #c52d1a vs #fff = 5.58:1 and vs the wp-admin
-	 * grey #f0f0f1 = 4.90:1 — both clear AA text (4.5:1) and UI (3:1); #fff text
+	 * grey #f0f0f1 = 4.90:1, both clear AA text (4.5:1) and UI (3:1); #fff text
 	 * on the accent = 5.58:1. Dark scheme lightens to #e8543f (4.58:1 on the dark
 	 * card) so it never drops below the UI floor.
 	 */
@@ -271,7 +271,7 @@
 }
 
 /* ------------------------------------------------------------------ *
- * PRO upsell — dismissible banner, sidebar promo, "what PRO adds"
+ * PRO upsell, dismissible banner, sidebar promo, "what PRO adds"
  * locked cards. Pure advertising (no disabled inputs), scoped entirely
  * to the .marks-admin settings wrapper so nothing leaks into wp-admin.
  * Reuses the family --marks-a-* tokens: the inked vermilion accent

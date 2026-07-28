@@ -21,7 +21,7 @@ Oznaczenia są rysowane w CSS i umieszczone nad obrazem produktu, więc nie doda
 JavaScriptu i nie przesuwają układu podczas ładowania strony. Pojawiają się na stronie
 pojedynczego produktu oraz na listach sklepu, kategorii i tagów.
 
-Kod jest otwarty i znajduje się na https://github.com/wppoland/plogins-marks — jeśli chcesz go przejrzeć,
+Kod jest otwarty i znajduje się na https://github.com/wppoland/plogins-marks, jeśli chcesz go przejrzeć,
 zgłosić błąd lub przesłać poprawkę.
 
 Konfiguracja znajduje się w głównym menu administracyjnym <strong>Marks</strong>: globalny przełącznik włącz/wyłącz,

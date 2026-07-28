@@ -1,5 +1,5 @@
 /**
- * Marks — CSS-only product badges (storefront).
+ * Marks, CSS-only product badges (storefront).
  *
  * The plugin's world is labelling and stamping: a badge is a small label
  * pressed onto the product image. Badges are absolutely positioned over the
@@ -8,7 +8,7 @@
  * is a CSS custom property under the `--marks-*` namespace, so themes can
  * re-skin badges without touching markup.
  *
- * The signature accent is an inked vermilion — the colour of a rubber sale
+ * The signature accent is an inked vermilion, the colour of a rubber sale
  * stamp pressed in ink, not a generic UI blue. The one earned micro-interaction
  * is the "press": each badge lands like a stamp making contact with the image
  * (a brief over-press that settles), and each label carries a die-cut peel-lift
@@ -32,7 +32,7 @@
 	--marks-font-weight: 700;
 
 	/*
-	 * Signature accent — inked vermilion. This is the colour of a rubber stamp
+	 * Signature accent, inked vermilion. This is the colour of a rubber stamp
 	 * pressed into red ink (the classic "SALE" / "PAID" stamp). It is the one
 	 * deliberate, non-default choice that grounds badges in the stamping world.
 	 * Themes can re-ink everything by overriding --marks-ink alone.
@@ -100,7 +100,7 @@
 
 /*
  * Die-cut peel-lift corner. A soft highlight on the top-left and a faint
- * shadow line read as a physical label whose corner has lifted off the image —
+ * shadow line read as a physical label whose corner has lifted off the image, 
  * the tactile "this was stuck on" cue. Purely decorative, drawn with a single
  * pseudo-element gradient so it costs no markup and never shifts layout.
  */
@@ -191,7 +191,7 @@
 }
 
 /*
- * THE MOMENT — the stamp press.
+ * THE MOMENT, the stamp press.
  *
  * Each badge lands like a rubber stamp making contact with the image: it
  * arrives slightly rotated and oversized, then presses down and squares up,

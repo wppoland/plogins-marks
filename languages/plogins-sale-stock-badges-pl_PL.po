@@ -437,7 +437,7 @@ msgstr ""
 
 #: src/Admin/Settings.php:276
 msgid ""
-"Caps badges on the smaller thumbnails in shop and category grids. 2–3 keeps "
+"Caps badges on the smaller thumbnails in shop and category grids. 2-3 keeps "
 "listings clean."
 msgstr ""
 "Ogranicza oznaczenia na mniejszych miniaturach w siatkach sklepu i "

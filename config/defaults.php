@@ -56,7 +56,7 @@ return [
 
     // The storefront-kit BadgeEngine also supports an optional "secondary" manual
     // badge that defaults to ON when unset. Marks does not expose that feature, so
-    // disable it explicitly here — otherwise the engine would read an unprefixed
+    // disable it explicitly here, otherwise the engine would read an unprefixed
     // `secondary_text` product meta and could surface an unintended badge if that
     // generic key happens to exist (e.g. from an import or another plugin).
     'show_secondary_badge' => false,
