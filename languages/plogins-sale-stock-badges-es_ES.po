@@ -63,10 +63,10 @@ msgstr "Insignias de productos que aumentan las conversiones"
 
 #: src/Admin/Settings.php:125
 msgid ""
-"Badges highlight what makes a product worth buying, a sale, a fresh arrival,"
-" low stock or a bestseller. They are pure CSS, so they load instantly and "
-"never shift your layout. Configure them below; the live preview on the right"
-" updates as you type."
+"Badges highlight what makes a product worth buying, a sale, a fresh arrival, "
+"low stock or a bestseller. They are pure CSS, so they load instantly and "
+"never shift your layout. Configure them below; the live preview on the right "
+"updates as you type."
 msgstr ""
 "Las insignias resaltan lo que hace que valga la pena comprar un producto: "
 "una oferta, una novedad, un stock bajo o un éxito de ventas. Son CSS puro, "
@@ -87,8 +87,8 @@ msgid ""
 "The master switch. When off, no badges render anywhere on your storefront "
 "and the badge stylesheet is not loaded, zero front-end impact."
 msgstr ""
-"El interruptor maestro. Cuando está desactivado, no se muestran insignias en"
-" ninguna parte de su tienda y la hoja de estilo de la insignia no está "
+"El interruptor maestro. Cuando está desactivado, no se muestran insignias en "
+"ninguna parte de su tienda y la hoja de estilo de la insignia no está "
 "cargada, sin impacto en el front-end."
 
 #: src/Admin/Settings.php:153
@@ -195,8 +195,8 @@ msgstr ""
 
 #: src/Admin/Settings.php:196
 msgid ""
-"Creates urgency. Requires WooCommerce stock management; triggers at or below"
-" the \"Low-stock threshold\"."
+"Creates urgency. Requires WooCommerce stock management; triggers at or below "
+"the \"Low-stock threshold\"."
 msgstr ""
 "Crea urgencia. Requiere gestión de stock de WooCommerce; se activa en o por "
 "debajo del \"umbral de existencias bajas\"."
@@ -214,8 +214,8 @@ msgid ""
 "Social proof for your top sellers. Triggers once total units sold reaches "
 "the \"Bestseller threshold\"."
 msgstr ""
-"Prueba social para tus mejores vendedores. Se activa una vez que el total de"
-" unidades vendidas alcanza el \"umbral de best seller\"."
+"Prueba social para tus mejores vendedores. Se activa una vez que el total de "
+"unidades vendidas alcanza el \"umbral de best seller\"."
 
 #: src/Admin/Settings.php:198 src/Service/MarksService.php:52
 msgid "Free shipping"
@@ -230,8 +230,8 @@ msgid ""
 "Shown for products whose shipping class matches one listed under \"Free-"
 "shipping classes\"."
 msgstr ""
-"Se muestra para productos cuya clase de envío coincide con una que figura en"
-" \"Clases de envío gratuito\"."
+"Se muestra para productos cuya clase de envío coincide con una que figura en "
+"\"Clases de envío gratuito\"."
 
 #: src/Admin/Settings.php:199 src/Service/MarksService.php:53
 msgid "Out of stock"
@@ -246,8 +246,8 @@ msgid ""
 "Sets expectations before the click. Shown when WooCommerce reports the "
 "product as out of stock."
 msgstr ""
-"Establece expectativas antes del clic. Se muestra cuando WooCommerce informa"
-" que el producto está agotado."
+"Establece expectativas antes del clic. Se muestra cuando WooCommerce informa "
+"que el producto está agotado."
 
 #: src/Admin/Settings.php:201
 msgid "Discount percent"
@@ -322,13 +322,13 @@ msgstr "Umbral de existencias bajas"
 msgid ""
 "Show the Low stock badge when remaining stock is at or below this number."
 msgstr ""
-"Muestre la insignia Stock bajo cuando el stock restante sea igual o inferior"
-" a este número."
+"Muestre la insignia Stock bajo cuando el stock restante sea igual o inferior "
+"a este número."
 
 #: src/Admin/Settings.php:223
 msgid ""
-"When stock falls to this number or below, the Low stock badge appears. Lower"
-" it to reserve the badge for true scarcity."
+"When stock falls to this number or below, the Low stock badge appears. Lower "
+"it to reserve the badge for true scarcity."
 msgstr ""
 "Cuando el stock cae a este número o menos, aparece el distintivo de stock "
 "bajo. Bájalo para reservar la insignia para una verdadera escasez."
@@ -460,13 +460,13 @@ msgstr "Insignia manual"
 #, php-format
 msgid ""
 "Define one store-wide badge (label + colour). Leave the label empty to "
-"disable it. To show it on a specific product, set the %s product meta, handy"
-" for \"Editor's pick\" or \"Staff favourite\" flags."
+"disable it. To show it on a specific product, set the %s product meta, handy "
+"for \"Editor's pick\" or \"Staff favourite\" flags."
 msgstr ""
-"Define una insignia para toda la tienda (etiqueta + color). Deja la etiqueta"
-" vacía para desactivarla. Para mostrarla en un producto específico, "
-"configura el meta de producto %s, útil para indicadores como «Elección del "
-"editor» o «Favorito del personal»."
+"Define una insignia para toda la tienda (etiqueta + color). Deja la etiqueta "
+"vacía para desactivarla. Para mostrarla en un producto específico, configura "
+"el meta de producto %s, útil para indicadores como «Elección del editor» o "
+"«Favorito del personal»."
 
 #: src/Admin/Settings.php:297
 msgid "Manual badge label"
@@ -477,8 +477,8 @@ msgid ""
 "The text shown by your manual badge, e.g. \"Editor's pick\". Leave blank to "
 "turn the manual badge off entirely."
 msgstr ""
-"El texto que se muestra en tu insignia manual, p. ej. «Elección del editor»."
-" Déjalo en blanco para desactivar por completo la insignia manual."
+"El texto que se muestra en tu insignia manual, p. ej. «Elección del editor». "
+"Déjalo en blanco para desactivar por completo la insignia manual."
 
 #: src/Admin/Settings.php:307
 msgid "e.g. Editor’s pick"
@@ -490,8 +490,8 @@ msgstr "Color de la insignia manual"
 
 #: src/Admin/Settings.php:314
 msgid ""
-"Pick a semantic colour. Accent is the Marks signature ink (a vermilion red),"
-" Success green, Warning amber, Danger red, Neutral grey. The preview on the "
+"Pick a semantic colour. Accent is the Marks signature ink (a vermilion red), "
+"Success green, Warning amber, Danger red, Neutral grey. The preview on the "
 "right shows each. Exact shades are themeable via the --marks-bg-* variables."
 msgstr ""
 "Elige un color semántico. El acento es la tinta característica de la marca "
@@ -525,12 +525,12 @@ msgstr "Las insignias aún no están disponibles"
 #: src/Admin/Settings.php:387
 msgid ""
 "Marks could not load its badge engine. This usually means a required "
-"dependency is missing or out of date. Please reinstall or update the plugin;"
-" once the engine is present, this screen will show the full badge settings."
+"dependency is missing or out of date. Please reinstall or update the plugin; "
+"once the engine is present, this screen will show the full badge settings."
 msgstr ""
 "Marks no pudo cargar su motor de insignia. Por lo general, esto significa "
-"que falta una dependencia requerida o está desactualizada. Vuelva a instalar"
-" o actualice el complemento; Una vez que el motor esté presente, esta "
+"que falta una dependencia requerida o está desactualizada. Vuelva a instalar "
+"o actualice el complemento; Una vez que el motor esté presente, esta "
 "pantalla mostrará la configuración completa de la insignia."
 
 #: src/Admin/Settings.php:402
@@ -566,3 +566,63 @@ msgstr "Etiqueta personalizada (opcional)"
 #, php-format
 msgid "Custom label for the %s badge"
 msgstr "Etiqueta personalizada para la insignia %s"
+
+#: src/Admin/ProUpsell.php:78
+msgid "Wkrótce"
+msgstr "Próximamente"
+
+#: src/Admin/ProUpsell.php:78
+msgid "Coming soon"
+msgstr "Próximamente"
+
+#. translators: %d: yearly price in PLN
+#: src/Admin/ProUpsell.php:83
+#, php-format
+msgid "od %d zł/rok"
+msgstr "desde %d zł/año"
+
+#. translators: 1: currency symbol, 2: yearly price
+#: src/Admin/ProUpsell.php:88
+#, php-format
+msgid "from %1$s%2$d/yr"
+msgstr "desde %1$s%2$d/año"
+
+#: src/Admin/ProUpsell.php:97
+msgid "Upgrade to PRO"
+msgstr "Mejora a PRO"
+
+#: src/Admin/ProUpsell.php:98
+msgid "Powiadom mnie"
+msgstr "Avísame"
+
+#: src/Admin/ProUpsell.php:98
+msgid "Get notified"
+msgstr "Avísame"
+
+#: src/Admin/ProUpsell.php:128
+msgid "Permission denied."
+msgstr "Permiso denegado."
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:158
+#, php-format
+msgid "Do more with %s"
+msgstr "Haz más con %s"
+
+#: src/Admin/ProUpsell.php:165
+msgid "Dismiss this notice"
+msgstr "Descartar este aviso"
+
+#: src/Admin/ProUpsell.php:182
+msgid "Unlock every PRO feature"
+msgstr "Desbloquea todas las funciones PRO"
+
+#: src/Admin/ProUpsell.php:195
+msgid "one licence, every PRO feature"
+msgstr "una licencia, todas las funciones PRO"
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:214
+#, php-format
+msgid "What %s adds"
+msgstr "Lo que añade %s"

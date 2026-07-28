@@ -63,16 +63,16 @@ msgstr "Produktabzeichen, die die Conversions steigern"
 
 #: src/Admin/Settings.php:125
 msgid ""
-"Badges highlight what makes a product worth buying, a sale, a fresh arrival,"
-" low stock or a bestseller. They are pure CSS, so they load instantly and "
-"never shift your layout. Configure them below; the live preview on the right"
-" updates as you type."
+"Badges highlight what makes a product worth buying, a sale, a fresh arrival, "
+"low stock or a bestseller. They are pure CSS, so they load instantly and "
+"never shift your layout. Configure them below; the live preview on the right "
+"updates as you type."
 msgstr ""
 "Abzeichen heben hervor, was den Kauf eines Produkts, einen Verkauf, einen "
-"Neuzugang, einen geringen Lagerbestand oder einen Bestseller ausmacht. Da es"
-" sich um reines CSS handelt, laden sie sofort und verändern dein Layout nie."
-" Konfiguriere sie unten; Die Live-Vorschau auf der rechten Seite wird "
-"während der Eingabe aktualisiert."
+"Neuzugang, einen geringen Lagerbestand oder einen Bestseller ausmacht. Da es "
+"sich um reines CSS handelt, laden sie sofort und verändern dein Layout nie. "
+"Konfiguriere sie unten; Die Live-Vorschau auf der rechten Seite wird während "
+"der Eingabe aktualisiert."
 
 #: src/Admin/Settings.php:136
 msgid "Display"
@@ -195,8 +195,8 @@ msgstr ""
 
 #: src/Admin/Settings.php:196
 msgid ""
-"Creates urgency. Requires WooCommerce stock management; triggers at or below"
-" the \"Low-stock threshold\"."
+"Creates urgency. Requires WooCommerce stock management; triggers at or below "
+"the \"Low-stock threshold\"."
 msgstr ""
 "Schafft Dringlichkeit. Erfordert die Bestandsverwaltung von WooCommerce; "
 "löst bei oder unterhalb der „Schwelle für niedrigen Lagerbestand“ aus."
@@ -293,8 +293,8 @@ msgstr "Schwellenwerte"
 msgid ""
 "Tune when the automatic badges above trigger. Values must be at least 1."
 msgstr ""
-"Stimme ab, wenn die oben genannten automatischen Abzeichen ausgelöst werden."
-" Die Werte müssen mindestens 1 sein."
+"Stimme ab, wenn die oben genannten automatischen Abzeichen ausgelöst werden. "
+"Die Werte müssen mindestens 1 sein."
 
 #: src/Admin/Settings.php:222
 msgid "Newness window (days)"
@@ -327,8 +327,8 @@ msgstr ""
 
 #: src/Admin/Settings.php:223
 msgid ""
-"When stock falls to this number or below, the Low stock badge appears. Lower"
-" it to reserve the badge for true scarcity."
+"When stock falls to this number or below, the Low stock badge appears. Lower "
+"it to reserve the badge for true scarcity."
 msgstr ""
 "Wenn der Lagerbestand auf diesen Wert oder darunter sinkt, wird das Symbol "
 "„Niedriger Lagerbestand“ angezeigt. Senke es, um das Abzeichen für echte "
@@ -424,8 +424,8 @@ msgstr "Max-Abzeichen (Produktseite)"
 #: src/Admin/Settings.php:275
 msgid "Maximum number of badges shown on a single product page."
 msgstr ""
-"Maximale Anzahl an Abzeichen, die auf einer einzelnen Produktseite angezeigt"
-" werden."
+"Maximale Anzahl an Abzeichen, die auf einer einzelnen Produktseite angezeigt "
+"werden."
 
 #: src/Admin/Settings.php:275
 msgid ""
@@ -463,8 +463,8 @@ msgstr "Manuelles Abzeichen"
 #, php-format
 msgid ""
 "Define one store-wide badge (label + colour). Leave the label empty to "
-"disable it. To show it on a specific product, set the %s product meta, handy"
-" for \"Editor's pick\" or \"Staff favourite\" flags."
+"disable it. To show it on a specific product, set the %s product meta, handy "
+"for \"Editor's pick\" or \"Staff favourite\" flags."
 msgstr ""
 "Definiere ein geschäftsweites Abzeichen (Etikett + Farbe). Lass das Etikett "
 "leer, um es zu deaktivieren. Um es für ein bestimmtes Produkt anzuzeigen, "
@@ -494,14 +494,14 @@ msgstr "Manuelle Abzeichenfarbe"
 
 #: src/Admin/Settings.php:314
 msgid ""
-"Pick a semantic colour. Accent is the Marks signature ink (a vermilion red),"
-" Success green, Warning amber, Danger red, Neutral grey. The preview on the "
+"Pick a semantic colour. Accent is the Marks signature ink (a vermilion red), "
+"Success green, Warning amber, Danger red, Neutral grey. The preview on the "
 "right shows each. Exact shades are themeable via the --marks-bg-* variables."
 msgstr ""
 "Wähle eine semantische Farbe. Akzent ist die Marks-Signaturtinte "
 "(Zinnoberrot), Success-Grün, Warning-Bernstein, Danger-Rot und Neutralgrau. "
-"Die Vorschau rechts zeigt jeweils. Genaue Farbtöne können über die Variablen"
-" --marks-bg-* thematisiert werden."
+"Die Vorschau rechts zeigt jeweils. Genaue Farbtöne können über die Variablen "
+"--marks-bg-* thematisiert werden."
 
 #: src/Admin/Settings.php:356
 msgid "Badge preview"
@@ -530,8 +530,8 @@ msgstr "Abzeichen sind noch nicht verfügbar"
 #: src/Admin/Settings.php:387
 msgid ""
 "Marks could not load its badge engine. This usually means a required "
-"dependency is missing or out of date. Please reinstall or update the plugin;"
-" once the engine is present, this screen will show the full badge settings."
+"dependency is missing or out of date. Please reinstall or update the plugin; "
+"once the engine is present, this screen will show the full badge settings."
 msgstr ""
 "Marks konnte seine Badge-Engine nicht laden. Dies bedeutet normalerweise, "
 "dass eine erforderliche Abhängigkeit fehlt oder veraltet ist. Bitte "
@@ -572,3 +572,63 @@ msgstr "Benutzerdefiniertes Etikett (optional)"
 #, php-format
 msgid "Custom label for the %s badge"
 msgstr "Benutzerdefiniertes Etikett für das %s-Abzeichen"
+
+#: src/Admin/ProUpsell.php:78
+msgid "Wkrótce"
+msgstr "Demnächst"
+
+#: src/Admin/ProUpsell.php:78
+msgid "Coming soon"
+msgstr "Demnächst"
+
+#. translators: %d: yearly price in PLN
+#: src/Admin/ProUpsell.php:83
+#, php-format
+msgid "od %d zł/rok"
+msgstr "ab %d zł/Jahr"
+
+#. translators: 1: currency symbol, 2: yearly price
+#: src/Admin/ProUpsell.php:88
+#, php-format
+msgid "from %1$s%2$d/yr"
+msgstr "ab %1$s%2$d/Jahr"
+
+#: src/Admin/ProUpsell.php:97
+msgid "Upgrade to PRO"
+msgstr "Auf PRO upgraden"
+
+#: src/Admin/ProUpsell.php:98
+msgid "Powiadom mnie"
+msgstr "Benachrichtige mich"
+
+#: src/Admin/ProUpsell.php:98
+msgid "Get notified"
+msgstr "Benachrichtige mich"
+
+#: src/Admin/ProUpsell.php:128
+msgid "Permission denied."
+msgstr "Zugriff verweigert."
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:158
+#, php-format
+msgid "Do more with %s"
+msgstr "Mehr erreichen mit %s"
+
+#: src/Admin/ProUpsell.php:165
+msgid "Dismiss this notice"
+msgstr "Diesen Hinweis ausblenden"
+
+#: src/Admin/ProUpsell.php:182
+msgid "Unlock every PRO feature"
+msgstr "Alle PRO-Funktionen freischalten"
+
+#: src/Admin/ProUpsell.php:195
+msgid "one licence, every PRO feature"
+msgstr "eine Lizenz, alle PRO-Funktionen"
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:214
+#, php-format
+msgid "What %s adds"
+msgstr "Was %s ergänzt"
