@@ -4,7 +4,7 @@ Tags: woocommerce, product badges, sale badge, new badge, low stock
 Requires at least: 6.5
 Tested up to: 7.0
 Requires PHP: 8.1
-Stable tag: 1.0.14
+Stable tag: 1.0.15
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -122,6 +122,9 @@ The plugin stores its configuration in two WordPress options (`marks_settings` a
 Sale & Stock Badges includes Polish, German and Spanish translations for the plugin interface. The text domain is `plogins-sale-stock-badges`, so WordPress.org language packs can also override or extend these bundled translations.
 
 == Changelog ==
+
+= 1.0.15 =
+* Fix: the manual badge label on the settings screen is finally used. Set `_marks_manual_text` to 1 on a product and it shows that label; type your own wording in the meta and that product uses it instead. Until now the label was saved and ignored, so a product flagged with 1 wore a badge that said "1".
 
 = 1.0.13 =
 * Translations: completed Polish, German and Spanish for the PRO upgrade panel.
