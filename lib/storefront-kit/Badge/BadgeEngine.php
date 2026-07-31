@@ -98,7 +98,16 @@ final class BadgeEngine
         $secondary = trim((string) $this->meta($product, 'secondary_text'));
 
         if ((bool) ($settings['show_manual_badge'] ?? true) && $manual !== '') {
-            $badges[] = new Badge($manual, $manualStyle !== '' ? $manualStyle : (string) ($settings['manual_badge_style'] ?? 'accent'));
+            // The meta doubles as a flag and as a label. Merchants who follow the
+            // settings screen set it to 1 and write the wording once, store-wide;
+            // merchants who write the wording per product keep doing that. A flag
+            // value without a configured label falls back to the meta, which is
+            // what installs did before the label was honoured at all.
+            $isFlag = in_array(strtolower($manual), ['1', 'yes', 'true', 'on'], true);
+            $configured = trim((string) ($settings['manual_badge_text'] ?? ''));
+            $text = ($isFlag && $configured !== '') ? $configured : $manual;
+
+            $badges[] = new Badge($text, $manualStyle !== '' ? $manualStyle : (string) ($settings['manual_badge_style'] ?? 'accent'));
         }
 
         if ((bool) ($settings['show_secondary_badge'] ?? true) && $secondary !== '') {

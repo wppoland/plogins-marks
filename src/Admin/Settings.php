@@ -295,7 +295,7 @@ final class Settings implements HasHooks
                                 <?php
                                 printf(
                                     /* translators: %s: meta key wrapped in <code>. */
-                                    esc_html__('Define one store-wide badge (label + colour). Leave the label empty to disable it. To show it on a specific product, set the %s product meta, handy for "Editor\'s pick" or "Staff favourite" flags.', 'plogins-sale-stock-badges'),
+                                    esc_html__('Define one store-wide badge (label + colour). To put it on a product, set the %s product meta to 1. Write different wording in the meta instead and that product uses it, so a label here is the default rather than the only option.', 'plogins-sale-stock-badges'),
                                     '<code>_marks_manual_text</code>',
                                 );
                                 ?>
