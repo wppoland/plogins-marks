@@ -61,6 +61,8 @@ pick the render style:
 
 `[marks_badges id="123" context="loop"]`
 
+Reporting a security issue: email hello@wppoland.com, and under our [coordinated disclosure policy](https://wppoland.com/en/security-policy/) we confirm within two business days, assess within five, and patch a critical issue within seven days of confirming it.
+
 == Sale & Stock Badges PRO ==
 
 The free edition ships the core CSS badges (Sale, New, Low stock, Bestseller, manual). **Sale & Stock Badges PRO** adds campaign and rules-based badging:
