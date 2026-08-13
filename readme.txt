@@ -2,7 +2,7 @@
 Contributors: motylanogha
 Tags: woocommerce, product badges, sale badge, new badge, low stock
 Requires at least: 6.5
-Tested up to: 7.0
+Tested up to: 7.1
 Requires PHP: 8.1
 Stable tag: 1.0.15
 License: GPLv2 or later
