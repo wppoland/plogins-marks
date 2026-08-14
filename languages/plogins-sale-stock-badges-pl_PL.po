@@ -2,20 +2,14 @@
 # This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: plogins-marks 0.3.1\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/plogins-marks\n"
-"POT-Creation-Date: 2026-06-16T20:25:05+00:00\n"
-"PO-Revision-Date: 2026-06-15 00:00+0000\n"
-"Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
-"Language-Team: Polish <pl@li.org>\n"
-"Language: pl_PL\n"
+"PO-Revision-Date: 2026-07-19 15:33:49+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
-"|| n%100>14) ? 1 : 2);\n"
-"X-Domain: plogins-marks\n"
-"X-Generator: WP-CLI 2.12.0\n"
+"Plural-Forms: nplurals=3; plural=(n == 1) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.3\n"
+"Language: pl\n"
+"Project-Id-Version: Plugins - Sale &amp; Stock Badges for WooCommerce - Stable (latest release)\n"
 
 #. Plugin Name of the plugin
 #: plogins-marks.php
@@ -105,8 +99,7 @@ msgstr "Pokaż oznaczenia na stronie produktu."
 
 #: src/Admin/Settings.php:163
 msgid "Places badges over the main product image on each product's own page."
-msgstr ""
-"Umieszcza oznaczenia na głównym zdjęciu produktu na jego własnej stronie."
+msgstr "Umieszcza oznaczenia na głównym zdjęciu produktu na jego własnej stronie."
 
 #: src/Admin/Settings.php:167
 msgid "Shop and category listings"
@@ -186,9 +179,7 @@ msgstr "Niski stan"
 
 #: src/Admin/Settings.php:196
 msgid "On stock-managed products at or below the threshold."
-msgstr ""
-"Na produktach z zarządzaniem stanem magazynowym na poziomie progu lub "
-"poniżej."
+msgstr "Na produktach z zarządzaniem stanem magazynowym na poziomie progu lub poniżej."
 
 #: src/Admin/Settings.php:196
 msgid ""
@@ -415,8 +406,7 @@ msgstr "Maks. oznaczeń (strona produktu)"
 
 #: src/Admin/Settings.php:275
 msgid "Maximum number of badges shown on a single product page."
-msgstr ""
-"Maksymalna liczba oznaczeń wyświetlanych na stronie pojedynczego produktu."
+msgstr "Maksymalna liczba oznaczeń wyświetlanych na stronie pojedynczego produktu."
 
 #: src/Admin/Settings.php:275
 msgid ""
@@ -432,8 +422,7 @@ msgstr "Maks. oznaczeń (listy)"
 
 #: src/Admin/Settings.php:276
 msgid "Maximum number of badges shown on shop and category listings."
-msgstr ""
-"Maksymalna liczba oznaczeń wyświetlanych na listach sklepu i kategorii."
+msgstr "Maksymalna liczba oznaczeń wyświetlanych na listach sklepu i kategorii."
 
 #: src/Admin/Settings.php:276
 msgid ""
@@ -506,9 +495,7 @@ msgstr "Przykład tego, jak Twoje oznaczenia będą wyglądać na zdjęciu produ
 
 #: src/Admin/Settings.php:368
 msgid "No badges enabled yet, tick some on the left to see them here."
-msgstr ""
-"Nie włączono jeszcze żadnych oznaczeń, zaznacz kilka po lewej, aby zobaczyć "
-"je tutaj."
+msgstr "Nie włączono jeszcze żadnych oznaczeń, zaznacz kilka po lewej, aby zobaczyć je tutaj."
 
 #: src/Admin/Settings.php:385
 msgid "Badges are not available yet"
