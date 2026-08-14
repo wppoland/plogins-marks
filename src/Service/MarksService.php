@@ -98,6 +98,12 @@ final class MarksService implements HasHooks
     /**
      * When the merchant prefers a single sale treatment, hide WooCommerce's
      * default “Sale!” flash so only the Marks badge shows.
+     *
+     * The flash used to stay unless the Sale badge was also on. A merchant who
+     * swapped the Sale badge for the Discount percent badge, which the settings
+     * screen suggests, ticked "Hide theme Sale! flash", saved, and the shopper
+     * still got the theme's "Sale!" on every card with nothing saying why. The
+     * checkbox stands on its own now: ticked means hidden.
      */
     public function maybeHideNativeSaleFlash(mixed $html, mixed $post, mixed $product): mixed
     {
@@ -107,7 +113,7 @@ final class MarksService implements HasHooks
 
         $settings = $this->settings();
 
-        if (empty($settings['hide_woocommerce_sale_flash']) || empty($settings['show_sale_badge'])) {
+        if (empty($settings['hide_woocommerce_sale_flash'])) {
             return $html;
         }
 

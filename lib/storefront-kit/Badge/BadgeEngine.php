@@ -251,9 +251,33 @@ final class BadgeEngine
 
     private function getDiscountPercent(\WC_Product $product): int
     {
-        $regular = (float) $product->get_regular_price();
-        $sale = (float) $product->get_sale_price();
+        // A variable product keeps no price of its own, get_regular_price()
+        // returns an empty string on the parent, so the maths below produced 0
+        // and the badge was skipped. The merchant ticked "Discount percent" and
+        // saw the Sale badge appear on the same variable product while the
+        // percentage never did. Read the discount off the variations instead and
+        // show the biggest saving a shopper can actually get.
+        if ($product instanceof \WC_Product_Variable) {
+            $best = 0;
 
+            foreach ($product->get_children() as $childId) {
+                $variation = wc_get_product($childId);
+
+                if (! $variation instanceof \WC_Product || ! $variation->is_on_sale()) {
+                    continue;
+                }
+
+                $best = max($best, $this->percentOff((float) $variation->get_regular_price(), (float) $variation->get_sale_price()));
+            }
+
+            return $best;
+        }
+
+        return $this->percentOff((float) $product->get_regular_price(), (float) $product->get_sale_price());
+    }
+
+    private function percentOff(float $regular, float $sale): int
+    {
         if ($regular <= 0 || $sale <= 0 || $sale >= $regular) {
             return 0;
         }
