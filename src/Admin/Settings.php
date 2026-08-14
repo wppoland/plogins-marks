@@ -212,9 +212,9 @@ final class Settings implements HasHooks
                                     $this->checkboxRow(
                                         'hide_woocommerce_sale_flash',
                                         __('Hide theme “Sale!” flash', 'plogins-sale-stock-badges'),
-                                        __('Replace WooCommerce’s default sale flash with the Marks sale badge only.', 'plogins-sale-stock-badges'),
+                                        __('Hide WooCommerce’s own sale flash and leave the sale to the Marks badges.', 'plogins-sale-stock-badges'),
                                         $settings,
-                                        __('Avoids two sale labels on one product card. Marks badges are CSS-only, they never reflow the page. Best used together with the Sale badge above.', 'plogins-sale-stock-badges'),
+                                        __('Avoids two sale labels on one product card. Marks badges are CSS-only, they never reflow the page. Pair it with the Sale badge or the Discount percent badge above, otherwise nothing marks a sale.', 'plogins-sale-stock-badges'),
                                     );
                                     ?>
                                 </tbody>
