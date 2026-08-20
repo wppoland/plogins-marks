@@ -4,7 +4,7 @@ Tags: woocommerce, product badges, sale badge, new badge, low stock
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.0.16
+Stable tag: 1.0.17
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -72,7 +72,7 @@ The free edition ships the core CSS badges (Sale, New, Low stock, Bestseller, ma
 * **Image badges** - show a certification or brand logo (PNG/SVG) on a product
 * **A/B label sets** - rotate competing badge labels with sticky cookies and per-variant impression counts
 
-Everything in the free edition stays free and open. Sale & Stock Badges PRO starts at 19 EUR per year (PLN shown at checkout).
+Everything in the free edition stays free and open. Sale & Stock Badges PRO starts at 19 EUR per year, billed in EUR.
 
 Compare editions and pricing: [plogins.com/plogins-marks-pro/pricing](https://plogins.com/plogins-marks-pro/pricing/)
 
@@ -124,6 +124,9 @@ The plugin stores its configuration in two WordPress options (`marks_settings` a
 Sale & Stock Badges includes Polish, German and Spanish translations for the plugin interface. The text domain is `plogins-sale-stock-badges`, so WordPress.org language packs can also override or extend these bundled translations.
 
 == Changelog ==
+
+= 1.0.17 =
+* Docs: corrected the PRO pricing line. PRO is 19 EUR per year and is billed in EUR. The previous wording implied a PLN option, which we do not offer.
 
 = 1.0.16 =
 * Fix: the Discount percent badge now shows on variable products, using the biggest saving across their variations. Until now a variable product on sale got the Sale badge but never the percentage.

@@ -157,10 +157,10 @@ msgstr ""
 #. Found in description paragraph.
 msgid ""
 "Everything in the free edition stays free and open. Sale &amp; Stock Badges "
-"PRO starts at 19 EUR per year (PLN shown at checkout)."
+"PRO starts at 19 EUR per year, billed in EUR."
 msgstr ""
 "Wszystko w darmowej edycji pozostaje darmowe i otwarte. Sale &amp; Stock "
-"Badges PRO zaczyna się od 19 EUR rocznie (PLN wyświetlane przy płatności)."
+"Badges PRO zaczyna się od 19 EUR rocznie, rozliczane w EUR."
 
 #. Found in description paragraph.
 msgid ""
