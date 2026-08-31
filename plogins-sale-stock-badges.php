@@ -25,7 +25,7 @@ namespace Marks;
 
 defined('ABSPATH') || exit;
 
-const VERSION     = '1.0.17';
+const VERSION     = '1.0.19';
 const PLUGIN_FILE = __FILE__;
 
 define('MARKS_DIR', plugin_dir_path(__FILE__));
