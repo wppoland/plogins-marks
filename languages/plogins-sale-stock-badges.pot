@@ -318,7 +318,7 @@ msgid "Free-shipping classes"
 msgstr ""
 
 #: src/Admin/Settings.php:239
-msgid "Enter the slugs of your WooCommerce shipping classes that ship free, separated by commas. Find slugs under WooCommerce → Settings → Shipping → Classes."
+msgid "Enter the slugs of your WooCommerce shipping classes that ship free, separated by commas. Find slugs under WooCommerce > Settings > Shipping > Classes."
 msgstr ""
 
 #: src/Admin/Settings.php:250

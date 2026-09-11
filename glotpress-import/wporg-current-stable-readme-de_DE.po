@@ -102,10 +102,10 @@ msgstr "Aktiviere es. WooCommerce muss aktiv sein."
 #. Found in installation list item.
 msgid ""
 "Upload the plugin to <code>/wp-content/plugins/marks</code>, or install via "
-"Plugins → Add New."
+"Plugins > Add New."
 msgstr ""
 "Lade das Plugin nach <code>/wp-content/plugins/marks</code> hoch oder "
-"installiere es über Plugins → Installieren."
+"installiere es über Plugins > Installieren."
 
 #. Found in description paragraph.
 msgid ""

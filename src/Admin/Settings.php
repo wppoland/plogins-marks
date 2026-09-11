@@ -236,7 +236,7 @@ final class Settings implements HasHooks
                                     <tr>
                                         <th scope="row">
                                             <label for="marks_free_shipping_classes"><?php esc_html_e('Free-shipping classes', 'plogins-sale-stock-badges'); ?></label>
-                                            <?php $this->help(__('Enter the slugs of your WooCommerce shipping classes that ship free, separated by commas. Find slugs under WooCommerce → Settings → Shipping → Classes.', 'plogins-sale-stock-badges')); ?>
+                                            <?php $this->help(__('Enter the slugs of your WooCommerce shipping classes that ship free, separated by commas. Find slugs under WooCommerce > Settings > Shipping > Classes.', 'plogins-sale-stock-badges')); ?>
                                         </th>
                                         <td>
                                             <input

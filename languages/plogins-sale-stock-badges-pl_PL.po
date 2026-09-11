@@ -344,12 +344,12 @@ msgstr "Klasy z darmową wysyłką"
 #: src/Admin/Settings.php:229
 msgid ""
 "Enter the slugs of your WooCommerce shipping classes that ship free, "
-"separated by commas. Find slugs under WooCommerce → Settings → Shipping → "
+"separated by commas. Find slugs under WooCommerce > Settings > Shipping > "
 "Classes."
 msgstr ""
 "Wpisz uproszczone nazwy (slugi) klas wysyłki WooCommerce z darmową dostawą, "
-"oddzielone przecinkami. Slugi znajdziesz w WooCommerce → Ustawienia → "
-"Wysyłka → Klasy."
+"oddzielone przecinkami. Slugi znajdziesz w WooCommerce > Ustawienia > "
+"Wysyłka > Klasy."
 
 #: src/Admin/Settings.php:240
 msgid ""
