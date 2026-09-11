@@ -63,7 +63,7 @@ den Renderstil zu wählen:
 
 == Installation ==
 
-1. Lade das Plugin nach `/wp-content/plugins/marks` hoch oder installiere es über Plugins → Installieren.
+1. Lade das Plugin nach `/wp-content/plugins/marks` hoch oder installiere es über Plugins > Installieren.
 2. Aktiviere es. WooCommerce muss aktiv sein.
 3. Gehe zum Menü <strong>Marks</strong>, aktiviere die Abzeichen und wähle, welche automatischen Abzeichen angezeigt werden.
 

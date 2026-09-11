@@ -360,12 +360,12 @@ msgstr "Klassen für kostenlosen Versand"
 #: src/Admin/Settings.php:229
 msgid ""
 "Enter the slugs of your WooCommerce shipping classes that ship free, "
-"separated by commas. Find slugs under WooCommerce → Settings → Shipping → "
+"separated by commas. Find slugs under WooCommerce > Settings > Shipping > "
 "Classes."
 msgstr ""
 "Gib die Slugs deiner WooCommerce-Versandklassen, die kostenlos versendet "
-"werden, durch Kommas getrennt ein. Slugs findest du unter WooCommerce → "
-"Einstellungen → Versand → Klassen."
+"werden, durch Kommas getrennt ein. Slugs findest du unter WooCommerce > "
+"Einstellungen > Versand > Klassen."
 
 #: src/Admin/Settings.php:240
 msgid ""

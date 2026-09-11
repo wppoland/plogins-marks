@@ -63,7 +63,7 @@ elegir el estilo de renderizado:
 
 == Installation ==
 
-1. Sube el plugin a `/wp-content/plugins/marks` o instálalo desde Plugins → Añadir nuevo.
+1. Sube el plugin a `/wp-content/plugins/marks` o instálalo desde Plugins > Añadir nuevo.
 2. Actívalo. WooCommerce debe estar activo.
 3. Ve al menú <strong>Marks</strong>, activa las insignias y elige qué insignias automáticas mostrar.
 

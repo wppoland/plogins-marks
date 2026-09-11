@@ -63,7 +63,7 @@ wybrać styl renderowania:
 
 == Installation ==
 
-1. Prześlij wtyczkę do `/wp-content/plugins/marks` lub zainstaluj przez Wtyczki → Dodaj nową.
+1. Prześlij wtyczkę do `/wp-content/plugins/marks` lub zainstaluj przez Wtyczki > Dodaj nową.
 2. Włącz ją. WooCommerce musi być aktywne.
 3. Przejdź do menu <strong>Marks</strong>, włącz oznaczenia i wybierz, które automatyczne oznaczenia mają być wyświetlane.
 
