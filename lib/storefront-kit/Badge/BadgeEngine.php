@@ -258,16 +258,22 @@ final class BadgeEngine
         // percentage never did. Read the discount off the variations instead and
         // show the biggest saving a shopper can actually get.
         if ($product instanceof \WC_Product_Variable) {
-            $best = 0;
+            // get_variation_prices() reads the same cached price array that
+            // WooCommerce builds to print the price range on this very card, so
+            // in the shop loop the numbers are already in memory. Loading one
+            // WC_Product per variation to read two prices cost a page with
+            // twelve variable products one product object per variation per
+            // card, every render, before a shopper had touched anything.
+            $prices  = $product->get_variation_prices(true);
+            $regular = is_array($prices['regular_price'] ?? null) ? $prices['regular_price'] : [];
+            $sale    = is_array($prices['sale_price'] ?? null) ? $prices['sale_price'] : [];
+            $best    = 0;
 
-            foreach ($product->get_children() as $childId) {
-                $variation = wc_get_product($childId);
-
-                if (! $variation instanceof \WC_Product || ! $variation->is_on_sale()) {
-                    continue;
-                }
-
-                $best = max($best, $this->percentOff((float) $variation->get_regular_price(), (float) $variation->get_sale_price()));
+            foreach ($regular as $variationId => $regularPrice) {
+                // WooCommerce stores the regular price as the sale price when a
+                // variation is not on sale, so percentOff() returns 0 for it and
+                // the "is it on sale" question does not need asking twice.
+                $best = max($best, $this->percentOff((float) $regularPrice, (float) ($sale[$variationId] ?? 0)));
             }
 
             return $best;
