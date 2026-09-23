@@ -1,10 +1,10 @@
-=== Sale & Stock Badges for WooCommerce ===
+=== Marks - Sale & Stock Badges for WooCommerce ===
 Contributors: motylanogha
 Tags: woocommerce, product badges, sale badge, new badge, low stock
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.0.27
+Stable tag: 1.0.28
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -124,6 +124,9 @@ The plugin stores its configuration in two WordPress options (`marks_settings` a
 Sale & Stock Badges is fully translatable and ships the `plogins-sale-stock-badges.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.0.28 =
+* Display name is now "Marks - Sale & Stock Badges for WooCommerce", matching the name the plugin is sold under. The slug, the text domain and every option key are unchanged, so nothing on an existing install moves.
 
 = 1.0.27 =
 * The Plugin URI in the header pointed at a page that does not exist. It used the WordPress.org slug, while the plugin page on plogins.com uses the original one.
