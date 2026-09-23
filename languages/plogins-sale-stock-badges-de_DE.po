@@ -281,7 +281,7 @@ msgid ""
 "Avoids two sale labels on one product card. Marks badges are CSS-only, they "
 "never reflow the page. Best used together with the Sale badge above."
 msgstr ""
-"Vermeidet zwei Verkaufsetiketten auf einer Produktkarte. Markierungs-Badges "
+"Vermeidet zwei Verkaufsetiketten auf einer Produktkarte. Marks-Badges "
 "sind nur CSS-basiert, sie fließen nie in die Seite ein. Am besten zusammen "
 "mit dem Sale-Badge oben verwenden."
 
