@@ -4,7 +4,7 @@ Tags: woocommerce, product badges, sale badge, new badge, low stock
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.0.29
+Stable tag: 1.0.30
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -124,6 +124,12 @@ The plugin stores its configuration in two WordPress options (`marks_settings` a
 Sale & Stock Badges is fully translatable and ships the `plogins-sale-stock-badges.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.0.30 =
+* Fixed: on block themes, including the default Twenty Twenty-Five, the shop and category badges of every product piled up in one corner of the page instead of sitting on each product image.
+* Fixed: on block themes the single product badges sat at the top edge of the page, over the breadcrumb, instead of on the product image. They now render inside the product gallery.
+* Fixed: "Hide theme Sale! flash" did nothing on block themes, where the sale flash is a block rather than the classic flash.
+* Fixed: badges in shop listings were rendered with the single product styling, because the template never received its context.
 
 = 1.0.29 =
 * The upgrade notice's "Coming soon" and "Get notified" labels are English source strings for every language; Polish sites used to get their own Polish source text, which translators in other languages then saw untranslated.

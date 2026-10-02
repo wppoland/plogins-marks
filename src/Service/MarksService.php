@@ -73,6 +73,16 @@ final class MarksService implements HasHooks
             add_action('wp_enqueue_scripts', [$this, 'enqueueAssets']);
             add_shortcode('marks_badges', [$this, 'renderShortcode']);
             add_filter('woocommerce_sale_flash', [$this, 'maybeHideNativeSaleFlash'], 10, 3);
+            add_filter('render_block_woocommerce/product-sale-badge', [$this, 'maybeHideSaleBadgeBlock']);
+
+            // A block theme fires woocommerce_before_single_product_summary
+            // before the first block of the template, so the badges landed at
+            // the top of the page instead of on the image. Put them inside the
+            // gallery block there, which is positioned and holds the image.
+            if (function_exists('wp_is_block_theme') && wp_is_block_theme()) {
+                remove_action('woocommerce_before_single_product_summary', [$this->engine, 'renderSingleBadges'], 6);
+                add_filter('render_block_woocommerce/product-image-gallery', [$this, 'prependSingleBadges']);
+            }
 
             return;
         }
@@ -118,6 +128,42 @@ final class MarksService implements HasHooks
         }
 
         return false;
+    }
+
+    /**
+     * Block themes print the sale flash as the Product Sale Badge block, which
+     * never passes through `woocommerce_sale_flash`, so the setting only
+     * worked on classic themes.
+     */
+    public function maybeHideSaleBadgeBlock(mixed $html): mixed
+    {
+        if (! $this->isEnabled() || empty($this->settings()['hide_woocommerce_sale_flash'])) {
+            return $html;
+        }
+
+        return '';
+    }
+
+    /**
+     * Single-product badges inside the block theme's gallery wrapper.
+     */
+    public function prependSingleBadges(mixed $html): mixed
+    {
+        if (! is_string($html) || ! $this->engine instanceof BadgeEngine) {
+            return $html;
+        }
+
+        ob_start();
+        $this->engine->renderSingleBadges();
+        $badges = (string) ob_get_clean();
+
+        if ($badges === '') {
+            return $html;
+        }
+
+        $placed = preg_replace_callback('/^\s*<div\b[^>]*>/', static fn (array $m): string => $m[0] . $badges, $html, 1, $count);
+
+        return $count === 1 && is_string($placed) ? $placed : $badges . $html;
     }
 
     /**
@@ -231,17 +277,25 @@ final class MarksService implements HasHooks
     }
 
     /**
-     * @param array<string, mixed> $context
+     * The variables are extracted into the template's scope, so this method's
+     * own locals must not share a name with any key. It used to take `$context`,
+     * which EXTR_SKIP then refused to overwrite, so the template received the
+     * whole array and every badge group rendered as `single`, in the shop loop
+     * too.
+     *
+     * @param array<string, mixed> $vars
      */
-    private function renderTemplate(string $template, array $context): void
+    private function renderTemplate(string $template, array $vars): void
     {
-        $file = MARKS_DIR . 'templates/' . $template . '.php';
+        $marksTemplateFile = MARKS_DIR . 'templates/' . $template . '.php';
 
-        if (! is_readable($file)) {
+        if (! is_readable($marksTemplateFile)) {
             return;
         }
 
-        extract($context, EXTR_SKIP);
-        require $file;
+        unset($template);
+        extract($vars, EXTR_SKIP);
+        unset($vars);
+        require $marksTemplateFile;
     }
 }
