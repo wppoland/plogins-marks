@@ -70,9 +70,12 @@
 	pointer-events: none;
 }
 
-/* WooCommerce product cells are positioned relatively in most themes; ensure it. */
+/* WooCommerce product cells are positioned relatively in most themes; ensure it.
+   The block Product Collection's cells are not, which piled every card's
+   badges into one corner of the page. */
 .woocommerce ul.products li.product,
-.woocommerce div.product div.images {
+.woocommerce div.product div.images,
+li.wc-block-product {
 	position: relative;
 }
 
