@@ -4,7 +4,7 @@ Tags: woocommerce, product badges, sale badge, new badge, low stock
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.0.30
+Stable tag: 1.0.31
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -124,6 +124,9 @@ The plugin stores its configuration in two WordPress options (`marks_settings` a
 Sale & Stock Badges is fully translatable and ships the `plogins-sale-stock-badges.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.0.31 =
+* Security (low): the [marks_badges id=N] shortcode showed the badges of any product ID, including drafts, private and password protected products. A contributor could put the shortcode in a post and read, in preview, which badges an unpublished product would get. It now renders nothing for a product the viewer cannot open.
 
 = 1.0.30 =
 * Fixed: on block themes, including the default Twenty Twenty-Five, the shop and category badges of every product piled up in one corner of the page instead of sitting on each product image.
