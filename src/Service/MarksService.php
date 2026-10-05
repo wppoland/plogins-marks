@@ -234,7 +234,15 @@ final class MarksService implements HasHooks
         if ($id > 0) {
             $product = wc_get_product($id);
 
-            return $product instanceof \WC_Product ? $product : null;
+            if (! $product instanceof \WC_Product) {
+                return null;
+            }
+
+            // An explicit ID must not reveal a draft, private or password
+            // protected product to someone who could not open it.
+            $public = $product->get_status() === 'publish' && $product->get_post_password() === '';
+
+            return $public || current_user_can('read_post', $id) ? $product : null;
         }
 
         global $product;
