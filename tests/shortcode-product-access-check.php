@@ -18,7 +18,10 @@ define('MARKS_DIR', dirname(__DIR__) . '/');
 
 class WC_Product
 {
-    public function __construct(private string $status, private string $password = '') {}
+    public function __construct(private string $status, private string $password = '', private int $parent = 0, private int $id = 0) {}
+    public function is_type($t) { return $t === 'variation' && $this->parent > 0; }
+    public function get_parent_id() { return $this->parent; }
+    public function get_id() { return $this->id; }
     public function get_status() { return $this->status; }
     public function get_post_password() { return $this->password; }
 }
@@ -28,6 +31,7 @@ $products = [
     2 => new WC_Product('draft'),
     3 => new WC_Product('private'),
     4 => new WC_Product('publish', 'secret'),
+    5 => new WC_Product('publish', '', 2),
 ];
 $canRead = false;
 
@@ -49,7 +53,8 @@ $expect   = [
     [4, false, false],
     [2, true, true],
     [3, true, true],
-    [4, true, true],
+    [4, true, false],
+    [5, false, false],
     [99, true, false],
 ];
 
