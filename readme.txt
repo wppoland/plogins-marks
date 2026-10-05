@@ -242,3 +242,8 @@ Sale & Stock Badges is fully translatable and ships the `plogins-sale-stock-badg
 
 = 0.1.0 =
 * Initial release: automatic Sale / New / Low stock / Bestseller badges, a manual badge, and a settings screen. CSS-only.
+
+== Upgrade Notice ==
+
+= 1.0.31 =
+Security release. Not exposed to visitors: only a user who can write posts could see the badges of an unpublished or password-protected product in a post preview. Update, nothing else to do.
