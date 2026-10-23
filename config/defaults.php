@@ -63,6 +63,10 @@ return [
 
     // Render hints consumed by the CSS-only template.
     'shape'             => 'pill',
+    // Badge group corner: 'start' (top left, top right in RTL) or 'end'.
+    'corner'            => 'start',
+    // Brand ink for accent badges (Bestseller, Accent manual badge).
+    'ink_color'         => '#c52d1a',
     'uppercase'         => false,
     'max_badges_single' => 4,
     'max_badges_loop'   => 3,

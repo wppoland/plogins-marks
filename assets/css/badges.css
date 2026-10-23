@@ -39,6 +39,9 @@
 	 */
 	--marks-ink: #c52d1a;
 	--marks-ink-deep: #a8240f;
+	/* Label text on the ink. The brand colour setting sets it to white or
+	   near-black, whichever reads better on the chosen ink. */
+	--marks-ink-fg: #fff;
 
 	--marks-fg: #fff;
 	/* Two-layer shadow: a tight contact line plus a soft lift, so the label
@@ -70,6 +73,17 @@
 	pointer-events: none;
 }
 
+/* Corner setting: the inline-end corner (top right in left-to-right). */
+.marks-badges--end {
+	inset-inline-start: auto;
+	inset-inline-end: var(--marks-inset);
+	align-items: flex-end;
+}
+
+.marks-badges--end .marks-badge {
+	transform-origin: top right;
+}
+
 /* WooCommerce product cells are positioned relatively in most themes; ensure it.
    The block Product Collection's cells are not, which piled every card's
    badges into one corner of the page. */
@@ -89,7 +103,7 @@ li.wc-block-product {
 	font-size: var(--marks-font-size);
 	font-weight: var(--marks-font-weight);
 	line-height: 1.35;
-	color: var(--marks-fg);
+	color: var(--marks-ink-fg);
 	background: var(--marks-bg);
 	border-radius: var(--marks-radius);
 	box-shadow: var(--marks-shadow);
@@ -160,18 +174,22 @@ li.wc-block-product {
 }
 
 .marks-badge--success {
+	color: var(--marks-fg);
 	background: var(--marks-bg-success);
 }
 
 .marks-badge--warning {
+	color: var(--marks-fg);
 	background: var(--marks-bg-warning);
 }
 
 .marks-badge--danger {
+	color: var(--marks-fg);
 	background: var(--marks-bg-danger);
 }
 
 .marks-badge--neutral {
+	color: var(--marks-fg);
 	background: var(--marks-bg-neutral);
 }
 
