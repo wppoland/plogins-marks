@@ -198,6 +198,7 @@ final class Settings implements HasHooks
                             <p class="description">
                                 <?php esc_html_e('These appear on their own based on each product\'s live state, no manual tagging needed. Tick the ones you want and, optionally, give them your own wording. Leave a label blank to use the translated default.', 'plogins-sale-stock-badges'); ?>
                             </p>
+                            <p class="description"><?php echo esc_html($this->tokenHelp()); ?></p>
                             <table class="form-table" role="presentation">
                                 <tbody>
                                     <?php
@@ -305,7 +306,7 @@ final class Settings implements HasHooks
                                     <tr>
                                         <th scope="row">
                                             <label for="marks_manual_badge_text"><?php esc_html_e('Manual badge label', 'plogins-sale-stock-badges'); ?></label>
-                                            <?php $this->help(__('The text shown by your manual badge, e.g. "Editor\'s pick". Leave blank to turn the manual badge off entirely.', 'plogins-sale-stock-badges')); ?>
+                                            <?php $this->help(__('The text shown by your manual badge, e.g. "Editor\'s pick". Leave blank to turn the manual badge off entirely.', 'plogins-sale-stock-badges') . ' ' . $this->tokenHelp()); ?>
                                         </th>
                                         <td>
                                             <input
@@ -502,6 +503,14 @@ final class Settings implements HasHooks
             </td>
         </tr>
         <?php
+    }
+
+    /**
+     * Help text for the tokens every badge label accepts.
+     */
+    private function tokenHelp(): string
+    {
+        return __('Labels accept two tokens: {stock} for the units left, hidden when the product does not manage stock or has none left, and {discount_percent} for the percent off the regular price, hidden when there is no discount. Example: "Only {stock} left".', 'plogins-sale-stock-badges');
     }
 
     /**
