@@ -147,6 +147,7 @@ final class BadgeEngine
         }
 
         $badges = apply_filters('marks_product_badges', $badges, $product, $context, $settings);
+        $badges = array_values(array_filter(array_map(fn (Badge $badge): ?Badge => $this->replaceTokens($badge, $product), $badges)));
 
         return array_slice($this->dedupe($badges), 0, $this->badgeLimit($context, $settings));
     }
@@ -280,6 +281,43 @@ final class BadgeEngine
         }
 
         return $this->percentOff((float) $product->get_regular_price(), (float) $product->get_sale_price());
+    }
+
+    /**
+     * Fill the {stock} and {discount_percent} tokens in a badge label. A badge
+     * whose token has no value (stock not managed or none left, no discount)
+     * is dropped rather than shown with a blank or a zero. Image badges carry a
+     * URL, not a label, so they pass through untouched.
+     */
+    private function replaceTokens(Badge $badge, \WC_Product $product): ?Badge
+    {
+        if (str_starts_with($badge->style, 'image') || ! str_contains($badge->text, '{')) {
+            return $badge;
+        }
+
+        $values = [];
+
+        if (str_contains($badge->text, '{stock}')) {
+            $stock = $product->managing_stock() ? $product->get_stock_quantity() : null;
+
+            if ($stock === null || $stock < 1) {
+                return null;
+            }
+
+            $values['{stock}'] = (string) (int) $stock;
+        }
+
+        if (str_contains($badge->text, '{discount_percent}')) {
+            $discount = $this->getDiscountPercent($product);
+
+            if ($discount < 1) {
+                return null;
+            }
+
+            $values['{discount_percent}'] = (string) $discount;
+        }
+
+        return $values === [] ? $badge : new Badge(strtr($badge->text, $values), $badge->style);
     }
 
     private function percentOff(float $regular, float $sale): int
