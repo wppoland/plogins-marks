@@ -4,7 +4,7 @@ Tags: woocommerce, product badges, sale badge, new badge, low stock
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.0.31
+Stable tag: 1.0.32
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -124,6 +124,9 @@ The plugin stores its configuration in two WordPress options (`marks_settings` a
 Sale & Stock Badges is fully translatable and ships the `plogins-sale-stock-badges.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.0.32 =
+* New: badge labels accept the {stock} and {discount_percent} tokens, e.g. "Only {stock} left" or "Save {discount_percent}%". A badge whose token has no value is hidden. For variable products {discount_percent} is the biggest saving among the variations.
 
 = 1.0.31 =
 * Security (low): the [marks_badges id=N] shortcode showed the badges of any product ID, including drafts, private and password protected products. A contributor could put the shortcode in a post and read, in preview, which badges an unpublished product would get. It now renders nothing for a product the viewer cannot open.
