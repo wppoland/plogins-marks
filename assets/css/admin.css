@@ -164,6 +164,8 @@
 }
 
 .marks-preview__badges {
+	align-self: start;
+	justify-self: start;
 	display: flex;
 	flex-wrap: wrap;
 	gap: 0.4rem;
@@ -186,6 +188,11 @@
 	border-radius: 4px;
 }
 
+.marks-preview--end .marks-preview__badges {
+	justify-self: end;
+	justify-content: flex-end;
+}
+
 .marks-preview--upper .marks-preview__badge {
 	text-transform: uppercase;
 	letter-spacing: 0.03em;
@@ -199,7 +206,8 @@
  * danger 6.30, neutral 12.82.
  */
 .marks-preview__badge--accent {
-	background: #c52d1a;
+	color: var(--marks-preview-ink-fg, #fff);
+	background: var(--marks-preview-ink, #c52d1a);
 }
 
 .marks-preview__badge--success {

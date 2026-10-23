@@ -4,7 +4,7 @@ Tags: woocommerce, product badges, sale badge, new badge, low stock
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.0.32
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -43,8 +43,9 @@ label and colour. Settings are sanitised and clamped on save.
 * Custom label text for every automatic badge.
 * Configurable thresholds: newness window, low-stock level, bestseller sales.
 * Free-shipping detection by product shipping class.
-* Placement controls: single product page and/or shop and category listings.
-* Appearance controls: pill or square shape, uppercase, and a per-context badge cap.
+* Placement controls: single product page and/or shop and category listings, including Product Collection blocks and the [products] shortcode on any page.
+* Appearance controls: pill or square shape, top left or top right corner (mirrored in right-to-left languages), uppercase, and a per-context badge cap.
+* Brand colour for Accent badges (Bestseller and an Accent manual badge), with the label text switching between white and dark to stay readable.
 * `[marks_badges]` shortcode to place badges anywhere.
 * A single manual badge (label + colour) shown per product via meta.
 * CSS-only rendering: no JavaScript, no layout shift.
@@ -113,6 +114,7 @@ Yes. This plugin is compatible with WordPress Multisite. Network activate it or 
 1. Automatic badges on a shop listing.
 2. The Sale & Stock Badges settings screen.
 3. Badge labels filled from the {stock} and {discount_percent} tokens: "Only 3 left" and "-25%" in the shop loop.
+4. Sale and Bestseller badges on a single product page photo.
 
 == External Services ==
 
@@ -125,6 +127,13 @@ The plugin stores its configuration in two WordPress options (`marks_settings` a
 Sale & Stock Badges is fully translatable and ships the `plogins-sale-stock-badges.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.1.0 =
+* New: badge corner setting, top left or top right of the product image. In right-to-left languages the corners mirror.
+* New: brand colour setting for Accent badges (Bestseller and a manual badge set to Accent). The label text turns dark on a light colour so it stays readable.
+* Fixed: a Product Collection block that does not follow the shop query, such as a product grid on the home page, showed no badges. Its cards now get the listing badges on the image.
+* Fixed: on a page with a [products] shortcode or a product grid block, such as the home page, badges printed without their stylesheet. The stylesheet now loads wherever badges render.
+* Fixed: the manual badge colour list called Accent "blue" while it is the vermilion brand colour.
 
 = 1.0.32 =
 * New: badge labels accept the {stock} and {discount_percent} tokens, e.g. "Only {stock} left" or "Save {discount_percent}%". A badge whose token has no value is hidden. For variable products {discount_percent} is the biggest saving among the variations.
