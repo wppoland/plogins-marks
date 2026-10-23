@@ -112,6 +112,7 @@ Yes. This plugin is compatible with WordPress Multisite. Network activate it or 
 
 1. Automatic badges on a shop listing.
 2. The Sale & Stock Badges settings screen.
+3. Badge labels filled from the {stock} and {discount_percent} tokens: "Only 3 left" and "-25%" in the shop loop.
 
 == External Services ==
 
