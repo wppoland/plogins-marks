@@ -124,6 +124,18 @@
 			!! ( upper && upper.checked )
 		);
 
+		var corner = field( 'corner' );
+		preview.parentElement.classList.toggle(
+			'marks-preview--end',
+			!! ( corner && corner.value === 'end' )
+		);
+
+		var ink = field( 'ink_color' );
+		if ( ink && /^#[0-9a-f]{6}$/i.test( ink.value ) ) {
+			preview.parentElement.style.setProperty( '--marks-preview-ink', ink.value );
+			preview.parentElement.style.setProperty( '--marks-preview-ink-fg', inkText( ink.value ) );
+		}
+
 		var html = '';
 
 		rules.forEach( function ( rule ) {
@@ -158,6 +170,17 @@
 			emptyEl.hidden = true;
 		}
 		preview.innerHTML = html;
+	}
+
+	// Same rule as MarksService::inkVars(): white or near-black, whichever
+	// contrasts more with the ink.
+	function inkText( hex ) {
+		var lum = [ 1, 3, 5 ].reduce( function ( sum, at, i ) {
+			var c = parseInt( hex.substr( at, 2 ), 16 ) / 255;
+			c = c <= 0.03928 ? c / 12.92 : Math.pow( ( c + 0.055 ) / 1.055, 2.4 );
+			return sum + c * [ 0.2126, 0.7152, 0.0722 ][ i ];
+		}, 0 );
+		return 1.05 / ( lum + 0.05 ) >= ( lum + 0.05 ) / 0.0661 ? '#fff' : '#1d2327';
 	}
 
 	function badge( text, style ) {

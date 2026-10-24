@@ -19,6 +19,7 @@ define('MARKS_DIR', dirname(__DIR__) . '/');
 function esc_attr($text) { return htmlspecialchars((string) $text, ENT_QUOTES); }
 function esc_html($text) { return htmlspecialchars((string) $text, ENT_QUOTES); }
 function esc_url($url) { return htmlspecialchars((string) $url, ENT_QUOTES); }
+function get_option($name, $default = false) { return $default; }
 function sanitize_html_class($class) { return preg_replace('/[^A-Za-z0-9_-]/', '', (string) $class); }
 
 require MARKS_DIR . 'lib/storefront-kit/Badge/Badge.php';
