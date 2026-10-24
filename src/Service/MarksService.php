@@ -31,6 +31,9 @@ final class MarksService implements HasHooks
      */
     private const META_SECONDARY_TEXT = '_marks_secondary_text';
 
+    /** The packaged badge ink, see badges.css. */
+    public const DEFAULT_INK = '#c52d1a';
+
     private ?BadgeEngine $engine = null;
 
     public function __construct()
@@ -75,6 +78,12 @@ final class MarksService implements HasHooks
             add_filter('woocommerce_sale_flash', [$this, 'maybeHideNativeSaleFlash'], 10, 3);
             add_filter('render_block_woocommerce/product-sale-badge', [$this, 'maybeHideSaleBadgeBlock']);
 
+            // A Product Collection block that does not inherit the main query
+            // (a home page grid, say) never fires the classic loop hook, so its
+            // cards had no badges. An inherited one (the shop archive) does,
+            // through WooCommerce's compatibility layer, so it is left alone.
+            add_filter('render_block_woocommerce/product-image', [$this, 'prependLoopBadges'], 20, 3);
+
             // A block theme fires woocommerce_before_single_product_summary
             // before the first block of the template, so the badges landed at
             // the top of the page instead of on the image. Put them inside the
@@ -93,10 +102,33 @@ final class MarksService implements HasHooks
 
     public function enqueueAssets(): void
     {
-        if (! $this->isEnabled() || ! (is_product() || is_shop() || is_product_category() || is_product_tag())) {
+        if (! $this->isEnabled() || ! (is_product() || is_shop() || is_product_category() || is_product_tag() || $this->postHasProductGrid())) {
             return;
         }
 
+        $this->enqueueStyle();
+    }
+
+    /**
+     * Badges also render outside the shop pages (a home page with a product
+     * grid). renderTemplate() enqueues late as the catch-all; catching the
+     * common cases here keeps the stylesheet in the head.
+     */
+    private function postHasProductGrid(): bool
+    {
+        $post = is_singular() ? get_post() : null;
+
+        if (! $post instanceof \WP_Post) {
+            return false;
+        }
+
+        return has_block('woocommerce/product-collection', $post)
+            || has_block('woocommerce/product-template', $post)
+            || has_shortcode($post->post_content, 'products');
+    }
+
+    private function enqueueStyle(): void
+    {
         wp_enqueue_style(
             'marks',
             MARKS_URL . 'assets/css/badges.css',
@@ -157,6 +189,40 @@ final class MarksService implements HasHooks
         $this->engine->renderSingleBadges();
         $badges = (string) ob_get_clean();
 
+        return $this->prependInside($html, $badges);
+    }
+
+    /**
+     * Loop badges on a block Product Collection card's image.
+     */
+    public function prependLoopBadges(mixed $html, mixed $parsedBlock = null, mixed $block = null): mixed
+    {
+        // WooCommerce's archive compatibility layer marks the blocks it fires
+        // the classic hooks around with isInherited; the engine stamps those.
+        $inherited = is_array($parsedBlock) && ! empty($parsedBlock['attrs']['isInherited']);
+
+        if ($inherited || ! is_string($html) || str_contains($html, 'marks-badges') || ! $this->engine instanceof BadgeEngine) {
+            return $html;
+        }
+
+        $productId = $block instanceof \WP_Block ? (int) ($block->context['postId'] ?? 0) : 0;
+
+        // The product's own image on its single page carries the single badges.
+        if ($productId < 1 || ! ($this->settings()['show_on_loop'] ?? true) || (is_product() && $productId === get_queried_object_id())) {
+            return $html;
+        }
+
+        $product = wc_get_product($productId);
+
+        return $product instanceof \WC_Product ? $this->prependInside($html, $this->badgesHtml($product, 'loop')) : $html;
+    }
+
+    /**
+     * Put the badge group just inside the block's first wrapper, which is
+     * positioned and holds the image.
+     */
+    private function prependInside(string $html, string $badges): string
+    {
         if ($badges === '') {
             return $html;
         }
@@ -197,19 +263,20 @@ final class MarksService implements HasHooks
             return '';
         }
 
-        $context = $atts['context'] === 'loop' ? 'loop' : 'single';
-        $badges  = $this->engine->getBadges($product, $context);
+        return $this->badgesHtml($product, $atts['context'] === 'loop' ? 'loop' : 'single');
+    }
+
+    private function badgesHtml(\WC_Product $product, string $context): string
+    {
+        if (! $this->engine instanceof BadgeEngine) {
+            return '';
+        }
+
+        $badges = $this->engine->getBadges($product, $context);
 
         if ($badges === []) {
             return '';
         }
-
-        wp_enqueue_style(
-            'marks',
-            MARKS_URL . 'assets/css/badges.css',
-            [],
-            \Marks\VERSION,
-        );
 
         $settings = $this->settings();
 
@@ -267,6 +334,32 @@ final class MarksService implements HasHooks
         return null;
     }
 
+    /**
+     * Inline custom properties for a brand ink, or '' for the packaged one
+     * (so the stylesheet's dark-scheme ink still applies). The label text is
+     * white or near-black, whichever contrasts more with the ink.
+     */
+    public static function inkVars(string $hex): string
+    {
+        $hex = strtolower(trim($hex));
+
+        if (! preg_match('/^#[0-9a-f]{6}$/', $hex) || $hex === self::DEFAULT_INK) {
+            return '';
+        }
+
+        $channel = static function (string $pair): float {
+            $c = hexdec($pair) / 255;
+
+            return $c <= 0.03928 ? $c / 12.92 : (($c + 0.055) / 1.055) ** 2.4;
+        };
+        $lum = 0.2126 * $channel(substr($hex, 1, 2)) + 0.7152 * $channel(substr($hex, 3, 2)) + 0.0722 * $channel(substr($hex, 5, 2));
+
+        // Contrast with white is 1.05 / (L + 0.05); with #1d2327 (L ~0.0161) it is (L + 0.05) / 0.0661.
+        $fg = 1.05 / ($lum + 0.05) >= ($lum + 0.05) / 0.0661 ? '#fff' : '#1d2327';
+
+        return '--marks-ink:' . $hex . ';--marks-ink-fg:' . $fg . ';';
+    }
+
     private function isEnabled(): bool
     {
         return (bool) ($this->settings()['enabled'] ?? false);
@@ -307,6 +400,18 @@ final class MarksService implements HasHooks
         if (! is_readable($marksTemplateFile)) {
             return;
         }
+
+        // Every render path passes through here, so the stylesheet loads
+        // wherever badges print (late, in the footer, when the head gate in
+        // enqueueAssets() did not see the grid coming).
+        if (function_exists('wp_enqueue_style')) {
+            $this->enqueueStyle();
+        }
+
+        $marksSettings = $this->settings();
+        $vars['corner'] ??= $marksSettings['corner'] ?? 'start';
+        $vars['ink']    ??= self::inkVars((string) ($marksSettings['ink_color'] ?? ''));
+        unset($marksSettings);
 
         unset($template);
         extract($vars, EXTR_SKIP);

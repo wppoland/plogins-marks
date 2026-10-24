@@ -29,6 +29,9 @@ final class Settings implements HasHooks
     /** Allowed badge shapes (mapped to CSS classes by the template). */
     private const SHAPES = ['pill', 'square'];
 
+    /** Allowed badge group corners (logical, so they mirror in RTL). */
+    private const CORNERS = ['start', 'end'];
+
     /** Incremented to give each inline-help control a unique id/anchor. */
     private int $helpSeq = 0;
 
@@ -281,6 +284,42 @@ final class Settings implements HasHooks
                                             </select>
                                         </td>
                                     </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="marks_corner"><?php esc_html_e('Badge corner', 'plogins-sale-stock-badges'); ?></label>
+                                            <?php $this->help(__('Which top corner of the product image the badges sit in. In right-to-left languages the corners swap automatically.', 'plogins-sale-stock-badges')); ?>
+                                        </th>
+                                        <td>
+                                            <select id="marks_corner" name="<?php echo esc_attr(self::OPTION); ?>[corner]">
+                                                <?php
+                                                $currentCorner = (string) ($settings['corner'] ?? 'start');
+                                                $cornerLabels  = [
+                                                    'start' => __('Top left (top right in right-to-left languages)', 'plogins-sale-stock-badges'),
+                                                    'end'   => __('Top right (top left in right-to-left languages)', 'plogins-sale-stock-badges'),
+                                                ];
+                                                foreach (self::CORNERS as $corner) :
+                                                    ?>
+                                                    <option value="<?php echo esc_attr($corner); ?>" <?php selected($currentCorner, $corner); ?>>
+                                                        <?php echo esc_html($cornerLabels[$corner]); ?>
+                                                    </option>
+                                                <?php endforeach; ?>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <label for="marks_ink_color"><?php esc_html_e('Brand colour', 'plogins-sale-stock-badges'); ?></label>
+                                            <?php $this->help(__('The colour of Accent badges: the Bestseller badge and a manual badge set to Accent. The label text switches between white and dark to stay readable. Sale, New, Low stock and the other badges keep their own colours.', 'plogins-sale-stock-badges')); ?>
+                                        </th>
+                                        <td>
+                                            <input
+                                                type="color"
+                                                id="marks_ink_color"
+                                                name="<?php echo esc_attr(self::OPTION); ?>[ink_color]"
+                                                value="<?php echo esc_attr($this->inkColor($settings['ink_color'] ?? '')); ?>"
+                                            />
+                                        </td>
+                                    </tr>
                                     <?php
                                     $this->checkboxRow('uppercase', __('Uppercase labels', 'plogins-sale-stock-badges'), __('Render badge labels in uppercase.', 'plogins-sale-stock-badges'), $settings, __('Uppercases every badge label and adds light letter-spacing for a bolder, more uniform look.', 'plogins-sale-stock-badges'));
                                     $this->numberRow('max_badges_single', __('Max badges (product page)', 'plogins-sale-stock-badges'), __('Maximum number of badges shown on a single product page.', 'plogins-sale-stock-badges'), $settings, 1, __('Caps how many badges stack on a single product page so the image stays uncluttered. Highest-priority badges win.', 'plogins-sale-stock-badges'));
@@ -322,7 +361,7 @@ final class Settings implements HasHooks
                                     <tr>
                                         <th scope="row">
                                             <label for="marks_manual_badge_style"><?php esc_html_e('Manual badge colour', 'plogins-sale-stock-badges'); ?></label>
-                                            <?php $this->help(__('Pick a semantic colour. Accent is the Marks signature ink (a vermilion red), Success green, Warning amber, Danger red, Neutral grey. The preview on the right shows each. Exact shades are themeable via the --marks-bg-* variables.', 'plogins-sale-stock-badges')); ?>
+                                            <?php $this->help(__('Pick a semantic colour. Accent uses the brand colour from Appearance (a vermilion red unless you change it), Success green, Warning amber, Danger red, Neutral grey. The preview on the right shows each. Exact shades are themeable via the --marks-bg-* variables.', 'plogins-sale-stock-badges')); ?>
                                         </th>
                                         <td>
                                             <select
@@ -412,7 +451,7 @@ final class Settings implements HasHooks
     private function styleLabels(): array
     {
         return [
-            'accent'  => __('Accent (blue)', 'plogins-sale-stock-badges'),
+            'accent'  => __('Accent (brand colour)', 'plogins-sale-stock-badges'),
             'success' => __('Success (green)', 'plogins-sale-stock-badges'),
             'warning' => __('Warning (amber)', 'plogins-sale-stock-badges'),
             'danger'  => __('Danger (red)', 'plogins-sale-stock-badges'),
@@ -586,6 +625,12 @@ final class Settings implements HasHooks
             $shape = 'pill';
         }
 
+        $corner = isset($raw['corner']) ? sanitize_key((string) $raw['corner']) : 'start';
+
+        if (! in_array($corner, self::CORNERS, true)) {
+            $corner = 'start';
+        }
+
         $sanitized = [
             'enabled'         => ! empty($raw['enabled']),
             'show_on_single'  => ! empty($raw['show_on_single']),
@@ -614,6 +659,8 @@ final class Settings implements HasHooks
             'free_shipping_classes' => $this->text($raw, 'free_shipping_classes'),
 
             'shape'             => $shape,
+            'corner'            => $corner,
+            'ink_color'         => $this->inkColor($raw['ink_color'] ?? ''),
             'uppercase'         => ! empty($raw['uppercase']),
             'max_badges_single' => max(1, isset($raw['max_badges_single']) ? (int) $raw['max_badges_single'] : 4),
             'max_badges_loop'   => max(1, isset($raw['max_badges_loop']) ? (int) $raw['max_badges_loop'] : 3),
@@ -624,6 +671,16 @@ final class Settings implements HasHooks
         ];
 
         return (array) apply_filters('marks_sanitize_settings', $sanitized, $raw);
+    }
+
+    /**
+     * A six-digit hex colour, or the packaged ink.
+     */
+    private function inkColor(mixed $value): string
+    {
+        $hex = is_string($value) ? (string) sanitize_hex_color($value) : '';
+
+        return strlen($hex) === 7 ? strtolower($hex) : \Marks\Service\MarksService::DEFAULT_INK;
     }
 
     /**
