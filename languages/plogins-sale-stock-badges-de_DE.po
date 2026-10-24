@@ -3,8 +3,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Plogins Sale & Stock Badges for WooCommerce 0.3.1\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/marks\n"
-"POT-Creation-Date: 2026-09-26T04:48:57+00:00\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/plogins-sale-"
+"stock-badges\n"
+"POT-Creation-Date: 2026-10-23T19:46:03+00:00\n"
 "PO-Revision-Date: 2026-06-16T20:25:05+00:00\n"
 "Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
 "Language-Team: German <de@li.org>\n"
@@ -48,10 +49,6 @@ msgid "Sale & Stock Badges requires WooCommerce to be active."
 msgstr ""
 
 #: src/Admin/ProUpsell.php:85
-msgid "Wkrótce"
-msgstr "Demnächst"
-
-#: src/Admin/ProUpsell.php:85
 msgid "Coming soon"
 msgstr "Demnächst"
 
@@ -64,10 +61,6 @@ msgstr "ab %1$s%2$d/Jahr"
 #: src/Admin/ProUpsell.php:100
 msgid "Upgrade to PRO"
 msgstr "Auf PRO upgraden"
-
-#: src/Admin/ProUpsell.php:101
-msgid "Powiadom mnie"
-msgstr "Benachrichtige mich"
 
 #: src/Admin/ProUpsell.php:101
 msgid "Get notified"
@@ -101,15 +94,15 @@ msgstr "eine Lizenz, alle PRO-Funktionen"
 msgid "What %s adds"
 msgstr "Was %s ergänzt"
 
-#: src/Admin/Settings.php:80 src/Admin/Settings.php:81
+#: src/Admin/Settings.php:83 src/Admin/Settings.php:84
 msgid "Sale & Stock Badges"
 msgstr "Sale & Stock Badges"
 
-#: src/Admin/Settings.php:133
+#: src/Admin/Settings.php:136
 msgid "Product badges that boost conversions"
 msgstr "Produktabzeichen, die die Conversions steigern"
 
-#: src/Admin/Settings.php:135
+#: src/Admin/Settings.php:138
 msgid ""
 "Badges highlight what makes a product worth buying, a sale, a fresh arrival, "
 "low stock or a bestseller. They are pure CSS, so they load instantly and "
@@ -122,15 +115,15 @@ msgstr ""
 "Konfiguriere sie unten; Die Live-Vorschau auf der rechten Seite wird während "
 "der Eingabe aktualisiert."
 
-#: src/Admin/Settings.php:146
+#: src/Admin/Settings.php:149
 msgid "Display"
 msgstr "Anzeige"
 
-#: src/Admin/Settings.php:151
+#: src/Admin/Settings.php:154
 msgid "Enable badges"
 msgstr "Abzeichen aktivieren"
 
-#: src/Admin/Settings.php:152
+#: src/Admin/Settings.php:155
 msgid ""
 "The master switch. When off, no badges render anywhere on your storefront "
 "and the badge stylesheet is not loaded, zero front-end impact."
@@ -139,33 +132,33 @@ msgstr ""
 "deiner Storefront Abzeichen gerendert und das Badge-Stylesheet wird nicht "
 "geladen, ohne Auswirkungen auf das Front-End."
 
-#: src/Admin/Settings.php:163
+#: src/Admin/Settings.php:166
 msgid "Show product badges on the storefront."
 msgstr "Zeige Produktabzeichen im Schaufenster an."
 
-#: src/Admin/Settings.php:170
+#: src/Admin/Settings.php:173
 msgid "Single product page"
 msgstr "Einzelne Produktseite"
 
-#: src/Admin/Settings.php:171
+#: src/Admin/Settings.php:174
 msgid "Show badges on the product page."
 msgstr "Abzeichen auf der Produktseite anzeigen."
 
-#: src/Admin/Settings.php:173
+#: src/Admin/Settings.php:176
 msgid "Places badges over the main product image on each product's own page."
 msgstr ""
 "Platziert Abzeichen über dem Hauptproduktbild auf der jeweiligen "
 "Produktseite."
 
-#: src/Admin/Settings.php:177
+#: src/Admin/Settings.php:180
 msgid "Shop and category listings"
 msgstr "Shop- und Kategorielisten"
 
-#: src/Admin/Settings.php:178
+#: src/Admin/Settings.php:181
 msgid "Show badges on shop, category and tag listings."
 msgstr "Zeige Abzeichen in Shop-, Kategorie- und Tag-Einträgen an."
 
-#: src/Admin/Settings.php:180
+#: src/Admin/Settings.php:183
 msgid ""
 "Places badges on product thumbnails across the shop, category and tag "
 "archive pages."
@@ -174,7 +167,7 @@ msgstr ""
 "und Tag-Archivseiten."
 
 #. translators: %s: shortcode wrapped in <code>.
-#: src/Admin/Settings.php:189
+#: src/Admin/Settings.php:192
 #, php-format
 msgid ""
 "Need badges somewhere else? Drop %s into any page, post or widget to render "
@@ -183,11 +176,11 @@ msgstr ""
 "Benötige Abzeichen woanders? Füge %s in eine beliebige Seite, einen Beitrag "
 "oder ein Widget ein, um die Abzeichen des aktuellen Produkts darzustellen."
 
-#: src/Admin/Settings.php:197
+#: src/Admin/Settings.php:200
 msgid "Automatic badges"
 msgstr "Automatische Abzeichen"
 
-#: src/Admin/Settings.php:199
+#: src/Admin/Settings.php:202
 msgid ""
 "These appear on their own based on each product's live state, no manual "
 "tagging needed. Tick the ones you want and, optionally, give them your own "
@@ -198,31 +191,31 @@ msgstr ""
 "ihnen optional deinen eigenen Wortlaut. Lass eine Beschriftung leer, um die "
 "übersetzte Standardeinstellung zu verwenden."
 
-#: src/Admin/Settings.php:204 src/Admin/Settings.php:375
-#: src/Service/MarksService.php:48
+#: src/Admin/Settings.php:208 src/Admin/Settings.php:415
+#: src/Service/MarksService.php:51
 msgid "Sale"
 msgstr "Verkauf"
 
-#: src/Admin/Settings.php:204
+#: src/Admin/Settings.php:208
 msgid "On products currently on sale."
 msgstr "Auf aktuell im Angebot befindliche Produkte."
 
-#: src/Admin/Settings.php:204
+#: src/Admin/Settings.php:208
 msgid "Shown automatically whenever a product has an active sale price."
 msgstr ""
 "Wird automatisch angezeigt, wenn für ein Produkt ein aktiver Verkaufspreis "
 "vorhanden ist."
 
-#: src/Admin/Settings.php:205 src/Admin/Settings.php:376
-#: src/Service/MarksService.php:49
+#: src/Admin/Settings.php:209 src/Admin/Settings.php:416
+#: src/Service/MarksService.php:52
 msgid "New"
 msgstr "Neu"
 
-#: src/Admin/Settings.php:205
+#: src/Admin/Settings.php:209
 msgid "On products created within the newness window."
 msgstr "Auf Produkte, die im Neuheitenfenster erstellt wurden."
 
-#: src/Admin/Settings.php:205
+#: src/Admin/Settings.php:209
 msgid ""
 "Shown while a product is younger than the \"Newness window\" set under "
 "Thresholds."
@@ -230,18 +223,18 @@ msgstr ""
 "Wird angezeigt, solange ein Produkt jünger ist als das unter "
 "„Schwellenwerte“ festgelegte „Neuheitsfenster“."
 
-#: src/Admin/Settings.php:206 src/Admin/Settings.php:377
-#: src/Service/MarksService.php:50
+#: src/Admin/Settings.php:210 src/Admin/Settings.php:417
+#: src/Service/MarksService.php:53
 msgid "Low stock"
 msgstr "Geringer Lagerbestand"
 
-#: src/Admin/Settings.php:206
+#: src/Admin/Settings.php:210
 msgid "On stock-managed products at or below the threshold."
 msgstr ""
 "Bei lagergeführten Produkten, die den Schwellenwert erreichen oder "
 "unterschreiten."
 
-#: src/Admin/Settings.php:206
+#: src/Admin/Settings.php:210
 msgid ""
 "Creates urgency. Requires WooCommerce stock management; triggers at or below "
 "the \"Low-stock threshold\"."
@@ -249,15 +242,15 @@ msgstr ""
 "Schafft Dringlichkeit. Erfordert die Bestandsverwaltung von WooCommerce; "
 "löst bei oder unterhalb der „Schwelle für niedrigen Lagerbestand“ aus."
 
-#: src/Admin/Settings.php:207 src/Service/MarksService.php:51
+#: src/Admin/Settings.php:211 src/Service/MarksService.php:54
 msgid "Bestseller"
 msgstr "Bestseller"
 
-#: src/Admin/Settings.php:207
+#: src/Admin/Settings.php:211
 msgid "On products at or above the sales threshold."
 msgstr "Auf Produkte, die die Verkaufsschwelle erreichen oder darüber liegen."
 
-#: src/Admin/Settings.php:207
+#: src/Admin/Settings.php:211
 msgid ""
 "Social proof for your top sellers. Triggers once total units sold reaches "
 "the \"Bestseller threshold\"."
@@ -265,15 +258,15 @@ msgstr ""
 "Sozialer Beweis für deine Top-Seller. Wird ausgelöst, sobald die Gesamtzahl "
 "der verkauften Einheiten die „Bestseller-Grenze“ erreicht."
 
-#: src/Admin/Settings.php:208 src/Service/MarksService.php:52
+#: src/Admin/Settings.php:212 src/Service/MarksService.php:55
 msgid "Free shipping"
 msgstr "Kostenloser Versand"
 
-#: src/Admin/Settings.php:208
+#: src/Admin/Settings.php:212
 msgid "On products in a free-shipping shipping class."
 msgstr "Für Produkte in der Versandklasse „Kostenloser Versand“."
 
-#: src/Admin/Settings.php:208
+#: src/Admin/Settings.php:212
 msgid ""
 "Shown for products whose shipping class matches one listed under \"Free-"
 "shipping classes\"."
@@ -281,15 +274,15 @@ msgstr ""
 "Wird für Produkte angezeigt, deren Versandklasse mit einer unter "
 "„Kostenloser Versand“ aufgeführten Klasse übereinstimmt."
 
-#: src/Admin/Settings.php:209 src/Service/MarksService.php:53
+#: src/Admin/Settings.php:213 src/Service/MarksService.php:56
 msgid "Out of stock"
 msgstr "Ausverkauft"
 
-#: src/Admin/Settings.php:209
+#: src/Admin/Settings.php:213
 msgid "On products that are out of stock."
 msgstr "Auf Produkte, die nicht vorrätig sind."
 
-#: src/Admin/Settings.php:209
+#: src/Admin/Settings.php:213
 msgid ""
 "Sets expectations before the click. Shown when WooCommerce reports the "
 "product as out of stock."
@@ -297,15 +290,15 @@ msgstr ""
 "Setzt Erwartungen vor dem Klicken. Wird angezeigt, wenn WooCommerce das "
 "Produkt als nicht vorrätig meldet."
 
-#: src/Admin/Settings.php:211
+#: src/Admin/Settings.php:215
 msgid "Discount percent"
 msgstr "Rabatt in Prozent"
 
-#: src/Admin/Settings.php:211
+#: src/Admin/Settings.php:215
 msgid "Shows the sale discount as a percentage (e.g. -20%)."
 msgstr "Zeigt den Verkaufsrabatt in Prozent an (z. B. -20 %)."
 
-#: src/Admin/Settings.php:211
+#: src/Admin/Settings.php:215
 msgid ""
 "Calculates the saving from the regular and sale price automatically, e.g. "
 "-20%. Pairs well with, or instead of, the plain Sale badge."
@@ -313,44 +306,44 @@ msgstr ""
 "Berechnet automatisch die Ersparnis aus Normal- und Aktionspreis, z.B. -20 "
 "%. Passt gut zu oder anstelle des einfachen Sale-Abzeichens."
 
-#: src/Admin/Settings.php:214
+#: src/Admin/Settings.php:218
 msgid "Hide theme “Sale!” flash"
 msgstr "Theme-„Sale!“-Flash ausblenden"
 
-#: src/Admin/Settings.php:215
+#: src/Admin/Settings.php:219
 msgid ""
 "Hide WooCommerce’s own sale flash and leave the sale to the Marks badges."
 msgstr ""
 
-#: src/Admin/Settings.php:217
+#: src/Admin/Settings.php:221
 msgid ""
 "Avoids two sale labels on one product card. Marks badges are CSS-only, they "
 "never reflow the page. Pair it with the Sale badge or the Discount percent "
 "badge above, otherwise nothing marks a sale."
 msgstr ""
 
-#: src/Admin/Settings.php:225
+#: src/Admin/Settings.php:229
 msgid "Thresholds"
 msgstr "Schwellenwerte"
 
-#: src/Admin/Settings.php:227
+#: src/Admin/Settings.php:231
 msgid ""
 "Tune when the automatic badges above trigger. Values must be at least 1."
 msgstr ""
 "Stimme ab, wenn die oben genannten automatischen Abzeichen ausgelöst werden. "
 "Die Werte müssen mindestens 1 sein."
 
-#: src/Admin/Settings.php:232
+#: src/Admin/Settings.php:236
 msgid "Newness window (days)"
 msgstr "Neuheitsfenster (Tage)"
 
-#: src/Admin/Settings.php:232
+#: src/Admin/Settings.php:236
 msgid "Show the New badge on products created within this many days."
 msgstr ""
 "Zeige das Abzeichen „Neu“ auf Produkten an, die innerhalb dieser Tage "
 "erstellt wurden."
 
-#: src/Admin/Settings.php:232
+#: src/Admin/Settings.php:236
 msgid ""
 "A product counts as \"new\" for this many days after it is published. 30 is "
 "a sensible default."
@@ -358,18 +351,18 @@ msgstr ""
 "Ein Produkt gilt für so viele Tage nach seiner Veröffentlichung als „neu“. "
 "30 ist ein sinnvoller Standardwert."
 
-#: src/Admin/Settings.php:233
+#: src/Admin/Settings.php:237
 msgid "Low-stock threshold"
 msgstr "Schwelle für niedrige Lagerbestände"
 
-#: src/Admin/Settings.php:233
+#: src/Admin/Settings.php:237
 msgid ""
 "Show the Low stock badge when remaining stock is at or below this number."
 msgstr ""
 "Zeige das Symbol „Niedriger Lagerbestand“ an, wenn der verbleibende "
 "Lagerbestand diesen Wert erreicht oder unterschreitet."
 
-#: src/Admin/Settings.php:233
+#: src/Admin/Settings.php:237
 msgid ""
 "When stock falls to this number or below, the Low stock badge appears. Lower "
 "it to reserve the badge for true scarcity."
@@ -378,17 +371,17 @@ msgstr ""
 "„Niedriger Lagerbestand“ angezeigt. Senke es, um das Abzeichen für echte "
 "Knappheit zu reservieren."
 
-#: src/Admin/Settings.php:234
+#: src/Admin/Settings.php:238
 msgid "Bestseller threshold"
 msgstr "Bestseller-Schwelle"
 
-#: src/Admin/Settings.php:234
+#: src/Admin/Settings.php:238
 msgid "Show the Bestseller badge when total sales reach this number."
 msgstr ""
 "Zeige das Bestseller-Abzeichen an, wenn die Gesamtverkäufe diese Zahl "
 "erreichen."
 
-#: src/Admin/Settings.php:234
+#: src/Admin/Settings.php:238
 msgid ""
 "Total lifetime units sold needed to earn the Bestseller badge. Set it to "
 "match what \"popular\" means for your store."
@@ -397,11 +390,11 @@ msgstr ""
 "um das Bestseller-Abzeichen zu erhalten. Stelle es so ein, dass es dem "
 "entspricht, was „beliebt“ für dein Geschäft bedeutet."
 
-#: src/Admin/Settings.php:238
+#: src/Admin/Settings.php:242
 msgid "Free-shipping classes"
 msgstr "Klassen für kostenlosen Versand"
 
-#: src/Admin/Settings.php:239
+#: src/Admin/Settings.php:243
 msgid ""
 "Enter the slugs of your WooCommerce shipping classes that ship free, "
 "separated by commas. Find slugs under WooCommerce > Settings > Shipping > "
@@ -411,22 +404,22 @@ msgstr ""
 "werden, durch Kommas getrennt ein. Slugs findest du unter WooCommerce > "
 "Einstellungen > Versand > Klassen."
 
-#: src/Admin/Settings.php:250
+#: src/Admin/Settings.php:254
 msgid ""
 "Comma-separated product shipping-class slugs that count as free shipping."
 msgstr ""
 "Durch Kommas getrennte Slugs der Produktversandklasse, die als kostenloser "
 "Versand gelten."
 
-#: src/Admin/Settings.php:258
+#: src/Admin/Settings.php:262
 msgid "Appearance"
 msgstr "Aussehen"
 
-#: src/Admin/Settings.php:263
+#: src/Admin/Settings.php:267
 msgid "Badge shape"
 msgstr "Abzeichenform"
 
-#: src/Admin/Settings.php:264
+#: src/Admin/Settings.php:268
 msgid ""
 "Pill gives soft, fully-rounded corners; Square gives a tighter, more "
 "editorial look. Themes can override the exact radius via the --marks-radius "
@@ -436,23 +429,52 @@ msgstr ""
 "einen strafferen, redaktionelleren Look. Themes können den genauen Radius "
 "über die Variable --marks-radius überschreiben."
 
-#: src/Admin/Settings.php:271
+#: src/Admin/Settings.php:275
 msgid "Pill (rounded)"
 msgstr "Pille (gerundet)"
 
-#: src/Admin/Settings.php:272
+#: src/Admin/Settings.php:276
 msgid "Square"
 msgstr "Quadrat"
 
-#: src/Admin/Settings.php:284
+#: src/Admin/Settings.php:289
+msgid "Badge corner"
+msgstr ""
+
+#: src/Admin/Settings.php:290
+msgid ""
+"Which top corner of the product image the badges sit in. In right-to-left "
+"languages the corners swap automatically."
+msgstr ""
+
+#: src/Admin/Settings.php:297
+msgid "Top left (top right in right-to-left languages)"
+msgstr ""
+
+#: src/Admin/Settings.php:298
+msgid "Top right (top left in right-to-left languages)"
+msgstr ""
+
+#: src/Admin/Settings.php:311
+msgid "Brand colour"
+msgstr ""
+
+#: src/Admin/Settings.php:312
+msgid ""
+"The colour of Accent badges: the Bestseller badge and a manual badge set to "
+"Accent. The label text switches between white and dark to stay readable. "
+"Sale, New, Low stock and the other badges keep their own colours."
+msgstr ""
+
+#: src/Admin/Settings.php:324
 msgid "Uppercase labels"
 msgstr "Beschriftungen in Großbuchstaben"
 
-#: src/Admin/Settings.php:284
+#: src/Admin/Settings.php:324
 msgid "Render badge labels in uppercase."
 msgstr "Abzeichenbeschriftungen in Großbuchstaben darstellen."
 
-#: src/Admin/Settings.php:284
+#: src/Admin/Settings.php:324
 msgid ""
 "Uppercases every badge label and adds light letter-spacing for a bolder, "
 "more uniform look."
@@ -461,17 +483,17 @@ msgstr ""
 "Buchstabenabstand hinzu, um ein kräftigeres, einheitlicheres "
 "Erscheinungsbild zu erzielen."
 
-#: src/Admin/Settings.php:285
+#: src/Admin/Settings.php:325
 msgid "Max badges (product page)"
 msgstr "Max-Abzeichen (Produktseite)"
 
-#: src/Admin/Settings.php:285
+#: src/Admin/Settings.php:325
 msgid "Maximum number of badges shown on a single product page."
 msgstr ""
 "Maximale Anzahl an Abzeichen, die auf einer einzelnen Produktseite angezeigt "
 "werden."
 
-#: src/Admin/Settings.php:285
+#: src/Admin/Settings.php:325
 msgid ""
 "Caps how many badges stack on a single product page so the image stays "
 "uncluttered. Highest-priority badges win."
@@ -480,17 +502,17 @@ msgstr ""
 "Produktseite, damit das Bild übersichtlich bleibt. Abzeichen mit der "
 "höchsten Priorität gewinnen."
 
-#: src/Admin/Settings.php:286
+#: src/Admin/Settings.php:326
 msgid "Max badges (listings)"
 msgstr "Max. Abzeichen (Einträge)"
 
-#: src/Admin/Settings.php:286
+#: src/Admin/Settings.php:326
 msgid "Maximum number of badges shown on shop and category listings."
 msgstr ""
 "Maximale Anzahl an Abzeichen, die in Shop- und Kategorieeinträgen angezeigt "
 "werden."
 
-#: src/Admin/Settings.php:286
+#: src/Admin/Settings.php:326
 msgid ""
 "Caps badges on the smaller thumbnails in shop and category grids. 2-3 keeps "
 "listings clean."
@@ -498,12 +520,12 @@ msgstr ""
 "Begrenzt die Abzeichen auf den kleineren Miniaturansichten in Shop- und "
 "Kategorie-Rastern. 2-3 hält die Listen sauber."
 
-#: src/Admin/Settings.php:293
+#: src/Admin/Settings.php:333
 msgid "Manual badge"
 msgstr "Manuelles Abzeichen"
 
 #. translators: %s: meta key wrapped in <code>.
-#: src/Admin/Settings.php:298
+#: src/Admin/Settings.php:338
 #, php-format
 msgid ""
 "Define one store-wide badge (label + colour). To put it on a product, set "
@@ -512,11 +534,11 @@ msgid ""
 "option."
 msgstr ""
 
-#: src/Admin/Settings.php:307
+#: src/Admin/Settings.php:347
 msgid "Manual badge label"
 msgstr "Manuelles Abzeichenetikett"
 
-#: src/Admin/Settings.php:308
+#: src/Admin/Settings.php:348
 msgid ""
 "The text shown by your manual badge, e.g. \"Editor's pick\". Leave blank to "
 "turn the manual badge off entirely."
@@ -525,50 +547,47 @@ msgstr ""
 "Redaktion“. Lass das Feld leer, um das manuelle Abzeichen vollständig zu "
 "deaktivieren."
 
-#: src/Admin/Settings.php:317
+#: src/Admin/Settings.php:357
 msgid "e.g. Editor’s pick"
 msgstr "z.B. Wahl des Herausgebers"
 
-#: src/Admin/Settings.php:323
+#: src/Admin/Settings.php:363
 msgid "Manual badge colour"
 msgstr "Manuelle Abzeichenfarbe"
 
-#: src/Admin/Settings.php:324
+#: src/Admin/Settings.php:364
 msgid ""
-"Pick a semantic colour. Accent is the Marks signature ink (a vermilion red), "
-"Success green, Warning amber, Danger red, Neutral grey. The preview on the "
-"right shows each. Exact shades are themeable via the --marks-bg-* variables."
+"Pick a semantic colour. Accent uses the brand colour from Appearance (a "
+"vermilion red unless you change it), Success green, Warning amber, Danger "
+"red, Neutral grey. The preview on the right shows each. Exact shades are "
+"themeable via the --marks-bg-* variables."
 msgstr ""
-"Wähle eine semantische Farbe. Akzent ist die Marks-Signaturtinte "
-"(Zinnoberrot), Success-Grün, Warning-Bernstein, Danger-Rot und Neutralgrau. "
-"Die Vorschau rechts zeigt jeweils. Genaue Farbtöne können über die Variablen "
-"--marks-bg-* thematisiert werden."
 
-#: src/Admin/Settings.php:368
+#: src/Admin/Settings.php:408
 msgid "Badge preview"
 msgstr "Abzeichen-Vorschau"
 
-#: src/Admin/Settings.php:369
+#: src/Admin/Settings.php:409
 msgid "Live preview"
 msgstr "Live-Vorschau"
 
-#: src/Admin/Settings.php:371
+#: src/Admin/Settings.php:411
 msgid "A sample of how your badges will look on a product image."
 msgstr ""
 "Ein Beispiel dafür, wie deine Abzeichen auf einem Produktbild aussehen "
 "werden."
 
-#: src/Admin/Settings.php:380
+#: src/Admin/Settings.php:420
 msgid "No badges enabled yet, tick some on the left to see them here."
 msgstr ""
 "Noch keine Abzeichen aktiviert. Kreuze einige links an, um sie hier "
 "anzuzeigen."
 
-#: src/Admin/Settings.php:397
+#: src/Admin/Settings.php:437
 msgid "Badges are not available yet"
 msgstr "Abzeichen sind noch nicht verfügbar"
 
-#: src/Admin/Settings.php:399
+#: src/Admin/Settings.php:439
 msgid ""
 "Sale & Stock Badges could not load its badge engine. This usually means a "
 "required dependency is missing or out of date. Please reinstall or update "
@@ -576,36 +595,44 @@ msgid ""
 "settings."
 msgstr ""
 
-#: src/Admin/Settings.php:414
-msgid "Accent (blue)"
-msgstr "Akzent (blau)"
+#: src/Admin/Settings.php:454
+msgid "Accent (brand colour)"
+msgstr ""
 
-#: src/Admin/Settings.php:415
+#: src/Admin/Settings.php:455
 msgid "Success (green)"
 msgstr "Erfolg (grün)"
 
-#: src/Admin/Settings.php:416
+#: src/Admin/Settings.php:456
 msgid "Warning (amber)"
 msgstr "Warnung (gelb)"
 
-#: src/Admin/Settings.php:417
+#: src/Admin/Settings.php:457
 msgid "Danger (red)"
 msgstr "Gefahr (rot)"
 
-#: src/Admin/Settings.php:418
+#: src/Admin/Settings.php:458
 msgid "Neutral (grey)"
 msgstr "Neutral (grau)"
 
-#: src/Admin/Settings.php:436
+#: src/Admin/Settings.php:476
 msgid "More information"
 msgstr "Weitere Informationen"
 
-#: src/Admin/Settings.php:544
+#: src/Admin/Settings.php:552
+msgid ""
+"Labels accept two tokens: {stock} for the units left, hidden when the "
+"product does not manage stock or has none left, and {discount_percent} for "
+"the percent off the regular price, hidden when there is no discount. "
+"Example: \"Only {stock} left\"."
+msgstr ""
+
+#: src/Admin/Settings.php:592
 msgid "Custom label (optional)"
 msgstr "Benutzerdefiniertes Etikett (optional)"
 
 #. translators: %s: badge name, e.g. Sale.
-#: src/Admin/Settings.php:547
+#: src/Admin/Settings.php:595
 #, php-format
 msgid "Custom label for the %s badge"
 msgstr "Benutzerdefiniertes Etikett für das %s-Abzeichen"
@@ -622,6 +649,26 @@ msgstr ""
 #: src/Elementor/MarksBadgesWidget.php:89
 msgid "Leave 0 to use the current product on a product page."
 msgstr ""
+
+#~ msgid "Wkrótce"
+#~ msgstr "Demnächst"
+
+#~ msgid "Powiadom mnie"
+#~ msgstr "Benachrichtige mich"
+
+#~ msgid ""
+#~ "Pick a semantic colour. Accent is the Marks signature ink (a vermilion "
+#~ "red), Success green, Warning amber, Danger red, Neutral grey. The preview "
+#~ "on the right shows each. Exact shades are themeable via the --marks-bg-* "
+#~ "variables."
+#~ msgstr ""
+#~ "Wähle eine semantische Farbe. Akzent ist die Marks-Signaturtinte "
+#~ "(Zinnoberrot), Success-Grün, Warning-Bernstein, Danger-Rot und "
+#~ "Neutralgrau. Die Vorschau rechts zeigt jeweils. Genaue Farbtöne können "
+#~ "über die Variablen --marks-bg-* thematisiert werden."
+
+#~ msgid "Accent (blue)"
+#~ msgstr "Akzent (blau)"
 
 #~ msgid "Plogins Marks for WooCommerce"
 #~ msgstr "Plogins Marks für WooCommerce"
