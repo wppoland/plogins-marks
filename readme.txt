@@ -4,7 +4,7 @@ Tags: woocommerce, product badges, sale badge, new badge, low stock
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -35,6 +35,7 @@ label and colour. Settings are sanitised and clamped on save.
 * **Plugin page** - [plogins.com/plogins-marks](https://plogins.com/plogins-marks/)
 * **Source code** - [github.com/wppoland/plogins-marks](https://github.com/wppoland/plogins-marks)
 * **Bug reports and feature requests** - [GitHub issues](https://github.com/wppoland/plogins-marks/issues)
+* **Marks Pro** - [plogins.com/plogins-marks-pro/](https://plogins.com/plogins-marks-pro/)
 
 
 = Features =
@@ -64,18 +65,20 @@ pick the render style:
 
 Reporting a security issue: email hello@wppoland.com, and under our [coordinated disclosure policy](https://wppoland.com/en/security-policy/) we confirm within two business days, assess within five, and patch a critical issue within seven days of confirming it.
 
-== Sale & Stock Badges PRO ==
+== Marks Pro ==
 
-The free edition ships the core CSS badges (Sale, New, Low stock, Bestseller, manual). **Sale & Stock Badges PRO** adds campaign and rules-based badging:
+Marks Pro is a separate paid plugin that works on top of Marks. It adds:
 
-* **Scheduled and targeted badges** - campaign badges with custom colours, a start/end window and targeting by product, category or tag
-* **Conditional display rules** - store-wide rules that badge a product by category, price threshold or low stock
-* **Image badges** - show a certification or brand logo (PNG/SVG) on a product
-* **A/B label sets** - rotate competing badge labels with sticky cookies and per-variant impression counts
+* Scheduled campaign badges
+* Conditional rules
+* Image badges
+* A/B label sets
 
-Everything in the free edition stays free and open. Sale & Stock Badges PRO starts at 19 EUR per year, billed in EUR.
+The free edition is not a trial and its features stay available without a time limit.
 
-Compare editions and pricing: [plogins.com/plogins-marks-pro/pricing](https://plogins.com/plogins-marks-pro/pricing/)
+* **Marks Pro** - [plogins.com/plogins-marks-pro/](https://plogins.com/plogins-marks-pro/)
+* **Compare editions and pricing** - [plogins.com/plogins-marks-pro/pricing/](https://plogins.com/plogins-marks-pro/pricing/)
+* **PRO documentation** - [plogins.com/plogins-marks-pro/docs/](https://plogins.com/plogins-marks-pro/docs/)
 
 == Installation ==
 
@@ -127,6 +130,9 @@ The plugin stores its configuration in two WordPress options (`marks_settings` a
 Sale & Stock Badges is fully translatable and ships the `plogins-sale-stock-badges.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.1.1 =
+* Readme only: a PRO section with links to the paid edition.
 
 = 1.1.0 =
 * New: badge corner setting, top left or top right of the product image. In right-to-left languages the corners mirror.
