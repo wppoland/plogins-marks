@@ -12,6 +12,8 @@ defined('ABSPATH') || exit;
 return [
     'name'       => 'Marks Pro',
     'url'        => 'https://plogins.com/plogins-marks-pro/pricing/',
+    'campaign'   => 'plogins-marks',
+    'locales'    => ['pl', 'de', 'es'],
     'sellable'   => true,
     'price_from' => 19,
     'currency'   => 'EUR',
