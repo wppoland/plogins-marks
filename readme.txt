@@ -4,7 +4,7 @@ Tags: woocommerce, product badges, sale badge, new badge, low stock
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.1.1
+Stable tag: 1.1.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -67,19 +67,22 @@ Reporting a security issue: email hello@wppoland.com, and under our [coordinated
 
 == Marks Pro ==
 
-Marks Pro is a separate paid plugin that extends Marks:
+Marks Pro is a separate paid plugin that extends Marks.
 
-| Feature | Free | Pro |
-|:--- |:---:|:---:|
-| Automatic badges | Yes | Yes |
-| Low-stock threshold | Yes | Yes |
-| Manual badge | Yes | Yes |
-| CSS-only, no JavaScript | Yes | Yes |
-| Listing and product page | Yes | Yes |
-| Scheduled campaign badges | - | Yes |
-| Conditional rules | - | Yes |
-| Image badges | - | Yes |
-| A/B label sets | - | Yes |
+Included in Marks:
+
+* Automatic badges
+* Low-stock threshold
+* Manual badge
+* CSS-only, no JavaScript
+* Listing and product page
+
+Marks Pro adds:
+
+* Scheduled campaign badges
+* Conditional rules
+* Image badges
+* A/B label sets
 
 The free edition is not a trial and its features stay available without a time limit.
 
@@ -137,6 +140,10 @@ The plugin stores its configuration in two WordPress options (`marks_settings` a
 Sale & Stock Badges is fully translatable and ships the `plogins-sale-stock-badges.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.1.2 =
+* The Upgrade to PRO links open the pricing page in the admin's language where plogins.com has one, and tell plogins.com which plugin the visit came from (utm_source, utm_medium and utm_campaign in the link). Nothing is sent from your site.
+* Readme: the PRO section lists what the free plugin includes and what the paid edition adds as two lists, which WordPress.org can display (it does not display tables).
 
 = 1.1.1 =
 * Readme only: a PRO section with links to the paid edition.
