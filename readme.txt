@@ -67,12 +67,19 @@ Reporting a security issue: email hello@wppoland.com, and under our [coordinated
 
 == Marks Pro ==
 
-Marks Pro is a separate paid plugin that works on top of Marks. It adds:
+Marks Pro is a separate paid plugin that extends Marks:
 
-* Scheduled campaign badges
-* Conditional rules
-* Image badges
-* A/B label sets
+| Feature | Free | Pro |
+|:--- |:---:|:---:|
+| Automatic badges | Yes | Yes |
+| Low-stock threshold | Yes | Yes |
+| Manual badge | Yes | Yes |
+| CSS-only, no JavaScript | Yes | Yes |
+| Listing and product page | Yes | Yes |
+| Scheduled campaign badges | - | Yes |
+| Conditional rules | - | Yes |
+| Image badges | - | Yes |
+| A/B label sets | - | Yes |
 
 The free edition is not a trial and its features stay available without a time limit.
 
