@@ -4,15 +4,15 @@
  * scripts/gen-pro-upsell.mjs. The admin upsell renders this; curate the
  * feature list to fit this plugin's settings screen (do not invent features).
  *
- * @package plogins-marks-pro
+ * @package plogins-sale-stock-badges-pro
  */
 
 defined('ABSPATH') || exit;
 
 return [
     'name'       => 'Marks Pro',
-    'url'        => 'https://plogins.com/plogins-marks-pro/pricing/',
-    'campaign'   => 'plogins-marks',
+    'url'        => 'https://plogins.com/plogins-sale-stock-badges-pro/pricing/',
+    'campaign'   => 'plogins-sale-stock-badges',
     'locales'    => ['pl', 'de', 'es'],
     'sellable'   => true,
     'price_from' => 19,
