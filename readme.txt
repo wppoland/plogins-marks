@@ -4,7 +4,7 @@ Tags: woocommerce, product badges, sale badge, new badge, low stock
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.1.2
+Stable tag: 1.1.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -21,7 +21,7 @@ The badges are drawn with CSS and sit over the product image, so they add no
 JavaScript and don't shift the layout when the page loads. They show on the single
 product page and on shop, category and tag listings.
 
-The code is open and lives on [GitHub](https://github.com/wppoland/plogins-marks) if you want to read
+The code is open and lives on [GitHub](https://github.com/wppoland/plogins-sale-stock-badges) if you want to read
 it, file a bug or send a patch.
 
 Configuration lives under a top-level **Sale & Stock Badges** admin menu: a global on/off
@@ -31,11 +31,11 @@ label and colour. Settings are sanitised and clamped on save.
 
 = Documentation and links =
 
-* **Documentation** - [plogins.com/plogins-marks/docs](https://plogins.com/plogins-marks/docs/)
-* **Plugin page** - [plogins.com/plogins-marks](https://plogins.com/plogins-marks/)
-* **Source code** - [github.com/wppoland/plogins-marks](https://github.com/wppoland/plogins-marks)
-* **Bug reports and feature requests** - [GitHub issues](https://github.com/wppoland/plogins-marks/issues)
-* **Marks Pro** - [plogins.com/plogins-marks-pro/](https://plogins.com/plogins-marks-pro/)
+* **Documentation** - [plogins.com/plogins-sale-stock-badges/docs](https://plogins.com/plogins-sale-stock-badges/docs/)
+* **Plugin page** - [plogins.com/plogins-sale-stock-badges](https://plogins.com/plogins-sale-stock-badges/)
+* **Source code** - [github.com/wppoland/plogins-sale-stock-badges](https://github.com/wppoland/plogins-sale-stock-badges)
+* **Bug reports and feature requests** - [GitHub issues](https://github.com/wppoland/plogins-sale-stock-badges/issues)
+* **Marks Pro** - [plogins.com/plogins-sale-stock-badges-pro/](https://plogins.com/plogins-sale-stock-badges-pro/)
 
 
 = Features =
@@ -86,9 +86,9 @@ Marks Pro adds:
 
 The free edition is not a trial and its features stay available without a time limit.
 
-* **Marks Pro** - [plogins.com/plogins-marks-pro/](https://plogins.com/plogins-marks-pro/)
-* **Compare editions and pricing** - [plogins.com/plogins-marks-pro/pricing/](https://plogins.com/plogins-marks-pro/pricing/)
-* **PRO documentation** - [plogins.com/plogins-marks-pro/docs/](https://plogins.com/plogins-marks-pro/docs/)
+* **Marks Pro** - [plogins.com/plogins-sale-stock-badges-pro/](https://plogins.com/plogins-sale-stock-badges-pro/)
+* **Compare editions and pricing** - [plogins.com/plogins-sale-stock-badges-pro/pricing/](https://plogins.com/plogins-sale-stock-badges-pro/pricing/)
+* **PRO documentation** - [plogins.com/plogins-sale-stock-badges-pro/docs/](https://plogins.com/plogins-sale-stock-badges-pro/docs/)
 
 == Installation ==
 
@@ -140,6 +140,9 @@ The plugin stores its configuration in two WordPress options (`marks_settings` a
 Sale & Stock Badges is fully translatable and ships the `plogins-sale-stock-badges.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.1.3 =
+* Links point at the new plogins.com address and the renamed GitHub repository.
 
 = 1.1.2 =
 * The Upgrade to PRO links open the pricing page in the admin's language where plogins.com has one, and tell plogins.com which plugin the visit came from (utm_source, utm_medium and utm_campaign in the link). Nothing is sent from your site.

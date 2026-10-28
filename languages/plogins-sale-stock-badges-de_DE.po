@@ -24,8 +24,8 @@ msgstr ""
 
 #. Plugin URI of the plugin
 #: plogins-sale-stock-badges.php
-msgid "https://plogins.com/plogins-marks/"
-msgstr "https://plogins.com/de/plogins-marks/"
+msgid "https://plogins.com/plogins-sale-stock-badges/"
+msgstr "https://plogins.com/de/plogins-sale-stock-badges/"
 
 #. Description of the plugin
 #: plogins-sale-stock-badges.php
