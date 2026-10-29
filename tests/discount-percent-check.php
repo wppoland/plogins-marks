@@ -92,7 +92,7 @@ class WC_Product_Variable extends WC_Product
 require __DIR__ . '/../lib/storefront-kit/Badge/Badge.php';
 require __DIR__ . '/../lib/storefront-kit/Badge/BadgeEngine.php';
 
-$engine = new \WPPoland\StorefrontKit\Badge\BadgeEngine(
+$engine = new \Marks\Vendor\StorefrontKit\Badge\BadgeEngine(
     'badges',
     [],
     ['manual_text' => '_manual', 'manual_style' => '_style', 'secondary_text' => '_secondary'],
@@ -116,7 +116,7 @@ $engine = new \WPPoland\StorefrontKit\Badge\BadgeEngine(
 /**
  * @return array{0: string, 1: int} The badge text and the hydration count.
  */
-function marks_test_badge(\WPPoland\StorefrontKit\Badge\BadgeEngine $engine, \WC_Product $product): array
+function marks_test_badge(\Marks\Vendor\StorefrontKit\Badge\BadgeEngine $engine, \WC_Product $product): array
 {
     global $marks_test_hydrations;
     $marks_test_hydrations = 0;

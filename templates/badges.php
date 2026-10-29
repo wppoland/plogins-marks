@@ -5,7 +5,7 @@
  *
  * @package Marks
  *
- * @var list<\WPPoland\StorefrontKit\Badge\Badge> $badges
+ * @var list<\Marks\Vendor\StorefrontKit\Badge\Badge> $badges
  * @var string $context  Render context: `single` or `loop`.
  * @var string $shape    Badge shape hint: `pill` or `square`.
  * @var bool   $uppercase Whether labels render uppercase.

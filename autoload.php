@@ -21,8 +21,8 @@ if (is_readable($marks_composer)) {
 
 spl_autoload_register(static function (string $class): void {
     $prefixes = [
+        'Marks\\Vendor\\StorefrontKit\\'    => __DIR__ . '/lib/storefront-kit/',
         'Marks\\'           => __DIR__ . '/src/',
-        'WPPoland\\StorefrontKit\\'    => __DIR__ . '/lib/storefront-kit/',
     ];
 
     foreach ($prefixes as $prefix => $baseDir) {

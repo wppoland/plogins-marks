@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace WPPoland\StorefrontKit\Badge;
+namespace Marks\Vendor\StorefrontKit\Badge;
 
 /**
  * A single resolved product badge: the visible {@see $text} and a

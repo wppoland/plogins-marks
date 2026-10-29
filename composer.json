@@ -16,7 +16,7 @@
     "autoload": {
         "psr-4": {
             "Marks\\": "src/",
-            "WPPoland\\StorefrontKit\\": "lib/storefront-kit/"
+            "Marks\\Vendor\\StorefrontKit\\": "lib/storefront-kit/"
         }
     },
     "scripts": {
