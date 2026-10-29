@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace WPPoland\StorefrontKit\Badge;
+namespace Marks\Vendor\StorefrontKit\Badge;
 
 /**
  * Namespace-neutral product badge engine for merchandising / conversion hints.
@@ -15,8 +15,8 @@ namespace WPPoland\StorefrontKit\Badge;
  *
  * All WooCommerce/text-domain/option/meta specifics are constructor-injected
  * via closures and arrays, exactly like
- * {@see \WPPoland\StorefrontKit\Waitlist\WaitlistEngine} and
- * {@see \WPPoland\StorefrontKit\Pricing\DynamicPricingEngine}. Do NOT
+ * {@see \Marks\Vendor\StorefrontKit\Waitlist\WaitlistEngine} and
+ * {@see \Marks\Vendor\StorefrontKit\Pricing\DynamicPricingEngine}. Do NOT
  * hard-code text-domains, option keys or meta keys here.
  */
 final class BadgeEngine

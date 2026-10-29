@@ -34,7 +34,7 @@ $failures = [];
 foreach (['loop', 'single'] as $context) {
     ob_start();
     $render->invoke($service, 'badges', [
-        'badges'    => [new WPPoland\StorefrontKit\Badge\Badge('Sale', 'warning')],
+        'badges'    => [new Marks\Vendor\StorefrontKit\Badge\Badge('Sale', 'warning')],
         'context'   => $context,
         'product'   => null,
         'shape'     => 'pill',

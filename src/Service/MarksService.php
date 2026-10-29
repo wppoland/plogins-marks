@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Marks\Service;
 
 use Marks\Contract\HasHooks;
-use WPPoland\StorefrontKit\Badge\BadgeEngine;
+use Marks\Vendor\StorefrontKit\Badge\BadgeEngine;
 
 defined('ABSPATH') || exit;
 

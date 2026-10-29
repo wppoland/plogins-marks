@@ -57,7 +57,7 @@ require __DIR__ . '/../lib/storefront-kit/Badge/Badge.php';
 require __DIR__ . '/../lib/storefront-kit/Badge/BadgeEngine.php';
 
 // Only the manual badge, its label read from the product, so each case renders one label.
-$engine = new \WPPoland\StorefrontKit\Badge\BadgeEngine(
+$engine = new \Marks\Vendor\StorefrontKit\Badge\BadgeEngine(
     'badges',
     [],
     ['manual_text' => '_manual', 'manual_style' => '_style', 'secondary_text' => '_secondary'],

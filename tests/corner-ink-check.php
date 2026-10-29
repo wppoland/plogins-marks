@@ -48,7 +48,7 @@ $group   = static function (array $option) use ($service, $render): string {
     $GLOBALS['marks_test_option'] = $option;
     ob_start();
     $render->invoke($service, 'badges', [
-        'badges'  => [new WPPoland\StorefrontKit\Badge\Badge('Bestseller', 'accent')],
+        'badges'  => [new Marks\Vendor\StorefrontKit\Badge\Badge('Bestseller', 'accent')],
         'context' => 'loop',
     ]);
 
@@ -68,7 +68,7 @@ $check(MarksService::inkVars('red;}x{') === '', 'non-hex ink is ignored');
 
 // The engine is required before the block filter does anything; give it one.
 $engine = new ReflectionProperty($service, 'engine');
-$engine->setValue($service, (new ReflectionClass(WPPoland\StorefrontKit\Badge\BadgeEngine::class))->newInstanceWithoutConstructor());
+$engine->setValue($service, (new ReflectionClass(Marks\Vendor\StorefrontKit\Badge\BadgeEngine::class))->newInstanceWithoutConstructor());
 $stamped = '<div class="wc-block-components-product-image"><div class="marks-badges marks-badges--loop"></div><img></div>';
 $GLOBALS['marks_test_loaded'] = [];
 $service->prependLoopBadges($stamped, [], new WP_Block());
