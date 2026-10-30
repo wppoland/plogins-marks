@@ -142,7 +142,7 @@ Sale & Stock Badges is fully translatable and ships the `plogins-sale-stock-badg
 == Changelog ==
 
 = 1.1.5 =
-* Fixed: deleting the plugin on a multisite network now removes its settings from every site, not only the main one.
+* Fixed: deleting the plugin on a multisite network now removes its settings from every site, not only the main one, and keeps the badge settings while an add-on that stores its own settings there is still installed; whichever is deleted last removes them.
 
 = 1.1.4 =
 * Fixed: the site could fatal ("Unknown named parameter") when another Plogins plugin with an older copy of the shared library was active. The plugin's bundled copy now lives under its own namespace.
