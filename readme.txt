@@ -4,7 +4,7 @@ Tags: woocommerce, product badges, sale badge, new badge, low stock
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.1.4
+Stable tag: 1.1.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -140,6 +140,9 @@ The plugin stores its configuration in two WordPress options (`marks_settings` a
 Sale & Stock Badges is fully translatable and ships the `plogins-sale-stock-badges.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.1.5 =
+* Fixed: deleting the plugin on a multisite network now removes its settings from every site, not only the main one.
 
 = 1.1.4 =
 * Fixed: the site could fatal ("Unknown named parameter") when another Plogins plugin with an older copy of the shared library was active. The plugin's bundled copy now lives under its own namespace.
